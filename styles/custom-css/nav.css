@@ -49,14 +49,14 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
+  width: 32px;
   height: 80px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   /* border: 3px solid #fff; */
 }
 .menu-btn__burger {
-  width: 20px;
+  width: 32px;
   height: 6px;
   background: black;
   border-radius: 5px;
@@ -68,7 +68,7 @@ nav ul li a {
 .menu-btn__burger::after {
   content: "";
   position: absolute;
-  width: 20px;
+  width: 32px;
   height: 6px;
   background: black;
   border-radius: 5px;
