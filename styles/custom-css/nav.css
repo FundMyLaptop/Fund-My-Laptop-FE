@@ -10,11 +10,14 @@ nav ul li {
   font-size: 18px;
   color: #04172a;
   padding-right: 1.4rem;
+  font-weight: 500 !important;
+}
+.nav-item li a {
   font-weight: 500;
 }
 
 .navbar ul li a {
-  font-weight: 500;
+  font-weight: bold;
 }
 nav ul li a {
   font-weight: 500 !important;
@@ -34,5 +37,3 @@ nav ul li a {
   padding: 6px 24px;
   line-height: 21px;
 }
-
-.b
