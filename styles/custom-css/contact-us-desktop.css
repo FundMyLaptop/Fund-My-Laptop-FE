@@ -1,0 +1,43 @@
+:root {
+  box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #E5E5E5;
+  margin: 0;
+  padding: 0;
+}
+
+.b-design {
+  border: 1px solid #00000040;
+  border-radius: 4px;
+}
+
+.contact-us-splash {
+  text-align: center;
+}
+
+.contact-us-content {
+  padding: 5em 8em;
+}
+
+.contact-details-list {
+  flex: 1;
+  margin-right: 4em;
+}
+
+.contact-us-form {
+  flex: 2;
+  margin-left: 4em;
+  padding: 1.5em 2em;
+}
+
+.contact-us-form button {
+  margin-left: auto;
+}
