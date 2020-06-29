@@ -120,7 +120,10 @@ height: 1.25rem !important;
 .have-acc a{
     color: #FB3F5C;
 }
-
+.line{
+    width: 41%;
+    margin-top: -5px;
+}
 /* .footer{
     height: 390px;
     background-color: #04172A;
