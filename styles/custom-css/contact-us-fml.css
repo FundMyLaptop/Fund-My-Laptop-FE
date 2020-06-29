@@ -280,19 +280,17 @@ margin-top: 2rem;
 color: #FFFFFF;
 
 }
- 
-
-@media (min-width: 600px) {
+ @media (min-width: 550px) {
 	
 	input[type=name],
 input[type=email],
 input[type=text]{
-	width:700px;
+	width:500px;
 }
 textarea{
-	width:700px;}
+	width:500px;}
 input[type=submit]{
-margin-left: 35rem;
+margin-left: 25rem;
 
 }
 }
@@ -327,10 +325,11 @@ block {
   position:relative;
   right: 80px;
 	}
-.contained img{
+	.contained img{
 margin-left: 0rem;}
-}
-	media (min-width: 600px) {
+	
+
+	media (min-width:610px) {
 	
 	input[type=name],
 input[type=email],
@@ -340,7 +339,7 @@ input[type=text]{
 textarea{
 	width:700px;}
 input[type=submit]{
-margin-left: 35rem;
+margin-left: 30rem;
 
 
 }
@@ -354,10 +353,12 @@ input[type=text]{
 }
 textarea{
 	width:306px;}
-input[type=submit]{
-margin-left:7.5rem;}
-	
 }
+
+	
+
+	
+
 	
   
 	
