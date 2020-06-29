@@ -18,11 +18,14 @@ img {
   height: auto;
 }
 /* page styling begins */
+
+/* nav settings */
 .cont {
   margin-top: 30px;
 }
 .rgh-sd {
   height: auto;
+  margin-top: 90px;
 }
 .rgh-sd .rgh-sd-in {
   height: 500px;
@@ -32,6 +35,7 @@ img {
 }
 .lft-sd {
   padding: 20px;
+  margin-top: 40px;
 }
 .lft-sd .btn-google {
   width: 100%;
@@ -104,5 +108,21 @@ form .btn-lgn {
   /* background: #ffffff; */
   border-radius: 5px;
 }
-/* form input:active {
-  } */
+.footer {
+  overflow-x: hidden;
+}
+.footer img {
+  width: 20px;
+  height: 20px;
+}
+.footer .logo img {
+  width: 75px;
+  height: 45px;
+  margin-left: 30px;
+}
+.footer .right ul li a {
+  margin-left: 5px !important;
+}
+.footer .btm {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
