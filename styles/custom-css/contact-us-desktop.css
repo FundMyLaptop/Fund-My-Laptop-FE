@@ -105,3 +105,9 @@ i {
   margin-top: 1em;
   margin-left: auto;
 }
+.error{
+  font-size: 12px;
+  text-align: center;
+  color: red;
+  padding-top: 10px;
+}
