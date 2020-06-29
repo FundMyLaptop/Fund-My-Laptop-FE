@@ -8,7 +8,7 @@ const validateFormFields = () => {
         "must be five letters at least and must not contain digits",
     },
     tel: {
-      expected: () =>/^[0-9]{11,14}$/,
+      expected: () => /^[0-9]{11,14}$/,
       failureResponse: "please provide a valid phone number",
     },
     email: {
@@ -34,6 +34,13 @@ const validateFormFields = () => {
     if (valTypeStore.expected().test(this.value)) {
       this.nextElementSibling.textContent = "";
       formSubmitBtn.removeAttribute("disabled");
+    } else if (
+      this.value === " " ||
+      valTypeStore.expected().test(this.value) === " "
+    ) {
+      formSubmitBtn.setAttribute("disabled", "disabled");
+    } else if (fieldsToBeValidated.values === " ") {
+      formSubmitBtn.setAttribute("disabled", "disabled", true);
     } else {
       this.nextElementSibling.textContent = ` ${valTypeStore.failureResponse}`;
       formSubmitBtn.setAttribute("disabled", "disabled");
