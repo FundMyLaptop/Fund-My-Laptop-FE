@@ -104,10 +104,7 @@ nav ul li a {
   .menu-btn__burger {
     display: block;
   }
-  .navbar .navbar-toggler span {
-    background: black;
-    color: white;
-  }
+
   .navbar {
     align-items: center;
   }
