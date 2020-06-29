@@ -11,7 +11,7 @@
   <script src="https://kit.fontawesome.com/c5e8748bc2.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class="contactFormBody">
   <div class="contactUsHeader d-flex justify-content-center">
     <div>
       <h1>Contact Us</h1><hr class="titleHr"/>
@@ -58,32 +58,39 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label class="darkColour1">Full Name</label>
-            <input type="text" class="form-control darkColour2" placeholder="Input full name">
+            <input type="text" class="form-control darkColour2" placeholder="Input full name" required>
+            <p class="errorDisplayer"></p>
           </div>
           <div class="form-group col-md-6">
             <label class="darkColour1">Email Address</label>
-            <input type="email" class="form-control darkColour2" placeholder="Input email address">
+            <input type="email" class="form-control darkColour2" placeholder="Input email address" required>
+            <p class="errorDisplayer"></p>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label class="darkColour1">Phone Number</label>
-            <input type="tel" class="form-control darkColour2" placeholder="Input phone number">
+            <input type="tel" class="form-control darkColour2" placeholder="Input phone number" required>
+            <p class="errorDisplayer"></p>
           </div>
           <div class="form-group col-md-6">
             <label class="darkColour1">Subject</label>
-            <input type="text" class="form-control darkColour2" placeholder="Input subject">
+            <input type="text" class="form-control darkColour2" placeholder="Input subject" required>
+            <p class="errorDisplayer"></p>
           </div>
         </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1" class="darkColour1">Message</label>
-          <textarea class="form-control darkColour2" id="exampleFormControlTextarea1" rows="7"  placeholder="Input message"></textarea>
+          <textarea class="form-control darkColour2" id="exampleFormControlTextarea1" rows="7"  placeholder="Input message" required></textarea>
+          <p class="errorDisplayer"></p>
         </div>
+        
         <div class="d-flex">
-          <button type="submit" class="btn btn-danger">Send Message</button>
+          <button type="submit" class="btn btn-danger contactValidBtn">Send Message</button>
         </div>
       </form>
     </div>
   </div>
+  <script src="./../js/custom-js/validateContactForm.js"></script>
 </body>
 </html>
