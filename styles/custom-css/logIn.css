@@ -1,0 +1,108 @@
+/* general reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 23px;
+  color: rgba(4, 23, 42, 0.7);
+  margin-left: 30px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+/* page styling begins */
+.cont {
+  margin-top: 30px;
+}
+.rgh-sd {
+  height: auto;
+}
+.rgh-sd .rgh-sd-in {
+  height: 500px;
+  background-image: url("../../img/lg-img.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.lft-sd {
+  padding: 20px;
+}
+.lft-sd .btn-google {
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 23px;
+  text-align: center;
+  color: #fb3f5c;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #888888;
+}
+.lft-sd-in h1 span {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  color: #04172a;
+}
+.lft-sd .line {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 20px 0 20px 0;
+}
+.lft-sd-in {
+  width: 350px;
+  padding: 20px;
+}
+.lft-sd-in p {
+  font-style: normal;
+  font-weight: 450;
+  font-size: 17.5px;
+  line-height: 21px;
+  color: rgba(4, 23, 42, 0.7);
+  margin: 10px;
+}
+.line span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #f5f5f5;
+  position: absolute;
+  margin-top: -15px;
+  margin-left: 150px;
+  width: 20px;
+}
+.btn-google img {
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+}
+.lft-sd-in {
+  margin: 0 auto;
+}
+form input {
+  margin-top: 15px;
+  background: #ffffff;
+  border: 1px solid #1c7ed6 !important;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+form .btn-lgn {
+  margin-top: 15px;
+  width: 100%;
+  /* background: #ffffff; */
+  border-radius: 5px;
+}
+/* form input:active {
+  } */
