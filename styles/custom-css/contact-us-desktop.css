@@ -37,7 +37,7 @@ body {
   font-size: 1.2rem;
 }
 
-hr.headerHr {
+hr.titleHr {
   border: 10px solid #FB3F5C;
   width: 30.8%;
   margin-top: -3em;
@@ -67,6 +67,7 @@ hr.headerHr {
   font-weight: lighter;
 }
 
+/* Awesome font icons */
 i {
   color: #FB3F5C;
 }
