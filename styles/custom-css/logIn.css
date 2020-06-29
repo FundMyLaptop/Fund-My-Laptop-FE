@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome {
+  font-size: 18px;
+  font-family: ;
+}
+
+.google {
+  width: 343px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #FB3F5C;
+  box-shadow: 2px 2px 2px 2px #f8f8f8;
+  cursor: pointer;
+}
+
+input[type=email] {
+  width: 343px;
+  outline: none;
+  border: 1px solid #686868;
+  border-radius: 5px;
+}
+
+input[type=password] {
+  width: 343px;
+  outline: none;
+  border: 1px solid #686868;
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 1px solid #1C7ED6
+}
+
+
+.login {
+  background: #FB3F5C;
+  color: #fff;
+  width: 343px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.account {
+  color: #686868;
+  font-size: 12px;
+}
+
+.sign {
+  color: #FB3F5C;
+}
+
+.sign:hover {
+  color: #1C7ED6;
+  text-decoration: none;
+}
+
+.error {
+  color: #FB3F5C;
+  font-size: 11px;
+}
+
+.google::before {
+  content: url("../../img/google.svg");
+  margin-right: 15px;
+  position: relative;
+  bottom: -6px;
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FML-Login</title>
+  <link rel="stylesheet" href="../styles/bootstrap-css/bootstrap.css">
+  <link rel="stylesheet" href="../js/bootstrap-js/bootstrap.js">
+  <link rel="stylesheet" href="../styles/custom-css/logIn.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mx-auto">
+        <p class="welcome">Welcome to <br> <span class="font-weight-bold">Fund My Laptop</span></p>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column align-items-center">
+      <button type="button" class="google px-5 py-3 mb-3 mt-5 text-center">Login with Google</button>
+
+      <form action="" method="POST" id="form" class="d-flex flex-column">
+        <div class="">
+          <input type="email" name="email" placeholder="Email" class="py-3 px-2 mt-3" id="email">
+          <div id="errorEmail" class="error"></div>
+        </div>
+        <div class="">
+          <input type="password" name="password" placeholder="Password" class="py-3 px-2 mt-3" id="password">
+          <div id="errorPassword" class="error"></div>
+        </div>
+        <button type="button" class="login px-5 py-3 my-4" onclick="formValidation()">Log in</button> 
+        <p class="text-center account">Don't have an account? <a href="signUp.html" class="sign">Sign up</a></p>
+      </form>
+      <div id="error" class="error"></div>
+    </div>
+
+  </div>
+  <script src="../js/custom-js/logIn.js"></script>
+</body> 
+</html>
