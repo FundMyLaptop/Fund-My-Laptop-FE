@@ -287,12 +287,12 @@ color: #FFFFFF;
 	input[type=name],
 input[type=email],
 input[type=text]{
-	width:406px;
+	width:700px;
 }
 textarea{
-	width:406px;}
+	width:700px;}
 input[type=submit]{
-margin-left: 18.5rem;
+margin-left: 35rem;
 
 }
 }
@@ -301,7 +301,7 @@ margin-left: 18.5rem;
 
 	.contained{
 display: flex;
-margin-left: 0px;
+margin-left:0px;
 
 
 	}
@@ -310,5 +310,59 @@ margin-left: 0px;
 	right: 140px;
 	}
 }
+@media (max-width:325px){
+	input[type=name],
+	input[type=email],
+input[type=text]{
+	width:230px;
+}
+textarea{
+	width:230px;}
+input[type=submit]{
+margin-left:7.5rem;
+
+}
+
+block {
+  position:relative;
+  right: 80px;
+	}
+.contained img{
+margin-left: 0rem;}
+}
+	media (min-width: 600px) {
+	
+	input[type=name],
+input[type=email],
+input[type=text]{
+	width:700px;
+}
+textarea{
+	width:700px;}
+input[type=submit]{
+margin-left: 35rem;
+
+
+}
+}
+	media (min-width: 400px){
+		
+		input[type=name],
+	input[type=email],
+input[type=text]{
+	width:306px;
+}
+textarea{
+	width:306px;}
+input[type=submit]{
+margin-left:7.5rem;}
+	
+}
+	
+  
+	
+	
+
+
 	
 
