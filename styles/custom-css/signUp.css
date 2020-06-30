@@ -1,6 +1,7 @@
 body{
     font-family: 'DM Sans', sans-serif !important;
     font-style: normal;
+    overflow-x: hidden;
 }
 .port-nav{
     background-color: white;
@@ -71,8 +72,10 @@ body{
     line-height: 44px;
 }
 
+
 .laptop{
     background: url('https://res.cloudinary.com/dmql7dd72/image/upload/v1593458321/1SAnrIxw5OY_u2tbvg.png');
+    background-repeat: no-repeat;
     background-size: cover;
     height: 749px;
 }
@@ -133,3 +136,52 @@ height: 1.25rem !important;
     top: 0%;
     bottom: 0%;
 } */
+footer {
+  background: #04172a;
+  color: #ffffff;
+  padding-left: 70px;
+  
+}
+.foot-bottom {
+    border-top: 1px solid #151b67;
+}
+
+@media (max-width: 960px) {
+
+             footer {
+                padding-left:0px;
+            }
+              footer li {
+                text-align: center;
+              }
+              footer h4 {
+                text-align: center;
+              }
+              footer p {
+                text-align: center;
+              }
+              .footer-icon {
+                display: flex;
+                justify-content: center;
+              }
+            }
+
+            @media (max-width: 480px) {
+            
+            footer {
+                padding-left:0px;
+            }
+              footer li {
+                text-align: center;
+              }
+              footer h4 {
+                text-align: center;
+              }
+              footer p {
+                text-align: center;
+              }
+              .footer-icon {
+                display: flex;
+                justify-content: center;
+              }
+            }
