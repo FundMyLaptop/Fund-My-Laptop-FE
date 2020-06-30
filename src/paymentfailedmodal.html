@@ -19,7 +19,9 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0); /* Fallback color */
+    background: #FFFFFF;
+box-shadow: -30px -30px 50px rgba(0, 0, 0, 0.05), 30px 30px 50px rgba(0, 0, 0, 0.05);
+border-radius: 20px;
     background-color: #F0F0F0; /* Black w/ opacity */
   }
 
@@ -52,21 +54,39 @@
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
   }
-
+h
+ p{
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: rgba(4, 23, 42, 0.5);
+text-align: center;
+font-family:'Roboto', sans-serif"
+ }
 
   .modal-body {
     min-width: 10%;
     padding: 17px;
     color: #04172A;
+    align-content: center;
   }
 
   .modal-header {padding: 4px 16px;
   align-items: center;
+    display: grid;
 
   }
   .modal-header img{
     max-width:100%;height:auto;
     align-self: center;
+    align-content: center;
+    margin: auto;
+    left: 45%;
+right: 41.11%;
+top: 38.75%;
+bottom: 51.78%;
+
   }
 
 
@@ -78,8 +98,8 @@
   }
 
   .modal-footer {
-    padding: 2px 16px;
-
+    padding: 2px 40px;
+    display: grid;
     color: white;
   }
   .backBtn{
@@ -87,17 +107,20 @@
   box-shadow: 0px 2.76726px 2.21381px rgba(251, 63, 92, 0.0196802), 0px 6.6501px 5.32008px rgba(251, 63, 92, 0.0282725), 0px 12.5216px 10.0172px rgba(251, 63, 92, 0.035), 0px 22.3363px 17.869px rgba(251, 63, 92, 0.0417275), 0px 41.7776px 33.4221px rgba(251, 63, 92, 0.0503198), 0px 100px 80px rgba(251, 63, 92, 0.07);
   border-radius: 5px;
   border: none;
+  font-family: 'DM Sans', sans-serif;
   text-align: center;
   color: white;
   width: 100%;
-  min-width: 10%;
-margin-left: 70px auto;
+  min-width: 55px;
+  max-width: 400px;
+   margin: auto;
   align-self: center;
   height: 48px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
+
   }
   </style>
 </head>
@@ -113,7 +136,7 @@ margin-left: 70px auto;
     <div class="modal-content">
       <div style="margin-left: 10%; margin-right: 10%;">
         <div class="modal-header">
-          <img src="paymentfailed.png" width="350px" height="300px"  >
+          <img src="paymentfailed.png" width="200px"  >
         </div>
       <div class="modal-body">
         <h2 style="text-align:center;color: #04172A;font-style: normal;
