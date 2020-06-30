@@ -185,7 +185,13 @@ footer {
      }
     .navbar .navbar-brand {
         padding-right: -34px;
-     }       
+     } 
+     .check-text {
+         font-size: 14px;
+     }
+     .check-text a {
+         font-size: 14px;
+     }      
     footer {
         padding-left:0px;
         }
