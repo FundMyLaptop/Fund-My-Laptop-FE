@@ -74,10 +74,6 @@
         border-radius: 50%;
       }
 
-      .intern {
-          /* background: #FB3F5C; */
-      }
-
       .intern .card {
           height: 240px;
           width: 270px;
@@ -140,7 +136,7 @@
       }
 
       .intern-btn:hover {
-          transition: all ease-in 2s;
+          transition: all ease-in .8s;
           background: #04172A;
           color: #fff;
           cursor: pointer;
@@ -164,4 +160,63 @@
       ::-webkit-scrollbar-thumb {
           background: #04172A;
           border-radius: 5px;
+      }
+
+      tbody tr:hover {
+          background: #eee;
+          cursor: pointer;
+      }
+
+      @media only screen and (max-width: 576px) {
+         .container {
+             margin: 0 auto;
+             width: 93%;
+         }
+
+         .campaign, .none, .row-stack {
+             display: none;
+         }
+
+         .intern .card {
+             height: 100%;
+         }
+
+         .intern-img {
+             height: 45px;
+         }
+
+         .amount-funded p {
+             font-size: 9px;
+             padding: 13px;
+         }
+
+         .amount-funded {
+             margin-left: 1%;
+         }
+
+          progress[value]::-webkit-progress-bar {
+            width: 130%;
+        }
+
+        table {
+            font-size: 12px;
+        }
+      }
+
+      @media only screen and (min-width: 768px) {
+        .row-stack {
+            display: none;
+        }
+
+        .details {
+            display: none;
+        }
+
+        .intern .card {
+            height: 100%;
+        }
+
+        progress[value]::-webkit-progress-bar {
+            width: 130%;
+        }
       }
