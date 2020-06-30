@@ -84,7 +84,7 @@ div#uimg {
 }
 
 ._car_pgbar {
-	padding: .3em;
+	padding: 0.3em;
 	width: 100%;
 	border-radius: 3px;
 	position: relative;
@@ -92,7 +92,7 @@ div#uimg {
 	z-index: 5;
 }
 
-._car_pgbar::before{
+._car_pgbar::before {
 	position: absolute;
 	height: 100%;
 	width: 70%;
