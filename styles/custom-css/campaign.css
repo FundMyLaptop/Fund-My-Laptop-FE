@@ -3,9 +3,21 @@ body {
   overflow-x: hidden;
   font-family: "DM Sans";
 }
-
+li {
+    margin: 10px;
+}
+ul {
+    justify-content: flex-start;
+    color: rgba(4, 23, 42, 0.8);
+}
+.base-nav{
+    color: #000000;
+    font-family: "DM Sans";
+    font-size: 24px;
+    margin: 0px;
+}
 .pleading_funding {
-  margin: auto 80px;
+  margin: 100px 80px 50px 80px;
 }
 
 .plead_fund {
@@ -14,6 +26,7 @@ body {
   font-size: 36px;
   line-height: 47px;
   color: rgba(4, 23, 42, 0.8);
+  margin-left: 22px;
 }
 
 .title_laptop_detail {
@@ -118,9 +131,15 @@ body {
 }
 
 .funding_socials a {
-  margin-right: 15px;
+  margin-right: 20px;
   color: rgba(4, 23, 42, 0.8);
+  justify-content: flex-end;
 }
 .funding_socials a > ion-icon {
   font-size: 30px;
+}
+
+.funding_socials {
+    align-items: flex-end;
+    justify-items: flex-end;
 }

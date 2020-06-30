@@ -10,17 +10,70 @@
     />
     <link rel="stylesheet" href="../styles/bootstrap-css/bootstrap.css" />
     <link rel="stylesheet" href="../styles/custom-css/campaign.css" />
+    <link rel="stylesheet" href="../styles/custom-css/footer.css" />
+    <link rel="stylesheet" href="../styles/custom-css/nav.css" />
 
     <title>Campaign</title>
   </head>
 
   <body>
-    <!-- Pleading for fund title -->
+
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-sm bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="../../img/layer1.png" alt="image"
+        /></a>
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
+        <div class="navbar-collapse navv" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto" id="ham">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">LEND</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="#course">BORROW</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="#features">ABOUT</a>
+            </li>
+  
+            <li class="nav-item">
+              <button type="button" class="btn btn-danger nav-btn">Login</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+
+
+
+      
     <div class="container-fluid pleading_funding">
+      <ul class="nav">
+            <li class="nav-item">
+            <a class="nav-link active base-nav" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link base-nav" href="#">Campaigns Page</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link base-nav" href="#">Campaign</a>
+            </li>
+      </ul>
+    <!-- Pleading for fund title -->
+    
       <p class="plead_fund">Fund John Doe’s Laptop Purchase</p>
     </div>
 
     <div class="container">
+      <video width="100%" height="100%" controls>
+            <source src="#" type="video/mp4">
+            <source src="#" type="video/ogg">
+            Your browser does not support the video tag.
+      </video>
       <div class="row each_detail_row">
         <div class="col-6">
           <p class="title_laptop_detail">Posted by:</p>
@@ -151,7 +204,7 @@
             Can’t fund? Want to help? Share this campaign on social media
           </p>
         </div>
-        <div class="col-5 funding_socials">
+        <div class="col-5 funding_socials align-content-end">
           <a href="#"> <ion-icon name="logo-facebook"></ion-icon></a>
           <a href="#"> <ion-icon name="logo-twitter"></ion-icon></a>
           <a href="#"> <ion-icon name="mail"></ion-icon></a>
@@ -159,6 +212,51 @@
         </div>
       </div>
     </div>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-li">
+          <div class="left">
+            <ul>
+              <li><img src="../../img/Group 3005.png" alt="" /></li>
+              <li>address</li>
+              <li>email address</li>
+              <li>phone</li>
+            </ul>
+  
+            <div>
+              <ul class="footer-icons">
+                <li>
+                 <a href="#"><img src="../../img/Vector (1).png" alt="" /></a> 
+                </li>
+                <li ><a href="#"><img src="../../img/Vector (2).png" alt="" /></li></a>
+                <li><a href="#"><img src="../../img/Vector (3).png" alt="" /></a></li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="right">
+            <ul>
+              <h4>RESOURCES</h4>
+              <li>Why choose FundMyLaptop</li>
+              <li>How P2P Lending works</li>
+              <li>About FundMyLaptop</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container mt-4 bottom">
+          <p>2020 &copy; Copyright All Rights Reserved</p>
+  
+          <ul>
+            <li>FAQ</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+          </ul>
+        </div>
+      </footer>
 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   </body>
