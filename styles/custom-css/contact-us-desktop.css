@@ -13,6 +13,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'DM Sans', sans-serif;
+
+
 }
 
 .contactUsHeader {
@@ -20,10 +22,18 @@ body {
   /* background: linear-gradient( #04172a80, #04172a80 ), url(https://bit.ly/3icP4wo) no-repeat; */
   background: linear-gradient( #04172a80, #04172a80 ), url('../../img/contact-us-desktop-splash.svg') no-repeat;
   background-size: cover;
+  background-position: center;
   height: 296.89px;
   text-align: center;
   color: #ffffff;
    margin-top: 6rem;
+margin-right: -5.1rem;
+
+
+   
+
+  
+
    
 }
 
@@ -93,7 +103,7 @@ i {
 }
 
 .contactDetailsList {
-  flex: 1;
+  flex:1;
   margin-right: 3em;
 }
 
@@ -101,6 +111,7 @@ i {
   flex: 2;
   margin-left: 3em;
   padding: 2em 3em;
+  
 }
 
 .contactUsForm button {
@@ -112,8 +123,9 @@ i {
   text-align: center;
   color: red;
   padding-top: 10px;
+  
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .contactUsHeader {
      height: 143.48px;
     }
@@ -154,6 +166,7 @@ hr.titleHr {
   flex-direction: column;
   margin: 0;
   flex: 0;
+
 }
 .borderDesign {
   border: 1px solid #00000040;
@@ -164,7 +177,7 @@ hr.titleHr {
   
   position: relative;
   
-  right:7.5rem;
+  right:4.5rem;
 
 
 
@@ -190,7 +203,7 @@ input[type=email]
 box-sizing: border-box;
 border-radius: 3.816px;
 height:36.63px;
-width: 306px;
+width: 335px;
 }
 
 .darkColour2 {
@@ -201,23 +214,51 @@ box-sizing: border-box;
 }
 @media (max-width: 400px){
   .borderDesign {
-     width: 365px;
+     width: 435px;
+     right:7.6rem;
    }
+   input[type=text],
+input[type=tel],
+input[type=email]
+
+{
+  width: 362px;
  }
-  @media (min-width: 400px) and (max-width: 550px){
+}
+  @media (min-width: 400px) and (max-width: 500px){
     .borderDesign {
-     width: 400px;
-   }
+     width: 477px;
+     right:7.8rem;
+
  }
+    input[type=text],
+input[type=tel],
+input[type=email]
+
+{
+  width: 402px;
+ }
+}
  
-    @media (min-width: 760px) and (max-width: 1000px){
+    @media (min-width: 700px)and (max-width:1000px){
       .borderDesign {
-     width: 740px;
-   }
+     width: 824px;
+     right:7.4rem;
+
+
+}
+ input[type=text],
+input[type=tel],
+input[type=email]
+
+{
+  width: 372px;
  }
+}
  @media (max-width: 350px) {
    .borderDesign {
-     width: 295px;
+     width: 375px;
+     right:7.4rem;
    }
    input[type=text],
 input[type=tel],
@@ -228,16 +269,17 @@ input[type=email]
 box-sizing: border-box;
 border-radius: 3.816px;
 height:36.63px;
-width: 206px;
+width: 296px;
 }
 
  }
  
 
- @media (min-width: 560px) and (max-width: 700px){
+ @media (min-width: 450px) and (max-width: 460px){
   .borderDesign {
-     width: 565px;
-   }
+     width: 665px;
+   right: 7.8rem; 
+ }
    input[type=text],
      input[type=tel],
      input[type=email]{
@@ -245,7 +287,12 @@ width: 206px;
 box-sizing: border-box;
 border-radius: 3.816px;
 height:36.63px;
-width: 506px;
+width: 586px;
    }
  }
  
+ @media (min-width: 460px) and (max-width: 700px){
+  .borderDesign {
+     width: 465px;
+   right: 7.5rem; 
+ }
