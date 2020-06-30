@@ -90,8 +90,20 @@ body{
     box-shadow: 0 .3rem 2rem rgba(0,0,0,.10)!important;
 }
 
-form .error{
+label.error{
 color: #ff0000!important;
+}
+.dis-block{
+    display: block;
+}
+.pos-abs{
+    position: absolute;
+}
+.pos-rel{
+    position: relative;
+}
+.hoy{
+    margin-bottom: auto;
 }
 .custom-control-label::before, 
 .custom-control-label::after {

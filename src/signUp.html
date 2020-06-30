@@ -79,8 +79,9 @@
                     <div class="col-md-12 mt-3">
                         <div class="custom-control form-control-lg custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label check-text" for="customCheck1">I agree to the <a href="http://">Terms Policy Conditions</a> </label>
+                            <label class="custom-control-label check-text" for="customCheck1">I agree to the <a href="#">Terms Policy Conditions</a> </label>
                         </div>
+                         <label class='error hoy  '></label>
                     </div>  
                     <div class="col-md-12 mt-3">
                         <button type="submit" class="btn btn-danger signup-btn btn-lg">Sign up</button>
@@ -132,7 +133,7 @@
                 },
                 password: {
                     required: true,
-                    minlength: 5
+                    minlength: 6
                 }
                 },
                 // Specify validation error messages
@@ -141,15 +142,24 @@
                 lastname: "Please enter your lastname",
                 password: {
                     required: "Please provide a password",
-                    minlength: "Your password must be at least 5 characters long"
+                    minlength: "Your password must be at least 6 characters long"
                 },
                 email: "Please enter a valid email address"
                 },
                 // Make sure the form is submitted to the destination defined
                 // in the "action" attribute of the form when valid
                 submitHandler: function(form) {
+                if ($("input[type=checkbox]").is(":checked")) {
                 form.submit();
+                $(form)[0].reset();     
                 }
+                else{
+                    $(".hoy").append("You have to agree to our terms and conditions in order to proceed!");
+                    $("input[type=checkbox]").focus();
+                    $(".hoy").attr("style", "display:block!important")
+                }
+                }
+
             });
             });</script>
   </body>
