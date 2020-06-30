@@ -7,6 +7,9 @@ body {
 li {
     margin: 10px;
 }
+.nav-bar {
+    background: #ffffff !important;
+}
 ul {
     justify-content: flex-start;
     color: rgba(4, 23, 42, 0.8);
@@ -14,8 +17,8 @@ ul {
 .base-nav{
     color: #000000;
     font-family: "DM Sans";
-    font-size: 24px;
-    margin: 0px;
+    /* font-size: 24px;
+    margin: 0px; */
 }
 .pleading_funding {
   margin: 50px 80px 50px 0px;
