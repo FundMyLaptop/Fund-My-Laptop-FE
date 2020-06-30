@@ -2,15 +2,18 @@ body{
     font-family: 'DM Sans', sans-serif !important;
     font-style: normal;
     overflow-x: hidden;
+    height: 100%;
 }
 .port-nav{
     background-color: white;
-    padding: .3rem 2.5rem !important;
+}
+.navbar .navbar-nav {
+    padding-right: 90px;
 }
 
-.brand-logo{
+/*.brand-logo{
     padding-left: 90px;
-}
+}*/
 
 .brand-logo img{
     height: 50px;
@@ -24,6 +27,9 @@ body{
 
 .special{
     color:#E10D0D;
+}
+.su-form {
+    padding-left: 50px;
 }
 
 .login-button{
@@ -150,41 +156,50 @@ footer {
 
 
 @media (max-width: 960px) {
+    
+    .navbar .navbar-nav {
+        padding-right: 0px;
+}
+    footer {
+        padding-left:0px;
+        }
+    footer li {
+        text-align: center;
+        }
+    footer h4 {
+         text-align: center;
+        }
+    footer p {
+        text-align: center;
+        }
+    .footer-icon {
+        display: flex;
+        justify-content: center;
+        }
+    }
 
-             footer {
-                padding-left:0px;
-            }
-              footer li {
-                text-align: center;
-              }
-              footer h4 {
-                text-align: center;
-              }
-              footer p {
-                text-align: center;
-              }
-              .footer-icon {
-                display: flex;
-                justify-content: center;
-              }
-            }
+ @media (max-width: 480px) {
 
-            @media (max-width: 480px) {
-            
-            footer {
-                padding-left:0px;
-            }
-              footer li {
-                text-align: center;
-              }
-              footer h4 {
-                text-align: center;
-              }
-              footer p {
-                text-align: center;
-              }
-              .footer-icon {
-                display: flex;
-                justify-content: center;
-              }
-            }
+     .navbar .navbar-nav {
+        padding-right: 0px;
+     }
+    .navbar .navbar-brand {
+        padding-right: -34px;
+     }       
+    footer {
+        padding-left:0px;
+        }
+    footer li {
+        text-align: center;
+        }
+    footer h4 {
+        text-align: center;
+        }
+    footer p {
+        text-align: center;
+        }
+    .footer-icon {
+        display: flex;
+        justify-content: center;
+        }
+    }
