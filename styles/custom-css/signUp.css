@@ -91,7 +91,7 @@ body{
 }
 
 form .error{
-color: red!important;
+color: #ff0000!important;
 }
 .custom-control-label::before, 
 .custom-control-label::after {
