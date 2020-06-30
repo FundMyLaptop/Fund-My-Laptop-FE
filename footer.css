@@ -1,0 +1,33 @@
+body{
+    color:#fff;
+
+}
+.bg{
+    background-color:#04172A;
+    color: #fff;
+}
+.footer-left{
+	text-align: left;
+}
+.footer-top{
+	border-bottom: solid 2px #fff;
+}
+.more-info{
+	margin-right: 10px;
+}
+hr{
+	margin-bottom: 0px;
+}
+.footer-bottom{
+	margin-top: 0px;
+}
+@media (min-width: 768px) {
+.footer-top-left{
+	margin-right: 30%;
+}
+.footer-bottom-left{
+	margin-right: 30%;
+}
+}
+
+
