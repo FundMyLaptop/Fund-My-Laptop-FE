@@ -2,6 +2,7 @@ body {
   color: rgba(4, 23, 42, 0.8);
   overflow-x: hidden;
   font-family: "DM Sans";
+  background:#FFF;
 }
 li {
     margin: 10px;
@@ -17,7 +18,7 @@ ul {
     margin: 0px;
 }
 .pleading_funding {
-  margin: 100px 80px 50px 80px;
+  margin: 50px 80px 50px 80px;
 }
 
 .plead_fund {
