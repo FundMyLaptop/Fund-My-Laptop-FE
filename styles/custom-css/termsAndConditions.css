@@ -62,9 +62,9 @@ body {
     font-size: 1.25rem;
     color: #ffffff !important;
 }
-.btn-primary:hover{
-    background: #FB3F5C;
-    border: 2px solid #FB3F5C;
+.btn-primary:hover, .btn-primary:focus{
+    background: #FB3F5C !important;
+    border: 2px solid #FB3F5C !important;
     border-radius: 5px;
     padding: 14px 51px !important;
     font-size: 1.25rem;
@@ -79,9 +79,9 @@ body {
     color: #3D3838 !important;
     font-size: 1.25rem;
 }
-.btn-outline-primary:hover{
-    background: #ffffff;
-    border: 2px solid #FB3F5C;
+.btn-outline-primary:hover, .btn-outline-primary:focus{
+    background: #ffffff !important;
+    border: 2px solid #FB3F5C !important;
     border-radius: 5px;
     padding: 14px 51px !important;
     color: #3D3838 !important;
