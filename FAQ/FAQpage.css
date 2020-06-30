@@ -1,0 +1,44 @@
+.text-center h1{
+    font-size: 30px;
+    color: #041724;
+    height: 3rem;
+    margin: 25px 30px;
+}
+.form-group{
+    padding-left: 25.5rem;
+    padding-right: 25.5rem;
+}
+.text-muted{
+    font-size: 20px;
+}
+.footer-text{
+    text-align: center;
+}
+.footer-btn{
+    text-align: center;
+}
+.panel-title{
+    background-color: #041724;
+    font: #ffff;
+    height: 3.5rem;
+    border-radius: 5px;
+}
+.body-text{
+    text-align: center;
+}
+.inside-text{
+    text-align: center;
+    display: inline-block;
+}
+.footer-btn{
+    background: #FB3F5C;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 10px;
+    cursor: pointer;
+}
