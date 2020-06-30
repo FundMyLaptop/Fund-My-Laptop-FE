@@ -167,6 +167,11 @@
           cursor: pointer;
       }
 
+      .card-title .intern-name {
+        margin-top: 1%;
+        margin-left: 10%;
+    }
+
       @media only screen and (max-width: 576px) {
          .container {
              margin: 0 auto;
@@ -177,7 +182,13 @@
              display: none;
          }
 
+         .card-title .intern-name {
+             margin-top: -22%;
+             padding-left: 20%;
+         }
+
          .intern .card {
+             margin-top: 3%;
              height: 100%;
          }
 
@@ -204,8 +215,19 @@
       }
 
       @media only screen and (min-width: 768px) {
+        .card-title .intern-name {
+            margin-top: 1%;
+            margin-left: 18%;
+        }
+
         .row-stack {
-            display: none;
+            margin-left: -4%;
+            margin-top: 5%;
+            display: flex;
+        }
+
+        .row-stack > div {
+            margin: 2% 2%;
         }
 
         .details {
