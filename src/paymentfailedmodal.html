@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <title>Payment Failed </title>
+</head>
+<style>
+  body {font-family: 'DM Sans', sans-serif;}
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: #F0F0F0; /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    height:inherit;
+    padding: 40px 100px 0px 100px;
+    width: 40%;
+    box-shadow: 0px 2.76726px 2.21381px rgba(153, 153, 153, 0.0196802), 0px 6.6501px 5.32008px rgba(153, 153, 153, 0.0282725), 0px 12.5216px 10.0172px rgba(153, 153, 153, 0.035), 0px 22.3363px 17.869px rgba(153, 153, 153, 0.0417275), 0px 41.7776px 33.4221px rgba(153, 153, 153, 0.0503198), 0px 100px 80px rgba(153, 153, 153, 0.07);
+  border-radius: 11px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+
+  .modal-body {
+    min-width: 10%;
+    padding: 17px;
+    color: #04172A;
+  }
+
+  .modal-header {padding: 4px 16px;
+  align-items: center;
+
+  }
+  .modal-header img{
+    max-width:100%;height:auto;
+    align-self: center;
+  }
+
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-footer {
+    padding: 2px 16px;
+
+    color: white;
+  }
+  .backBtn{
+      background: linear-gradient(270deg, #FB3F5C 0%, #FC657D 80.86%);
+  box-shadow: 0px 2.76726px 2.21381px rgba(251, 63, 92, 0.0196802), 0px 6.6501px 5.32008px rgba(251, 63, 92, 0.0282725), 0px 12.5216px 10.0172px rgba(251, 63, 92, 0.035), 0px 22.3363px 17.869px rgba(251, 63, 92, 0.0417275), 0px 41.7776px 33.4221px rgba(251, 63, 92, 0.0503198), 0px 100px 80px rgba(251, 63, 92, 0.07);
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  color: white;
+  width: 100%;
+  min-width: 10%;
+margin-left: 70px auto;
+  align-self: center;
+  height: 48px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  }
+  </style>
+</head>
+<body>
+
+  <button id="payBtn" style="width: 20%;height: 50px; color: black; background-color: red;">Payment Failed</button>
+  <a href="paymentFail.html"><button style="width: 20%;height: 20%;">Go to Home</button></a>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+
+    <div class="modal-content">
+      <div style="margin-left: 10%; margin-right: 10%;">
+        <div class="modal-header">
+          <img src="paymentfailed.png" width="350px" height="300px"  >
+        </div>
+      <div class="modal-body">
+        <h2 style="text-align:center;color: #04172A;font-style: normal;
+        font-weight:400;
+        font-size:3vw;
+        line-height: 40px;">Payment Failed</h2>
+        <p style="text-align:center; color: rgba(4, 23, 42, 0.5); font-style:small; font-family: 'Roboto', sans-serif">Unable to carry out payment transaction. Check your details and try again.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="backBtn close" >Try again</button>
+      </div>
+    </div>
+    </div>
+
+
+
+</div>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("payBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+</body>
+</html>
