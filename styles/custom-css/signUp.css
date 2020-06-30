@@ -90,6 +90,9 @@ body{
     box-shadow: 0 .3rem 2rem rgba(0,0,0,.10)!important;
 }
 
+.error{
+color:red;
+}
 .custom-control-label::before, 
 .custom-control-label::after {
 top: .8rem !important;
