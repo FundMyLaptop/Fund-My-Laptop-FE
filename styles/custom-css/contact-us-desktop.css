@@ -27,7 +27,7 @@ body {
   text-align: center;
   color: #ffffff;
    margin-top: 6rem;
-margin-right: -5.1rem;
+
 
 
    
@@ -214,7 +214,7 @@ box-sizing: border-box;
 }
 @media (max-width: 400px){
   .borderDesign {
-     width: 435px;
+     width: 360px;
      right:7.6rem;
    }
    input[type=text],
@@ -222,12 +222,12 @@ input[type=tel],
 input[type=email]
 
 {
-  width: 362px;
+  width: 302px;
  }
 }
   @media (min-width: 400px) and (max-width: 500px){
     .borderDesign {
-     width: 477px;
+     width: 399px;
      right:7.8rem;
 
  }
@@ -236,13 +236,13 @@ input[type=tel],
 input[type=email]
 
 {
-  width: 402px;
+  width: 322px;
  }
 }
  
     @media (min-width: 700px)and (max-width:1000px){
       .borderDesign {
-     width: 824px;
+     width: 744px;
      right:7.4rem;
 
 
@@ -252,12 +252,12 @@ input[type=tel],
 input[type=email]
 
 {
-  width: 372px;
+  width:302px;
  }
 }
  @media (max-width: 350px) {
    .borderDesign {
-     width: 375px;
+     width: 295px;
      right:7.4rem;
    }
    input[type=text],
@@ -269,7 +269,7 @@ input[type=email]
 box-sizing: border-box;
 border-radius: 3.816px;
 height:36.63px;
-width: 296px;
+width: 206px;
 }
 
  }
