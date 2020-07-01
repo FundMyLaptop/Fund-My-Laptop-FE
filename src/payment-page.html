@@ -640,43 +640,35 @@ height: 48px;
     
     </style>
 </head>
-<body id="body">
-    <header class="toolbar">
-       
-            <button class="hamburger" id="hamturn" onclick="toggle(); backdrop(); hamturn()">
-                <div class="ham_line"></div>
-                <div class="ham_lines"></div>
-                <div class="ham_liness"></div>
-            </button>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="../../img/layer1.png" alt="image"
+      /></a>
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
+      <div class="navbar-collapse navv" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto" id="ham">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">LEND</a>
+          </li>
 
+          <li class="nav-item">
+            <a class="nav-link" href="#course">BORROW</a>
+          </li>
 
-        </nav>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">ABOUT</a>
+          </li>
 
-        <div class="second-nav">
-             <nav class="second_navigation">
-            <div class="spacee"></div>
-            
-                <ul>
-                    <li ><a href="#">Main Page</a></li>
-                    <li><a href="payment-page.html" class="passive-nav">Payment Details</a></li>
-                    <li><a href="#">Confirmation</a></li>
-                    
-                    
-                </ul>
-        </nav>
-    </div>
-    </header>
-    <div id="hidden">
-        <nav id="side">
-            <ul>
-                    <li ><a href="#">Main Page</a></li>
-                    <li><a href="payment-page.html" class="passive-nav">Payment Details</a></li>
-                    <li><a href="#">Confirmation</a></li>
-                    
-                    
-                </ul>
-        </nav>
-    </div>
+          <li class="nav-item">
+            <button type="button" class="btn btn-danger nav-btn">Login</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+   
     <div class="main-body">
 
     <div class="page">
