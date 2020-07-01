@@ -242,7 +242,7 @@ main {
     margin: auto 5px;
   }
   .content{
-    padding-left: 0;
+    padding-left: 0 !important;
   }
 }
 
