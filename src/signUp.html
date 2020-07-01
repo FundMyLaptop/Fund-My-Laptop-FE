@@ -56,18 +56,18 @@
                     </p>
                     <p class="text-muted">Help Achieve Your dreams with funding for your laptops at little or no cost</p>
                 <!--- start of sign up form -->    
-                    <form action="" method="post">
+                    <form action="" method="post" name="signup">
                         <div class="form-row">
                             <div class="col-6 col-sm-6 col-md-6">
                                 <div class="form-group mb-0">
                                     <label for=""></label>
-                                    <input type="text" class="form-control form-control-lg" name="" id="" placeholder="First name" autofocus>
+                                    <input type="text" class="form-control form-control-lg" name="firstname" id="" placeholder="First name" autofocus>
                                 </div>
                             </div> 
                             <div class="col-6 col-sm-6 col-md-6">
                                 <div class="form-group mb-0">
                                     <label for=""></label>
-                                    <input type="text" class="form-control form-control-lg" name="" id="" placeholder="Last name">
+                                    <input type="text" class="form-control form-control-lg" name="lastname" id="" placeholder="Last name">
                                 </div>
                             </div>
                         </div><!--- End of form-row -->
@@ -75,22 +75,23 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for=""></label>
-                                    <input type="email" class="form-control form-control-lg" name="" id="" placeholder="Email">
+                                    <input type="email" class="form-control form-control-lg" name="email" id="" placeholder="Email">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for=""></label>
-                                    <input type="password" class="form-control form-control-lg" name="" id="" placeholder="Password">
+                                    <input type="password" class="form-control form-control-lg" name="password" id="" placeholder="Password">
                                 </div>
                             </div>  
                             <div class="col-12 mt-3">
                                 <div class="custom-control form-control-lg custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
                                     <label class="custom-control-label check-text" for="customCheck1">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                        I agree to the <a href="http://">Terms Policy Conditions</a> 
+                                        I agree to the <a href="#">Terms Policy Conditions</a> 
                                     </label>
                                 </div>
+                                <label for="" class="error hoy"></label>
                             </div>  
                             <div class="col-12 my-2 my-sm-2">
                                 <button type="submit" class="btn btn-danger signup-btn btn-lg">Sign up</button>
@@ -186,5 +187,56 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>-->
+    <script>
+        // Wait for the DOM to be ready
+$(function() {
+  // Initialize form validation on the registration form.
+  // It has the name attribute "registration"
+  $("form[name='signup']").validate({
+    // Specify validation rules
+    rules: {
+      // The key name on the left side is the name attribute
+      // of an input field. Validation rules are defined
+      // on the right side
+      firstname: "required",
+      lastname: "required",
+      email: {
+        required: true,
+        // Specify that email should be validated
+        // by the built-in "email" rule
+        email: true
+      },
+      password: {
+        required: true,
+        minlength: 6
+      }
+    },
+    // Specify validation error messages
+    messages: {
+      firstname: "Please enter your firstname",
+      lastname: "Please enter your lastname",
+      password: {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 6 characters long"
+      },
+      email: "Please enter a valid email address"
+    },
+    // Make sure the form is submitted to the destination defined
+    // in the "action" attribute of the form when valid
+    submitHandler: function(form) {
+        if ($("input[type=checkbox]").is(":checked")) {
+         form.submit(); 
+         $(form)[0].reset(); 
+        } else {
+            $("input[type=checkbox]").focus();
+            $(".hoy").append("You have to agree to our terms and condition before you proceed!").attr("style", "display:block!important")
+        }
+      
+    }
+  });
+});
+    </script>
+</body>
 </html>
