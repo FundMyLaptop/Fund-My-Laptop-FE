@@ -1,0 +1,39 @@
+body {
+  background-image: url(../../img/background.png);
+}
+.w-5 {
+  width: 10%;
+}
+.w-15 {
+  width: 20%;
+}
+.w-80 {
+  width: 80%;
+}
+.fx-pos {
+  transform: translateY(30px);
+}
+.grid {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.height {
+  height: 100px;
+}
+.fx-border {
+  border-radius: 45%;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
