@@ -76,7 +76,7 @@
 
       .intern .card {
           height: 240px;
-          width: 270px;
+          width: 260px;
           padding: 8px;
       } 
 
@@ -192,6 +192,59 @@
     }
 
 
+    ::-webkit-scrollbar {
+        height: 7px;
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #04172A;
+        border-radius: 5px;
+    }
+
+    /* payment progress section */
+    .progress-ring__circle {
+        transition: 0.35s stroke-dashoffset;
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
+    }
+
+    .campaign-progress {
+        margin-top: -55%;
+        margin-left: 2%;
+    }
+
+    .progress__value {
+        position: relative;
+        margin: 0;
+        background-color: transparent;
+        top: -180px;
+    }
+
+    .progress__value h1,
+    .progress__value h6 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .progress__value h6 {
+        font-size: 1em;
+        font-weight: lighter;
+    }
+
+    .total-investments {
+        text-transform: uppercase;
+        display: none;
+    }
+
+    .investments {
+        margin-top: -3%;
+    }
+
+    /* progress payment  ends here */
+
     
       @media only screen and (max-width: 576px) {
          .container {
@@ -204,8 +257,12 @@
              font-size: 26px;
          }
 
-         .campaign, .none, .row-stack {
+        .none, .row-stack, .campaign {
              display: none;
+         }
+
+         .account-overview .card {
+            width: 180px;
          }
 
          .card-title .intern-name {
@@ -241,6 +298,31 @@
 
         progress[value]::-webkit-progress-bar {
             width: 130%;
+        }
+
+        .campaign-progress {
+            margin-left: 0%;
+        }
+
+        .campaign-col {
+            display: flex;
+            margin-top: -70%;
+        }
+
+        .total-investments {
+            font-size: 12px;
+            font-weight: normal;
+            display: block;
+            margin-left: -180px;
+        }
+
+        .mobile-overview {
+            margin-top: 55%;
+        }
+
+
+        .investments {
+            margin-top: 5%;
         }
 
       }
