@@ -1,0 +1,44 @@
+/*This is 404 style*/
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+main { 
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+body {
+    background-image: url('../../img/background.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+       /* height: 965px;*/
+}
+
+p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 47px;
+    text-align: center;
+    color: #000000;
+    }
+
+
+.btn-info { 
+    border-radius: 5px;
+    border: none;
+    background-color: #FB3F5C;
+    padding: 14px 20px;
+    width: 180px;
+    display: block;
+}
+
+.btn-info:hover {
+    border: 1px solid #FB3F5C;
+    background-color: white;
+    color: #FB3F5C;
+    transition: ease-in-out 0.7s;
+
+}
