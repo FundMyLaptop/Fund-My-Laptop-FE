@@ -9,6 +9,10 @@ body {
    color: #04172A;
 }
 
+a {
+   color: #FB3F5C !important;
+}
+
 
 .login-with-google {
    display: inline-block;
@@ -62,7 +66,7 @@ form input[type="password"]:focus
 }
 
 .account-info-text {
-   font-size: 12px;
+   font-size: 13px;
    color: rgba(0, 0, 0, 0.5);
 }
 
