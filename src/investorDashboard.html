@@ -5,8 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>investor Dashoard</title>
     <style>
+
+        @font-face {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local('DM Sans Regular'), local('DMSans-Regular'),
+            url('font/dm-sans-v4-latin-regular.woff') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('font/dm-sans-v4-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        }
+        .body{
+            font-family: DM Sans;
+        }
+        .right-paddle{
+            background: url("icon/Vector 1.png") no-repeat;
+            height: 42px;
+            width: 18px;
+        }
+        .left-paddle{
+            background: url("icon/Vector 2.png") no-repeat;
+            height: 42px;
+            width: 18px;
+
+        }
+
+        .card-sample  {
+            background-color: #fff;
+            min-width: 100% ;
+            min-height: 200px;
+            overflow-x: auto;
+            display: flex
+        }
+        .card-sample::-webkit-scrollbar {
+            display: none;
+        }
+        .card--content {
+            /*width: 250px;*/
+            height: 258px;
+            min-width: 250px;
+            margin: 5px;
+        }
+        .intern-image{
+            width: 60px;
+            height: 60px;
+            background: #C4C4C4;
+        }
+        .intername{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+        }
+        .intern-role,.button-text{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+        }
+        .intern-LA{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+        }
+        .amount-progress{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+        }
+        .btn-default{
+            background: #FB3F5C;
+            color:white ;
+            box-shadow: 0px 4px 15px rgba(251, 63, 92, 0.2);
+        }
+        .btn-default:hover{
+            color: white !important;
+        }
+        .button-cont{
+            margin-top: -150px;
+        }
         * {
             box-sizing: border-box;
         }
@@ -19,17 +96,13 @@
             color: #04172A;
         }
 
-        .container {
+
+        .row-1 {
             height: 100vh;
         }
 
-        .row {
-            height: 100vh;
-        }
-
-        main {
+        .main-1 {
             flex: 1 1 0;
-            height: 100vh;
             padding: 0 20px;
         }
 
@@ -37,12 +110,9 @@
             color: #FB3F5C;
         }
 
-        .user {
-            margin-top: 50px;
-        }
 
         .user__intro,
-        .user p {
+        .paragaph {
             margin: 5px 0;
         }
 
@@ -122,7 +192,7 @@
             display: none;
         }
 
-        table {
+        .table-cl {
             font-size: .8em;
             width: 100%;
             border-collapse: collapse;
@@ -199,7 +269,7 @@
             }
 
             .user__intro {
-                font-size: 2em;
+                font-size: 2em !important;
             }
 
             .account {
@@ -225,14 +295,340 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
+<div class="">
+    <main>
+        <div class="">
+            <div class="">
+
+            </div>
+        </div>
+    </main>
+</div>
+
+        <main>
+            <div class="px-2 ">
+            <section class="px-2">
+                <h1 class="user__intro">Welcome Back, <span class="text--secondary">Chandan</span></h1>
+				<p>Campaigns available for investing.<span class="text--secondary">  View More   ></span></p>
+            </section>
+            <section class="card-sample">
+            <div class="card--content p-3  mx-2 bg-light">
+                <div class="row">
+                    <div class="col-4 "style="min-width: 60px; min-height: 60px">
+                        <div class="intern-image border rounded rounded-circle">
+                            <img src="" alt="" >
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="row">
+                            <div class="intername">
+                                John Doe
+                            </div>
+                        </div>
+                        <div class="row intern-role">intern</div>
+                    </div>
+                </div>
+                <div class="row pt-3 pb-1">
+                    <div class="col">
+                        <div class="intern-LA">Loan Amount: $1,000 </div>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <div class="progress ">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row amount-progress justify-content-center">
+                    <div class="col text-left">$700 Funded</div>
+                    <div class="col text-right">$300 Left</div>
+                </div>
+                <div class="row pt-4 justify-content-lg-start justify-content-md-center justify-content-sm-center">
+                    <div class="col">
+                        <button class="btn btn-default button-text" style="font-weight: 500;">Invest Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card--content p-3  mx-2 bg-light">
+                <div class="row">
+                    <div class="col-4 "style="min-width: 60px; min-height: 60px">
+                        <div class="intern-image border rounded rounded-circle">
+                            <img src="" alt="" >
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="row">
+                            <div class="intername">
+                                John Doe
+                            </div>
+                        </div>
+                        <div class="row intern-role">intern</div>
+                    </div>
+                </div>
+                <div class="row pt-3 pb-1">
+                    <div class="col">
+                        <div class="intern-LA">Loan Amount: $1,000 </div>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <div class="progress ">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row amount-progress justify-content-center">
+                    <div class="col text-left">$700 Funded</div>
+                    <div class="col text-right">$300 Left</div>
+                </div>
+                <div class="row pt-4 justify-content-lg-start justify-content-md-center justify-content-sm-center">
+                    <div class="col">
+                        <button class="btn btn-default button-text" style="font-weight: 500;">Invest Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card--content p-3  mx-2 bg-light">
+                <div class="row">
+                    <div class="col-4 "style="min-width: 60px; min-height: 60px">
+                        <div class="intern-image border rounded rounded-circle">
+                            <img src="" alt="" >
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="row">
+                            <div class="intername">
+                                John Doe
+                            </div>
+                        </div>
+                        <div class="row intern-role">intern</div>
+                    </div>
+                </div>
+                <div class="row pt-3 pb-1">
+                    <div class="col">
+                        <div class="intern-LA">Loan Amount: $1,000 </div>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <div class="progress ">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row amount-progress justify-content-center">
+                    <div class="col text-left">$700 Funded</div>
+                    <div class="col text-right">$300 Left</div>
+                </div>
+                <div class="row pt-4 justify-content-lg-start justify-content-md-center justify-content-sm-center">
+                    <div class="col">
+                        <button class="btn btn-default button-text" style="font-weight: 500;">Invest Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card--content p-3  mx-2 bg-light">
+                <div class="row">
+                    <div class="col-4 "style="min-width: 60px; min-height: 60px">
+                        <div class="intern-image border rounded rounded-circle">
+                            <img src="" alt="" >
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="row">
+                            <div class="intername">
+                                John Doe
+                            </div>
+                        </div>
+                        <div class="row intern-role">intern</div>
+                    </div>
+                </div>
+                <div class="row pt-3 pb-1">
+                    <div class="col">
+                        <div class="intern-LA">Loan Amount: $1,000 </div>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <div class="progress ">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row amount-progress justify-content-center">
+                    <div class="col text-left">$700 Funded</div>
+                    <div class="col text-right">$300 Left</div>
+                </div>
+                <div class="row pt-4 justify-content-lg-start justify-content-md-center justify-content-sm-center">
+                    <div class="col">
+                        <button class="btn btn-default button-text" style="font-weight: 500;">Invest Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card--content p-3  mx-2 bg-light">
+                <div class="row">
+                    <div class="col-4 "style="min-width: 60px; min-height: 60px">
+                        <div class="intern-image border rounded rounded-circle">
+                            <img src="" alt="" >
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="row">
+                            <div class="intername">
+                                John Doe
+                            </div>
+                        </div>
+                        <div class="row intern-role">intern</div>
+                    </div>
+                </div>
+                <div class="row pt-3 pb-1">
+                    <div class="col">
+                        <div class="intern-LA">Loan Amount: $1,000 </div>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <div class="progress ">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row amount-progress justify-content-center">
+                    <div class="col text-left">$700 Funded</div>
+                    <div class="col text-right">$300 Left</div>
+                </div>
+                <div class="row pt-4 justify-content-lg-start justify-content-md-center justify-content-sm-center">
+                    <div class="col">
+                        <button class="btn btn-default button-text" style="font-weight: 500;">Invest Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card--content p-3  mx-2 bg-light">
+                <div class="row">
+                    <div class="col-4 "style="min-width: 60px; min-height: 60px">
+                        <div class="intern-image border rounded rounded-circle">
+                            <img src="" alt="" >
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="row">
+                            <div class="intername">
+                                John Doe
+                            </div>
+                        </div>
+                        <div class="row intern-role">intern</div>
+                    </div>
+                </div>
+                <div class="row pt-3 pb-1">
+                    <div class="col">
+                        <div class="intern-LA">Loan Amount: $1,000 </div>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <div class="progress ">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row amount-progress justify-content-center">
+                    <div class="col text-left">$700 Funded</div>
+                    <div class="col text-right">$300 Left</div>
+                </div>
+                <div class="row pt-4 justify-content-lg-start justify-content-md-center justify-content-sm-center">
+                    <div class="col">
+                        <button class="btn btn-default button-text" style="font-weight: 500;">Invest Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card--content p-3  mx-2 bg-light">
+                <div class="row">
+                    <div class="col-4 "style="min-width: 60px; min-height: 60px">
+                        <div class="intern-image border rounded rounded-circle">
+                            <img src="" alt="" >
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="row">
+                            <div class="intername">
+                                John Doe
+                            </div>
+                        </div>
+                        <div class="row intern-role">intern</div>
+                    </div>
+                </div>
+                <div class="row pt-3 pb-1">
+                    <div class="col">
+                        <div class="intern-LA">Loan Amount: $1,000 </div>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <div class="progress ">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row amount-progress justify-content-center">
+                    <div class="col text-left">$700 Funded</div>
+                    <div class="col text-right">$300 Left</div>
+                </div>
+                <div class="row pt-4 justify-content-lg-start justify-content-md-center justify-content-sm-center">
+                    <div class="col">
+                        <button class="btn btn-default button-text" style="font-weight: 500;">Invest Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card--content p-3  mx-2 bg-light">
+                <div class="row">
+                    <div class="col-4 "style="min-width: 60px; min-height: 60px">
+                        <div class="intern-image border rounded rounded-circle">
+                            <img src="" alt="" >
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="row">
+                            <div class="intername">
+                                John Doe
+                            </div>
+                        </div>
+                        <div class="row intern-role">intern</div>
+                    </div>
+                </div>
+                <div class="row pt-3 pb-1">
+                    <div class="col">
+                        <div class="intern-LA">Loan Amount: $1,000 </div>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <div class="progress ">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row amount-progress justify-content-center">
+                    <div class="col text-left">$700 Funded</div>
+                    <div class="col text-right">$300 Left</div>
+                </div>
+                <div class="row pt-4 justify-content-lg-start justify-content-md-center justify-content-sm-center">
+                    <div class="col">
+                        <button class="btn btn-default button-text" style="font-weight: 500;">Invest Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+            </div>
+        </main>
+    <div class="">
+        <div class="row-1">
             <main>
-                <section class="user">
-                    <h1 class="user__intro">Welcome Back, <span class="text--secondary">Chandan</span></h1>
-                    <p>Here is your account overview</p>
-                </section>
-                <section class="account">
+            	<div class="main-1">
+                    <div class="">
+                        <section class="user">
+                            <p class="paragaph">Here is your account overview</p>
+                        </section>
+                    </div>
+                	<section class="account">
                     <div class="account__block">
                         <div class="account__block--details">
                             <small>Invested Amount</small><br>
@@ -269,11 +665,11 @@
                             <h6>REPAID</h6>
                         </div>
                     </div>
-                </section>
-                <section class="table">
+                	</section>
+                	<section class="table">
                     <header>Your Investments</header>
                     <div class="table__container">
-                        <table>
+                        <table class="table-cl">
                             <thead>
                                 <td>LOAN</td>
                                 <td>AMOUNT</td>
@@ -332,7 +728,8 @@
                             </tbody>
                         </table>
                     </div>
-                </section>
+                	</section>
+            	</div>
             </main>
         </div>
     </div>
@@ -357,5 +754,8 @@
 
 
 </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </html>
