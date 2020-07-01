@@ -16,7 +16,7 @@
 
            <div class="row">
              <div class="col col-md-5">
-                 <form class="py-5">
+                 <form class="py-5" id="form">
                    <h1 class="welcome-text mb-5">Welcome to <br> <span class="font-weight-bold">Fund my Laptop</span></h1>
                     <div>
                       <a href="#" class="text-center py-3 login-with-google d-flex justify-content-center align-items-center">
@@ -32,22 +32,26 @@
                       <hr/>
                     </div>
                    <div class="form-group">
-                    <input type="email" placeholder="Email" name="email" class="form-control">
+                    <input type="email" placeholder="Email" name="email" class="form-control" id="email">
+                    <div id="errorEmail" class="error"></div>
                    </div>
                    <div class="form-group">
-                    <input type="password" placeholder="Password" name="password" class="form-control">
+                    <input type="password" placeholder="Password" name="password" class="form-control" id="password">
+                    <div id="errorPassword" class="error"></div>
                    </div>
                    <div>
-                     <input type="submit" class="form-control btn btn-login" value="Log in">
+                     <input type="submit" class="form-control btn btn-login" value="Log in" onclick="formValidation()">
                    </div>
                    <p class="account-info-text text-center py-4">Don't have an account? <a href="#" class="sign-up-link">Sign up</a></p>
                  </form>
+                 <div id="error" class="error"></div>
              </div>
          </div>
          </div>
        </section>
      </main>
     
+    <script src="../js/custom-js/logIn.js"></script>
     <script src="../js/bootstrap-js/jquery.js"></script>
     <script src="../js/bootstrap-js/bootstrap.js"></script>
     <script src="../js/bootstrap-js/popper.js"></script>
