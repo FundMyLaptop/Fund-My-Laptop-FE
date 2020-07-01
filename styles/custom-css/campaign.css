@@ -2,15 +2,16 @@ body {
   color: rgba(4, 23, 42, 0.8);
   overflow-x: hidden;
   font-family: "DM Sans";
+  background:#FFF;
 }
 
 main {
   background: #fafafa;
 }
 
-
 .pleading_funding {
-  margin: auto 80px;
+  margin: 50px 80px 50px 0px;
+  align-items: flex-start;
 }
 
 .plead_fund {
@@ -19,6 +20,8 @@ main {
   font-size: 36px;
   line-height: 47px;
   color: rgba(4, 23, 42, 0.8);
+  margin-left: 22px;
+  margin-bottom: 30px;
 }
 
 .page-links {
@@ -177,13 +180,15 @@ main {
 }
 
 .funding_socials a {
-  margin-right: 15px;
+  margin-right: 20px;
   color: rgba(4, 23, 42, 0.8);
+  justify-content: flex-end;
 }
 
 .funding_socials a > ion-icon {
   font-size: 30px;
 }
+
 
 
 @media only screen and (max-width: 480px) {
@@ -225,3 +230,4 @@ main {
     width: 100%;
   }
 }
+
