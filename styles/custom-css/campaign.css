@@ -1,0 +1,23 @@
+.main
+{color: #000; background-color: #fff;}
+ 
+.container{
+	
+	margin: 0 auto;
+	width: 100%
+	
+
+}
+.icon{font-size: 26px; display: flex;
+	 list-style: none; 
+margin:auto; padding:5px; display: inline; margin-bottom: 20px;
+}
+
+.icon li{font-size: 26px; color: #000;
+	 list-style: none; justify-content: space-between;
+margin:auto; padding:5px; display: inline; 
+}
+ .icon a{font-size: 26px; color: #000;
+	 list-style: none; justify-content: space-between;
+margin:auto; padding:5px; display: inline; 
+}
