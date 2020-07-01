@@ -1,15 +1,19 @@
 body{
     font-family: 'DM Sans', sans-serif !important;
     font-style: normal;
+    overflow-x: hidden;
+    height: 100%;
 }
 .port-nav{
     background-color: white;
-    padding: .3rem 2.5rem !important;
+}
+.navbar .navbar-nav {
+    padding-right: 90px;
 }
 
-.brand-logo{
+/*.brand-logo{
     padding-left: 90px;
-}
+}*/
 
 .brand-logo img{
     height: 50px;
@@ -23,6 +27,9 @@ body{
 
 .special{
     color:#E10D0D;
+}
+.su-form {
+    padding-left: 50px;
 }
 
 .login-button{
@@ -71,10 +78,14 @@ body{
     line-height: 44px;
 }
 
+
 .laptop{
-    background: url('https://res.cloudinary.com/dmql7dd72/image/upload/v1593458321/1SAnrIxw5OY_u2tbvg.png');
+    width: 100%;
+    background-image: url('https://res.cloudinary.com/dmql7dd72/image/upload/v1593458321/1SAnrIxw5OY_u2tbvg.png');
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 749px;
+    background-position: center center;
+    min-height: 749px;
 }
 
 .signup-btn{
@@ -148,3 +159,75 @@ height: 1.25rem !important;
     top: 0%;
     bottom: 0%;
 } */
+
+footer {
+  background: #04172a;
+  color: #ffffff;
+  padding-left: 70px;
+  
+}
+.foot-bottom {
+    border-top: 1px solid #151b67;
+}
+
+
+@media (max-width: 960px) {
+    
+    .navbar .navbar-nav {
+        padding-right: 0px;
+}
+    footer {
+        padding-left:0px;
+        }
+    footer li {
+        text-align: center;
+        }
+    footer h4 {
+         text-align: center;
+        }
+    footer p {
+        text-align: center;
+        }
+    .footer-icon {
+        display: flex;
+        justify-content: center;
+        }
+        label.error{
+            color: #ff0000!important;
+            }    
+    }
+
+ @media (max-width: 480px) {
+
+     .navbar .navbar-nav {
+        padding-right: 0px;
+     }
+    .navbar .navbar-brand {
+        padding-right: -34px;
+     } 
+     .check-text {
+         font-size: 14px;
+     }
+     .check-text a {
+         font-size: 14px;
+     }      
+    footer {
+        padding-left:0px;
+        }
+    footer li {
+        text-align: center;
+        }
+    footer h4 {
+        text-align: center;
+        }
+    footer p {
+        text-align: center;
+        }
+    .footer-icon {
+        display: flex;
+        justify-content: center;
+        }
+        label.error{
+            color: #ff0000!important;
+            }
+    }

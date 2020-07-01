@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!--Font awesome cdn-->
+		<script src="https://use.fontawesome.com/c40733cf62.js"></script>
+		<link rel="stylesheet" href="../styles/bootstrap-css/bootstrap.css" />
+		<link rel="stylesheet" href="../styles/custom-css/dashboardNav.css" />
+		<link rel="stylesheet" href="../styles/custom-css/investeeDashboard.css" />
+	</head>
+ 
+	<body>
+		<header class="p-lg-3 d-flex justify-content-md-around position-relative">
+			<div class="nav__logo-box d-flex align-items-center p-2">
+				<img
+					src="../img/layer1.png"
+					class="nav__logo"
+					alt="FundMyLaptop logo"
+				/>
+				<div class="p-1 m-lg-2 m-sm-0 position-relative">
+					<img
+						class="dropdown-icon"
+						src="../img/dropdown-icon.svg"
+						alt="dropdown icon"
+					/>
+					<a href="#" class="nav__link">Lend</a>
+				</div>
+			</div>
+			<nav class="d-flex p-2 align-items-center">
+				<ul class="d-lg-flex nav__list">
+					<li class="position-relative">
+						<img
+							class="dropdown-icon"
+							src="../img/dropdown-icon.svg"
+							alt="dropdown icon"
+						/><a href="#" class="nav__link">Borrow</a>
+					</li>
+					<li><a href="#" class="nav__link">About</a></li>
+				</ul>
+				<div class="position-relative">
+					<img
+						src="../img/notification-dot.svg"
+						alt="new notifications"
+						class="position-absolute notification-dot"
+					/>
+					<img
+						src="../img/notification.svg"
+						class="notification-icon"
+						alt="notification icon"
+					/>
+				</div>
+
+				<a href="#" class="btn btn-view text-white m-auto">View Dashboard</a>
+				<img src="../img/user-photo.svg" alt="user photo" />
+			</nav>
+			<div class="toggle-menu position-absolute">
+				<img src="../img/menu.svg" alt="toggle menu icon" class="menu-icon" />
+			</div>
+		</header>
+		<nav class="navbar__items hide">
+			<div class="p-1 m-sm-0">
+				<a href="#" class="nav-link">Lend</a>
+			</div>
+			<div class="Navbar__Link">
+				<a href="#" class="nav-link">Borrow</a>
+			</div>
+
+			<div class="Navbar__Link">
+				<a href="#" class="nav-link">About</a>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="user">
+				<h1 class="userhead">
+					Welcome back, <span class="color1">Chandan</span>
+				</h1>
+				<p>Share your campaign on social media ></p>
+			</div>
+
+			<!--Credit score, loan balance and progress bar-->
+			<div class="userdetails d-flex">
+				<div id="uimg">
+					<div
+						class="usertext position-absolute w-100 h-100 d-flex flex-column justify-content-between text-center p-2"
+					>
+						<p>CREDIT SCORE</p>
+						<h1>1573</h1>
+						<button class="btn_refresh align-self-end">
+							<i class="fa fa-rotate-right"></i>
+						</button>
+					</div>
+				</div>
+
+				<!--Total Loan Balance-->
+				<div class="align-self-center tot_balance">
+					<p class="mb-0" style="font-weight: 100;">TOTAL LOAN BALANCE</p>
+					<h1><small style="font-size: 20px;">INR</small>30,000</h1>
+				</div>
+
+				<div id="prog" class="position-relative ml-auto">
+					<div
+						id="proval"
+						class="position-absolute d-flex flex-column h-100 w-100 align-items-center justify-content-center"
+					>
+						<h1 class="m-0">40%</h1>
+						<span>Paid</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- loan summary -->
+			<div class="loan d-flex justify-content-between">
+				<p class="p-nom1">
+					Campaigns available for investing.
+					<a href="#">View More <i class="fa fa-angle-right"></i></a>
+				</p>
+				<p class="p-nom1">Show complete details. <input type="radio" /></p>
+			</div>
+
+			<div class="d-flex align-items-start justify-content-between">
+				<div class="__carousel d-flex">
+					<a class="__ctrl_left align-self-center mr-3">
+						<img
+							src="https://res.cloudinary.com/jiroghene/image/upload/v1593549282/Vector_1_wdt3l9.png"
+							alt=""
+						/>
+					</a>
+					<section id="carousel-boxes">
+						<div class="__carousel_box p-3">
+							<div class="_car_head d-flex align-items-start">
+								<img
+									src="https://res.cloudinary.com/jiroghene/image/upload/v1593549282/ph_oz4rvz.png"
+									alt=""
+								/>
+								<div class="align-self-center ml-2">
+									<h4 class="m-0">John Doe</h4>
+									<small>Intern</small>
+								</div>
+							</div>
+							<p class="mt-3">Loan Amount <br />$1000</p>
+							<div class="d-flex flex-column">
+								<p class="_car_pgbar d-flex justify-content-between">
+									<small class="text-light">70%</small>
+									<small>30%</small>
+								</p>
+								<div class="d-flex justify-content-between">
+									<small>$700 Funded</small>
+									<small>$300 Left</small>
+								</div>
+							</div>
+							<a href="#" class="btn mt-2">Invest Now</a>
+						</div>
+						<div class="__carousel_box p-3">
+							<div class="_car_head d-flex align-items-start">
+								<img
+									src="https://res.cloudinary.com/jiroghene/image/upload/v1593549282/ph_oz4rvz.png"
+									alt=""
+								/>
+								<div class="align-self-center ml-2">
+									<h4 class="m-0">John Doe</h4>
+									<small>Intern</small>
+								</div>
+							</div>
+							<p class="mt-3">Loan Amount <br />$1000</p>
+							<div class="d-flex flex-column">
+								<p class="_car_pgbar d-flex justify-content-between">
+									<small class="text-light">70%</small>
+									<small>30%</small>
+								</p>
+								<div class="d-flex justify-content-between">
+									<small>$700 Funded</small>
+									<small>$300 Left</small>
+								</div>
+							</div>
+							<a href="#" class="btn mt-2">Invest Now</a>
+						</div>
+						<div class="__carousel_box p-3">
+							<div class="_car_head d-flex align-items-start">
+								<img
+									src="https://res.cloudinary.com/jiroghene/image/upload/v1593549282/ph_oz4rvz.png"
+									alt=""
+								/>
+								<div class="align-self-center ml-2">
+									<h4 class="m-0">John Doe</h4>
+									<small>Intern</small>
+								</div>
+							</div>
+							<p class="mt-3">Loan Amount <br />$1000</p>
+							<div class="d-flex flex-column">
+								<p class="_car_pgbar d-flex justify-content-between">
+									<small class="text-light">70%</small>
+									<small>30%</small>
+								</p>
+								<div class="d-flex justify-content-between">
+									<small>$700 Funded</small>
+									<small>$300 Left</small>
+								</div>
+							</div>
+							<a href="#" class="btn mt-2">Invest Now</a>
+						</div>
+					</section>
+					<a class="__ctrl_right align-self-center ml-3">
+						<img
+							src="https://res.cloudinary.com/jiroghene/image/upload/v1593549282/arrr_ziqe08.png"
+							alt=""
+						/>
+					</a>
+				</div>
+				<div class="account flex-column">
+					<div class="account_details" style="flex: none;">
+						<small>Invested Amount</small><br />
+						<h2><span class="right">INR</span>50,000</h2>
+					</div>
+					<div class="account_details" style="flex: none;">
+						<small>Rapid amount</small><br />
+						<h2><span class="right">INR</span>20,000</h2>
+					</div>
+				</div>
+			</div>
+
+			<!-- summary -->
+			<div class="account">
+				<div class="account_details">
+					<small>Pending Amount</small><br />
+					<h2><span class="right">INR</span>30,000</h2>
+				</div>
+				<div class="account_details">
+					<small>Loaned amount</small><br />
+					<h2><span class="right">INR</span>20,000</h2>
+				</div>
+				<div class="account_details">
+					<small>Paid amount</small><br />
+					<h2><span class="right">INR</span>20,000</h2>
+				</div>
+				<div class="account_details">
+					<small>Interest rate</small><br />
+					<h2>2.5<span class="left">%</span></h2>
+				</div>
+				<div class="account_details">
+					<small>Amount per month</small><br />
+					<h2><span class="right">INR</span>5,125</h2>
+				</div>
+				<div class="account_details">
+					<small>Interest per month</small><br />
+					<h2><span class="right">INR</span>125</h2>
+				</div>
+				<div class="account_details">
+					<small>Total Term</small><br />
+					<h2>10<span class="left">months</span></h2>
+				</div>
+				<div class="account_details">
+					<small>Remaining Term</small><br />
+					<h2>6<span class="left">months</span></h2>
+				</div>
+			</div>
+
+			<!-- history -->
+			<p class="p-nom1">Repayment History</p>
+			<div class="table_container">
+				<table>
+					<thead>
+						<td>DATE</td>
+						<td>AMOUNT PAID</td>
+						<td>AMOUNT REMAINING</td>
+						<td>PAYMENT METHOD</td>
+						<td>REFERENCE ID</td>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="date">25</div>
+								<div class="f-15">JULY</div>
+							</td>
+							<td>INR 5,000</td>
+							<td>INR 30,000</td>
+							<td>Bank Transfer</td>
+							<td>646872757669746861</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="date">27</div>
+								<div class="f-15">JUNE</div>
+							</td>
+							<td>INR 5,000</td>
+							<td>INR 35,000</td>
+							<td>Bank Transfer</td>
+							<td>646872757669746861</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="date">20</div>
+								<div class="f-15">MAY</div>
+							</td>
+							<td>INR 5,000</td>
+							<td>INR 4O,000</td>
+							<td>Bank Transfer</td>
+							<td>646872757669746861</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="date">25</div>
+								<div class="f-15">APRIL</div>
+							</td>
+							<td>INR 5,000</td>
+							<td>INR 45,000</td>
+							<td>Bank Transfer</td>
+							<td>646872757669746861</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<script src="../js/bootstrap-js/jquery.js"></script>
+		<script src="../js/bootstrap-js/bootstrap.js"></script>
+		<script src="../js/bootstrap-js/popper.js"></script>
+		<script src="../js/custom-js/dashboardNav.js"></script>
+
+		<script>
+			var circle = document.querySelector("circle");
+			var radius = circle.r.baseVal.value;
+			var circumference = radius * 2 * Math.PI;
+
+			circle.style.strokeDasharray = `${circumference} ${circumference}`;
+			circle.style.strokeDashoffset = `${circumference}`;
+
+			function setProgress(percent) {
+				const offset = circumference - (percent / 100) * circumference;
+				circle.style.strokeDashoffset = offset;
+			}
+
+			const progress_value = 40;
+			const displayed_value = document.querySelector("#displayed_value");
+			displayed_value.innerHTML = `${progress_value}%`;
+			setProgress(progress_value);
+		</script>
+	</body>
+</html>
