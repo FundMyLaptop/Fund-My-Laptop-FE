@@ -1,0 +1,474 @@
+.nav-link{
+    margin: 10px;
+    font-family: 'DM Sans', sans-serif;
+    color: #04172A;
+}
+
+#link{
+    color: #04172A;
+}
+
+#navbarDropdownMenuLink{
+    color: #04172A;
+}
+
+.navbar-brand{
+    margin-left: 5%;
+}
+
+#btn1{
+    margin: 10px;
+    font-family: 'DM Sans', sans-serif;
+    color: #04172A;
+    border-radius: 10px;
+}
+
+#btn2{
+    margin: 10px;
+    font-family: 'DM Sans', sans-serif;
+    background: #fb3f5bb6;
+    color: #04172A;
+    border-radius: 10px;
+    
+}
+
+/*second container*/
+#contain{
+    background-image: url('img/landing.png');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    
+}
+
+#firstcol{
+    width: 701px;
+height: 188px;
+left: 140px;
+top: 113px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: bold;
+font-size: 62px;
+
+
+color: rgba(255, 255, 255, 0.9);
+}
+
+#ptag{
+
+    width: 572px;
+height: 67px;
+left: 144px;
+top: 545px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 31px;
+
+color: rgba(255, 255, 255, 0.9);
+
+}
+
+#card{
+    width: 439px;
+    height: 352px;
+    margin-top: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(251, 63, 92, 0.07);
+    border-radius: 8px;
+    margin-left: 70px;
+}
+
+#btn3{
+    width: 280px;
+height: 48px;
+margin-top: 20px;
+background: #FB3F5C;
+border-radius: 5px;
+font-family:' DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 31px;
+
+color: #FFFFFF;
+}
+
+#move{
+    padding-top: 80px;
+}
+
+#moves{
+    padding-top: 60px;
+}
+
+#h4{
+    width: 285px;
+    height: 52px;
+    left: 131px;
+    top: 1018px;
+    padding-top: 50px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #04172A;
+    
+}
+
+#h5{
+    width: 285px;
+height: 52px;
+left: 140px;
+top: 1861px;
+padding-top: 30px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 52px;
+/* identical to box height */
+
+
+color: #04172A;
+
+    
+}
+
+#p9{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: rgba(4, 23, 42, 0.9);
+
+
+}
+
+#fund{
+    text-align: center; 
+    font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 31px;
+          
+          color: rgba(255, 255, 255, 0.9);
+}
+
+
+#sup{
+    text-align: center; font-family: DM Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 42px;
+          line-height: 94px;
+          
+          color: rgba(255, 255, 255, 0.9);
+           margin-top: 130px;
+}
+
+#raise{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+margin-top: 10px;
+/* identical to box height */
+
+
+color: rgba(0, 0, 0, 0.5);
+
+}
+
+#funds{
+    font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 31px;
+
+color: rgba(255, 255, 255, 0.9);
+}
+
+/*third container*/
+#third{
+    background: #E5E5E5;
+    height: 100%;
+}
+
+#down{
+    background: rgba(4, 23, 42, 0.9);
+    width: 360px;
+    height: 40px;
+    text-align: center;
+}
+
+/*fourth container*/
+#fourth{
+    height: 100%;
+    background: #FFFFFF;
+}
+
+#about{
+    width: 547px;
+height: 120px;
+left: 759px;
+top: 2013px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 62px;
+
+color: #04172A;
+}
+
+#row{
+    margin-top: 40px;
+}
+
+#p1{
+    width: 545px;
+height: 180px;
+left: 761px;
+top: 2197px;
+margin-top: 60px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 36px;
+
+color: #000000;
+}
+
+#col{
+    max-width: 100%;
+}
+
+#support{
+    width: 701px;
+height: 188px;
+left: 140px;
+top: 313px;
+margin-top: 100px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: bold;
+font-size: 72px;
+line-height: 94px;
+
+color: rgba(255, 255, 255, 0.9);
+}
+
+#para{
+    width: 572px;
+height: 67px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 31px;
+
+color: rgba(255, 255, 255, 0.9);
+}
+
+@media(max-width: 767px)
+{
+    #firstcol{
+        width: 701px;
+    height: 188px;
+    left: 140px;
+    top: 113px;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.9);
+    }
+
+    #card{
+        margin-top: -150px;
+        float: left;
+        
+    }
+
+  
+    #ptag{
+
+        width: 572px;
+    height: 67px;
+    left: 144px;
+    top: 545px;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5px;
+    line-height: 31px;
+    
+    color: rgba(255, 255, 255, 0.9);
+    
+    }
+
+    #about{
+        width: 547px;
+    height: 120px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 62px;
+    
+    color: #04172A;
+    }
+
+    
+
+    #p1{
+        width: 445px;
+    height: 180px;
+    left: 761px;
+    top: 2197px;
+    margin-top: 30px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 36px;
+    
+    color: #000000;
+    }
+
+    #fund{
+        text-align: center; 
+        font-family: 'DM Sans';
+ 
+              margin-top: -60px;
+              width: 462px;
+              font-size: 10px;
+height: 67px;
+              color: rgba(255, 255, 255, 0.9);
+    }
+
+
+    #sup{
+        text-align: center; 
+        font-family: 'DM Sans';
+              font-style: normal;
+              font-weight: bold;
+              font-size: 26px;
+              line-height: 94px;
+              
+              color: rgba(255, 255, 255, 0.9);
+               margin-top: -6px;
+    }
+
+    #funds{
+        font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 31px;
+    text-align: center;
+    margin-top: -50px;
+    color: rgba(255, 255, 255, 0.9);
+    }
+
+    #support{
+        width: 350px;
+    height: 188px;
+        text-align: center;
+    margin-top: -1px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 34px;
+    
+    color: rgba(255, 255, 255, 0.9);
+    }
+
+    #para{
+        width: 375px;
+    height: 67px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size : 15px;
+    text-align: center;
+    line-height: 19px;
+    margin-top: -40%;
+    color: rgba(255, 255, 255, 0.9);
+    }
+    
+}
+
+@media(max-width: 1000px)
+{
+    #firstcol{
+        width: 701px;
+    height: 188px;
+    left: 140px;
+    top: 113px;
+    margin-top: -60px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    }
+
+    #card{
+        margin-top: -10px;
+        margin-left: 90px;
+        width: 28rem;
+    }
+
+    #card-body{
+        
+        width: 300px;
+       
+    }
+
+
+    #ptag{
+
+   
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5px;
+    line-height: 31px;
+    
+    color: rgba(255, 255, 255, 0.9);
+    
+    }
+
+    #bow{
+        margin-top: 30px;
+        padding-right: 50px;
+        width: 10%;
+    }
+
+    
+}

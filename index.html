@@ -1,25 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./styles/bootstrap-css/bootstrap.css" rel="stylesheet" />
-        <link href="./styles/custom-css/comingsoon.css" rel="stylesheet" />
-        <title>Fund My Laptop</title>
-        <link rel="shortcut icon" href="./img/Logo 01 Main 01.svg" type="image/x-icon">
-    </head>
-    <body>
+  <head>
+    <title>FundMyLaptop</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <div class="construction d-flex align-items-center flex-column">
-            <img src="./img/Logo 01 Main 01.svg" class="logo-svg heading mt-5" alt="">
-            <!-- <h2 class="heading mt-5">TalentPool</h2> -->
-            <p class="sub-heading soon-head">...raising funds for your laptop</p>
-            <div class="img__wraper mx-5 mb-3">
-                <img src="./img/comingsoon.svg" class="main-img"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!--first container-->
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mL-auto mt-2 mt-lg-0 ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Fundraise for
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="link">Invest<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="link">About Us</a>
+                </li>
+                <li class="nav-item">
+                <button type="button" class="btn btn-outline-danger" id="btn1">Sign in</button>
+                <button type="button" class="btn btn-danger" id="btn2">Start a campaign</button>
+              </ul>
             </div>
-            <p class="soon mt-md-3">Coming soon... your ticket to securing a laptop !</p>
-        </div>
+          </nav>
+      </div>
 
-        <script src="./js/bootstrap-js/bootstrap.js"></script>
-    </body>
+      <div class="container-fluid" id="contain">
+       <!--
+            <div class="row">
+                <div class="col-6" id="firstcol">
+                    <p>Support or Start a Campaign today</p>
+                    <p id="ptag">Fundmylaptop is a platform where fundees can <br> place requests for help to either get funding for the <br> purchase of a new laptop or repair an existing one.</p>
+                </div>
+                
+    
+                <div class="col-lg-6 col-sm-12">
+                    <div class="card " style="width: 20rem;" id="card">
+                        <div class="card-body" id="card-body">
+                          <h5 class="card-title text-center">Laptop Funding</h5>
+                          <label for="validationServer01">Campaign Name</label>
+                          <input type="text" class="form-control" id="validationServer01" placeholder="campaign name here.." required>
+                          <label for="validationServer01">Target</label>
+                          <input type="number" class="form-control" id="validationServer01" placeholder="$1000" required>
+                          <label for="validationServer01">Start date</label>
+                          <div class="row">
+                            <div class="col-6">
+                              <input type="date" class="form-control" id="validationServer01" placeholder="$1000" required style="width: 9rem; font-size: 12px;">
+                            </div>
+
+                            <div class="col-6">
+                              <input type="date" class="form-control" id="validationServer01" placeholder="$1000" required style="width: 9rem; font-size: 12px;">
+                         
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn-danger" id="btn3">Start campaign</button>
+                        </div>
+                      </div>
+                </div>
+           
+        </div>-->
+
+        <div class="container">
+          <div class="row">
+            <div class="">
+              <p id="support">Support or Start a Campaign today</p>
+              <p id="para">Fundmylaptop is a platform where fundees can <br> place requests for help to either get funding for the <br> purchase of a new laptop or repair an existing one.</p>
+            </div>
+            <div class="col">
+              
+              <div class="card " style="width: 20rem;" id="card">
+                <div class="card-body" id="card-body">
+                  <h5 class="card-title text-center">Laptop Funding</h5>
+                  <label for="validationServer01">Campaign Name</label>
+                  <input type="text" class="form-control" id="validationServer01" placeholder="campaign name here.." required>
+                  <label for="validationServer01">Target</label>
+                  <input type="number" class="form-control" id="validationServer01" placeholder="$1000" required>
+                  <label for="validationServer01">Start date</label>
+                  <div class="row">
+                    <div class="col-6">
+                      <input type="date" class="form-control" id="validationServer01" placeholder="$1000" required style="width: 9rem; font-size: 12px;">
+                    </div>
+
+                    <div class="col-6">
+                      <input type="date" class="form-control" id="validationServer01" placeholder="$1000" required style="width: 9rem; font-size: 12px;">
+                 
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-danger" id="btn3">Start campaign</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="third">
+        <div class="container" >
+          <h4 id="h4" >Trending now!</h4>
+        <div class="row wow fadeInUp" id="move">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="img/trending.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Adelanke Doe</h5>
+                <p class="card-text">Laptop purchase</p>
+
+                <p>I need a laptop to complete my final year school project...</p>
+
+                <img src="img/Rectangle 22 (3).png" alt="" width="239px">
+
+                <div class="row">
+                  <div class="col-6" id="p9">
+                    N90,000
+                  </div>
+
+                  <div class="col-6" style="text-align: end;">
+                    90%
+                  </div>
+                 </div>
+                 
+                 <p id="raise">Raised of N100,000 </p>
+              </div>
+            </div>
+            <div class="card text-white  mb-3" style="max-width: 18rem;" id="down">
+              <div class="card-header">View details <img src="img/Vector.png" alt=""></div>
+              
+                  </div>
+          </div>
+         
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="img/trending.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Adelanke Doe</h5>
+                <p class="card-text">Laptop purchase</p>
+                
+                <p>I need a laptop to complete my final year school project...</p>
+
+                <img src="img/Rectangle 22 (3).png" alt="" width="239px">
+
+                <div class="row">
+                  <div class="col-6" id="p9">
+                    N90,000
+                  </div>
+
+                  <div class="col-6" style="text-align: end;">
+                    90%
+                  </div>
+                 </div>
+
+                 <p id="raise">Raised of N100,000 </p>
+              </div>
+            </div>
+            <div class="card text-white  mb-3" style="max-width: 18rem;" id="down">
+              <div class="card-header">View details <img src="img/Vector.png" alt=""></div>
+              
+                  </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/trending.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5>Adelanke Doe</h5>
+                   <p class="card-text">Laptop purchase</p>
+
+                   <p>I need a laptop to complete my final year school project...</p>
+
+                   <img src="img/Rectangle 22 (3).png" alt="" width="239px">
+
+
+                   <div class="row">
+                    <div class="col-6" id="p9">
+                      N90,000
+                    </div>
+
+                    <div class="col-6" style="text-align: end;">
+                      90%
+                    </div>
+                   </div>
+
+                   <p id="raise">Raised of N100,000 </p>
+                      </div>
+                    </div>
+                    <div class="card text-white  mb-3" style="max-width: 18rem;" id="down">
+                      <div class="card-header">View details <img src="img/Vector.png" alt=""></div>
+                      
+                          </div>
+        </div>
+     
+      </div>
+
+        
+      </div>
+      </div>
+
+      <div class="container-fluid" id="fourth">
+       <!-- <div class="container" id="move">
+          <h4 id="h4">About Us!</h4>
+          <div class="row" id="row">
+            <div class="col-md-6 text-center wow fadeInLeft"  id="imagese">
+           <img src="img/about.png" class="img-fluid" alt="" id="imag">
+            </div>
+
+            <div class="col-md-6 text-justify wow fadeInRight" id="to">
+           <h6 id="about"> We are here because of you</h6>
+           <p id="p1">We are a group of tech experts trying to help the younger generation of tech enthusiast get into tech with the limitation of gadgets and other important stuff limiting the african tech community </p>
+               </div>
+
+              
+
+        </div>
+        </div>-->
+        <div class="container" >
+          <h4 id="h5">About Us</h4>
+          <div class="row" id="moves">
+            <div class="">
+              <img src="img/about.png" class="img-fluid" alt="" id="imag">
+            </div>
+            <div class="col">
+              
+              <h1 > We are here because of you</h1>
+              <p id="p1">We are a group of tech experts trying to help the younger generation of tech enthusiast get into tech with the limitation of gadgets and other important stuff limiting the african tech community </p>
+            </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
