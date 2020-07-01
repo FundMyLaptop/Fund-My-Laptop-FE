@@ -559,6 +559,16 @@ pre code {
   margin-left: auto;
 }
 
+.container{
+  padding-top: 15px;
+}
+
+.h2-heading{
+  text-align: center;
+  padding: 30px 50px;
+
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

@@ -1,0 +1,42 @@
+.contact-banner{
+	background-image: linear-gradient(rgba(4, 23, 42, 0.5),rgba(4, 23, 42, 0.5)), url(/Fund-My-Laptop-FE/img/contac-us-banner.png);
+	background-position:center;
+    background-size: cover;
+    height: 300.48px;
+    margin: 15px 0
+    }
+
+.contact-banner .content h1{
+	 font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 18.3168px;
+line-height: 24px;
+
+height: 23.66px;
+
+color: #FFFFFF;
+border-bottom: 5px solid #FB3F5C;
+ 
+
+}
+.contact-banner .content h2{
+	width: 198.43px;
+height: 45.79px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 12.2112px;
+line-height: 15px;
+/* or 125% */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
