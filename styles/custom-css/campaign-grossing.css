@@ -6,6 +6,7 @@ body {
   
   main {
     background: #fafafa;
+    position: relative;
   }
 
 .campaign_gross_heading {
@@ -54,6 +55,7 @@ body {
 }
 
   .page-links {
+    margin-top: 2em;
     padding: 20px 50px;
   }
   
@@ -139,9 +141,13 @@ body {
     letter-spacing: 1px;
   }
 
+  .grossings {
+    position: relative;
+  }
+
   .pagination-container {
     position: relative;
-    margin-top: 50px;
+    margin: 50px 0;
     width: 100%;
   }
 
@@ -150,16 +156,26 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
+    left: 1%;
+  }
+
+  .pagination li a {
+    font-size: 14px;
   }
 
   @media only screen and (max-width: 480px) {
 
+    .pagination li a {
+      font-size: 14px;
+    }
+
     .page-links {
+      margin-top: 5em;
       padding: 5px 0;
     }
 
     .page-links a, .page-links span {
-      font-size: 20px;
+      font-size: 14px;
     }
 
     .heading {
@@ -167,11 +183,11 @@ body {
     }
 
     .heading h2 {
-      font-size: 30px;
+      font-size: 28px;
     }
 
     .heading p {
-      font-size: 23px;
+      font-size: 20px;
     }
 
     .container {
