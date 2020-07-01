@@ -113,6 +113,7 @@
       progress[value]::-webkit-progress-bar {
           background: #eee;
           width: 190px;
+          padding-right: 3%;
       }
 
       .amount-funded {
@@ -172,11 +173,35 @@
         margin-left: 10%;
     }
 
+    .amount-funded > div {
+        display: inline-block;
+        padding-left: 0px;
+    }
+
+    .amount-funded .left {
+        padding-left: 56px;
+    }
+
+    .investments {
+        overflow: scroll;
+    }
+
+    table {
+        border-collapse: collapse;
+        font-size: 12px;
+    }
+
+
     
       @media only screen and (max-width: 576px) {
          .container {
              margin: 0 auto;
-             width: 93%;
+             width: 100%;
+             margin-left: -8px;
+         }
+
+         .welcome h1 {
+             font-size: 26px;
          }
 
          .campaign, .none, .row-stack {
@@ -184,36 +209,42 @@
          }
 
          .card-title .intern-name {
-             margin-top: -22%;
-             padding-left: 20%;
+             margin-top: -29%;
+             padding-left: 30%;
          }
 
          .intern .card {
              margin-top: 3%;
              height: 100%;
+             width: 300px;
+         }
+
+         .card-title, .amount-funded {
+             width: 100%;
+         }
+
+         .card p {
+             font-size: 12px;
          }
 
          .intern-img {
              height: 45px;
          }
-
-         .amount-funded p {
-             font-size: 9px;
-             padding: 13px;
+         
+         .amount-funded > div p {
+             font-size: 8px;
          }
+    
+        .amount-funded .left {
+            margin-left: 3px;
+        }
 
-         .amount-funded {
-             margin-left: 1%;
-         }
-
-          progress[value]::-webkit-progress-bar {
+        progress[value]::-webkit-progress-bar {
             width: 130%;
         }
 
-        table {
-            font-size: 12px;
-        }
       }
+
 
       @media only screen and (min-width: 768px) {
         .card-title .intern-name {

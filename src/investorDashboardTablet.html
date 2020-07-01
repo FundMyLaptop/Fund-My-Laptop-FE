@@ -17,10 +17,10 @@
             <!-- dashboard section starts here -->
             <div class="container">
                 <div class="row">
-                    <div class="col col-md-12 ml-2 mt-5 welcome">
+                    <div class="col col-md ml-2 mt-5 welcome">
                         <h1>
                             Welcome back,
-                            <span class="username" id="user">Chandan</span>
+                            <span class="username" id="user">Chandan.</span>
                         </h1>
                     </div>
                 </div>
@@ -44,34 +44,8 @@
                 <!-- intern section -->
                 <div class="row ml-2 px-3 justify-content-between intern">
                     <div class="row">
-                        <div class="card col col-md-3 col-sm-4 bg-light border-0">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <img src="../img/Ellipse 63.png" alt="" class="intern-img">
-                                </div>
-                                <div class="card-title col-md-9">
-                                    <p class=" intern-name">John Doe 
-                                        <br> Intern
-                                    </p>
-                                </div>
-                                <p class="card-text px-3">
-                                    Loan Amount: $1,000
-                                </p>
-                                <progress class="ml-3" max="100" value="75"></progress>
-                                <div class="row amount-funded py-1">
-                                    <div class="funded">
-                                        <p>$700 Funded</p>
-                                    </div>
-                                    <div class="ml-5 px-3 left">
-                                        <p>$300 Left</p>
-                                    </div>
-                                </div>
-                                <button type="button" class="ml-3 btn intern-btn">invest now</button>
-                            </div>
-                        </div>
-                              
-                              
-                        <div class="card col col-md-3 col-sm-4 ml-4 bg-light px-2 border-0 none">
+                        <!-- an intern -->
+                        <div class="card col intern-2 col-md-3 col-sm-6 bg-light px-2 border-0">
                             <div class="row">
                                 <div class="col-md-3">
                                     <img src="../img/Ellipse 63.png" alt="" class="intern-img">
@@ -85,19 +59,19 @@
                                     Loan Amount: $1,000
                                 </p>
                                 <progress class="ml-3" max="100" value="75"></progress>
-                                <div class="row amount-funded py-1">
+                                <div class="amount-funded ">
                                     <div class="funded">
                                         <p>$700 Funded</p>
                                     </div>
-                                    <div class="ml-5 px-3 left">
+                                    <div class="left">
                                         <p>$300 Left</p>
                                     </div>
                                 </div>
                                 <button type="button" class="ml-3 btn intern-btn">invest now</button>
                             </div>
                         </div>
-
-                        <div class="card col col-md-3 col-sm-6 ml-4 bg-light border-0">
+                        <!-- another intern -->
+                        <div class="card col intern-2 col-md-3 col-sm-4 ml-4 bg-light px-2 border-0 ">
                             <div class="row">
                                 <div class="col-md-3">
                                     <img src="../img/Ellipse 63.png" alt="" class="intern-img">
@@ -111,17 +85,43 @@
                                     Loan Amount: $1,000
                                 </p>
                                 <progress class="ml-3" max="100" value="75"></progress>
-                                <div class="row amount-funded py-1">
+                                <div class="amount-funded ">
                                     <div class="funded">
                                         <p>$700 Funded</p>
                                     </div>
-                                    <div class="ml-5 px-3 left">
+                                    <div class="left">
                                         <p>$300 Left</p>
                                     </div>
                                 </div>
                                 <button type="button" class="ml-3 btn intern-btn">invest now</button>
-                            </div>        
-                        </div>                        
+                            </div>
+                        </div>
+                        <!-- yet another intern -->
+                        <div class="card col intern-2 col-md-3 col-sm-4 ml-4 bg-light px-2 border-0 none">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="../img/Ellipse 63.png" alt="" class="intern-img">
+                                </div>
+                                <div class="card-title col-md-9">
+                                    <p class="intern-name">John Doe 
+                                        <br> Intern
+                                    </p>
+                                </div>
+                                <p class="card-text px-3">
+                                    Loan Amount: $1,000
+                                </p>
+                                <progress class="ml-3" max="100" value="75"></progress>
+                                <div class="amount-funded ">
+                                    <div class="funded">
+                                        <p>$700 Funded</p>
+                                    </div>
+                                    <div class="left">
+                                        <p>$300 Left</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="ml-3 btn intern-btn">invest now</button>
+                            </div>
+                        </div>                       
                     </div>
 
                     <!-- row stack -->
@@ -146,66 +146,66 @@
                     </div>
                 </div>
 
-                    <!-- inestment table -->
-                    <div class="row investments">
-                        <div class="col col-md col-sm mt-5">
-                            <h4>Your Investments</h4>
-                            <table class="table mt-4">
-                                <thead class="">
-                                    <tr>
-                                        <th scope="col">Loan</th>
-                                        <th scope="col">Amount</th>
-                                        <th scope="col">Interest Rate</th>
-                                        <th scope="col">Term</th>
-                                        <th scope="col">Total Returns</th>
-                                        <th scope="col">Payment Due</th>
-                                        <th scope="col">Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">#7646446</th>
-                                        <th>INR 50,000</th>
-                                        <th>2.5%</th>
-                                        <th>10</th>
-                                        <th>INR 1,250</th>
-                                        <th>27 <sub>JUNE</sub></th>
-                                        <th>Active</th>
-                                    </tr>
-                                    <!-- second row starts here -->
-                                    <tr>
-                                        <th scope="row">#7646446</th>
-                                        <th>INR 50,000</th>
-                                        <th>2.5%</th>
-                                        <th>10</th>
-                                        <th>INR 1,250</th>
-                                        <th>27 <sub>JUNE</sub></th>
-                                        <th>Active</th>
-                                    </tr>
-                                    <!-- third row starts here -->
-                                    <tr>
-                                        <th scope="row">#7646446</th>
-                                        <th>INR 50,000</th>
-                                        <th>2.5%</th>
-                                        <th>10</th>
-                                        <th>INR 1,250</th>
-                                        <th>27 <sub>JUNE</sub></th>
-                                        <th>Active</th>
-                                    </tr>
-                                    <!-- fourth row starts here -->
-                                    <tr>
-                                        <th scope="row">#7646446</th>
-                                        <th>INR 50,000</th>
-                                        <th>2.5%</th>
-                                        <th>10</th>
-                                        <th>INR 1,250</th>
-                                        <th>27 <sub>JUNE</sub></th>
-                                        <th>Active</th>
-                                    </tr>
-                                </tbody>
-                            </table>  
-                        </div>
+                <!-- investments-->
+                <div class="row investments">
+                    <div class="col col-md mt-5">
+                        <h4>Your Investments</h4>
+                        <table class="table mt-4 col">
+                            <thead class="">
+                                <tr>
+                                    <th scope="col">Loan</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Interest Rate</th>
+                                    <th scope="col">Term</th>
+                                    <th scope="col">Total Returns</th>
+                                    <th scope="col">Payment Due</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">#7646446</th>
+                                    <th>INR 50,000</th>
+                                    <th>2.5%</th>
+                                    <th>10</th>
+                                    <th>INR 1,250</th>
+                                    <th>27 <sub>JUNE</sub></th>
+                                    <th>Active</th>
+                                </tr>
+                                <!-- second row starts here -->
+                                <tr>
+                                    <th scope="row">#7646446</th>
+                                    <th>INR 50,000</th>
+                                    <th>2.5%</th>
+                                    <th>10</th>
+                                    <th>INR 1,250</th>
+                                    <th>27 <sub>JUNE</sub></th>
+                                    <th>Active</th>
+                                </tr>
+                                <!-- third row starts here -->
+                                <tr>
+                                    <th scope="row">#7646446</th>
+                                    <th>INR 50,000</th>
+                                    <th>2.5%</th>
+                                    <th>10</th>
+                                    <th>INR 1,250</th>
+                                    <th>27 <sub>JUNE</sub></th>
+                                    <th>Active</th>
+                                </tr>
+                                <!-- fourth row starts here -->
+                                <tr>
+                                    <th scope="row">#7646446</th>
+                                    <th>INR 50,000</th>
+                                    <th>2.5%</th>
+                                    <th>10</th>
+                                    <th>INR 1,250</th>
+                                    <th>27 <sub>JUNE</sub></th>
+                                    <th>Active</th>
+                                </tr>
+                            </tbody>
+                        </table>  
                     </div>
+                </div>
             </div>    
         </main>
 
