@@ -2,12 +2,12 @@
 	background-image: linear-gradient(rgba(4, 23, 42, 0.5),rgba(4, 23, 42, 0.5)), url(/Fund-My-Laptop-FE/img/contac-us-banner.png);
 	background-position:center;
     background-size: cover;
-    height: 300.48px;
+    height: 300px;
     margin: 15px 0
     }
 
 .contact-banner .content h1{
-	 font-family: DM Sans;
+font-family: DM Sans;
 font-style: normal;
 font-weight: bold;
 font-size: 18.3168px;
