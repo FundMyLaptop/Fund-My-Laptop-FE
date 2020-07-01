@@ -1,0 +1,101 @@
+
+.contact-banner{
+	background-image: linear-gradient(rgba(4, 23, 42, 0.5),rgba(4, 23, 42, 0.5)), url(/Fund-My-Laptop-FE/img/contac-us-banner.png);
+	background-position:center;
+    background-size: cover;
+    height: 300.48px;
+    margin: 15px 0
+    }
+
+.contact-banner .content h1{
+	 font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 18.3168px;
+line-height: 24px;
+
+height: 23.66px;
+
+color: #FFFFFF;
+border-bottom: 5px solid #FB3F5C;
+ 
+
+}
+.contact-banner .content h2{
+	width: 198.43px;
+height: 45.79px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 12.2112px;
+line-height: 15px;
+/* or 125% */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+body {
+    background-color: #efefef !important;
+}
+
+.single-blog {
+    box-shadow: 0px 0px 20px 1px(0,0,0,0.2);
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #fff;
+}
+
+.single-blog img {
+   width: 100%;
+}
+
+.blog-meta {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.single-blog span {
+    float: right;
+    font-size: 12px;
+    color: cornflowerblue;
+}
+
+.blog-text {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.single-blog h2 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #007bff;
+}
+
+.single-blog h2 a {
+    text-decoration: none;
+}
+
+.read-more-btn {
+    background-image: linear-gradient(to right, #b50303, #FB3F5C);
+    padding: 5px 12px 8px;
+    border-radius: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #fff;
+    border: none!important;
+}
+
+.read-more-btn:hover {
+    background-image: linear-gradient(to right, #dc3546d3, #dc35455e );
+}
+
+.container {
+    padding-top: 60px;
+    margin-top: 60px;
+}
