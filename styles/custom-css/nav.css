@@ -3,7 +3,6 @@
   background-color: #ffffff !important;
   padding-left: 55px;
   padding-right: 30px;
-
   color: black;
 }
 .navbar-dark .navbar-toggler span {
@@ -95,6 +94,10 @@ nav ul li a {
 }
 
 @media (max-width: 575px) {
+  .navv {
+    display: none;
+  }
+
   .navbar-nav {
     display: none;}
      

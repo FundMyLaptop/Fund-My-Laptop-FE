@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   color: rgba(4, 23, 42, 0.8);
   overflow-x: hidden;
@@ -9,19 +14,17 @@ main {
   background: #fafafa;
 }
 
-.pleading_funding {
-  margin: 50px 80px 50px 0px;
-  align-items: flex-start;
+.content{
+  padding-left: 5rem !important;
 }
-
 .plead_fund {
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 47px;
   color: rgba(4, 23, 42, 0.8);
-  margin-left: 22px;
-  margin-bottom: 30px;
+  /* margin-left: 22px;
+  margin-bottom: 30px; */
 }
 
 .page-links {
@@ -103,6 +106,7 @@ main {
   font-size: 16px;
   line-height: 36px;
   color: rgba(4, 23, 42, 0.8);
+  text-align: justify;
 }
 
 .recommendations {
@@ -191,13 +195,17 @@ main {
 
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 578px) {
 
   .showcase {
     width: 100%;
     height: 179px;
+    background-size: none;
+    background-position: none;
   }
-
+  .content{
+    padding-left: 0 !important;
+  }
   .pleading_funding {
     margin: auto 5px;
   }
@@ -208,26 +216,42 @@ main {
   }
 
   .row {
-    margin: auto;
+    /* margin: auto; */
   }
 
   .pleading_funding p {
     font-size: 26px;
     line-height: 31px;
   }
-
+  .description_detail {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 36px;
+    color: rgba(4, 23, 42, 0.8);
+    text-align: justify;
+  }
+  .btn-down{
+    margin-top: .5rem;
+  }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 768px){
 
   .pleading_funding {
     margin: auto 5px;
+  }
+  .content{
+    padding-left: 0 !important;
   }
 }
 
 @media only screen and (max-width: 970px) {
   .showcase {
     width: 100%;
+  }
+    .content{
+    padding-left: 0;
   }
 }
 
