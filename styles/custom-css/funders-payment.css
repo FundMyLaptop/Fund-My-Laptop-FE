@@ -199,9 +199,9 @@ box-sizing: border-box;
    }
    .borderDesigns
    {
-    width:150px;
+    width:190px;
     position: relative;
-    right:2rem;
+    right:3rem;
   }
     
    input[type=text],
