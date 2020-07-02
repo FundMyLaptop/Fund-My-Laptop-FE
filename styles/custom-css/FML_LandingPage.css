@@ -80,11 +80,13 @@ h5{
         width: 98px;
         color: #FB3F5C;
         background-color: white;
+        border-radius: 10px;
     }
     .btn-start{
         background: #FB3F5C;
         width: 177px;
         color: #FFFFFF;
+        border-radius: 10px;
     }
   /* end nabars button */
 
