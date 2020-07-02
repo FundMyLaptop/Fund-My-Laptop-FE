@@ -16,49 +16,30 @@ body {
 
 
 }
-
-.contactUsHeader {
-  /* Optional property using a hosted image */
-  /* background: linear-gradient( #04172a80, #04172a80 ), url(https://bit.ly/3icP4wo) no-repeat; */
-  background: linear-gradient( #04172a80, #04172a80 ), url('../../img/contact-us-desktop-splash.svg') no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 296.89px;
-  text-align: center;
-  color: #ffffff;
-   margin-top: 6rem;
-
-
-
-   
-
-  
-
-   
+.media-body{
+  padding-left: 2rem;
 }
-
-.contactUsHeader div {
-  margin-top: 7.5em;
+.media-bodies{
+  padding-left: 4rem;
 }
+.okay{
+  height: 30px;
+  width: 30px;
+  align-self: center;
+  margin-left: 0rem;
 
-.contactUsHeader h1 {
-  margin-bottom: .75em;
-}
-
-.contactUsHeader p {
-  font-size: 1.2rem;
-}
-
-hr.titleHr {
-  border: 10px solid #FB3F5C;
-  width: 30.8%;
-  margin-top: -3em;
 }
 
 .borderDesign {
-  border: 1px solid #00000040;
+  border: 1px solid #000;
   border-radius: 4px;
   box-shadow: #00000040;
+
+}
+.borderDesigns {
+  border: 1px solid #fff;
+   box-shadow: 0px 4px 11px #FB3F5c;
+   width: 200px;
 }
 
 .lightColour {
@@ -80,43 +61,38 @@ hr.titleHr {
 }
 
 /* Awesome font icons */
-i {
-  color: #FB3F5C;
-}
 
-.iconPack {
-  padding: .5em .8em;
-  background-color: #fb3f5c1a;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.fbIconPack {
-  padding: .5em .9em;
-  background-color: #fb3f5c1a;
-  border-radius: 50%;
-  cursor: pointer;
-}
 
 .contactUsContent {
   padding: 5em 8em;
+
 }
 
 .contactDetailsList {
   flex:1;
   margin-right: 3em;
+  margin-top: 5rem;
 }
 
 .contactUsForm {
   flex: 2;
   margin-left: 3em;
   padding: 2em 3em;
+  margin-top: 3rem;
   
 }
 
 .contactUsForm button {
   margin-top: 1em;
   margin-left: auto;
+  background: #FB3F5C;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-family: DM sans;
+
+
+
 }
 .error{
   font-size: 12px;
@@ -141,6 +117,7 @@ height: 23.66px;
 
 color: #FFFFFF;
 }
+
 
 .contactUsHeader p {
     width: 198.43px;
@@ -169,10 +146,13 @@ hr.titleHr {
 
 }
 .borderDesign {
-  border: 1px solid #00000040;
+ 
+  box-shadow: 0px 4px 11px rgba(150, 150, 150, 0.25);
  border-radius: 3.816px;
   box-shadow: #00000040;
   height: 49.61;
+  width: 460px;
+
   
   
   position: relative;
@@ -214,9 +194,16 @@ box-sizing: border-box;
 }
 @media (max-width: 400px){
   .borderDesign {
-     width: 360px;
+    width: 353px;
      right:7.6rem;
    }
+   .borderDesigns
+   {
+    width:190px;
+    position: relative;
+    right:3rem;
+  }
+    
    input[type=text],
 input[type=tel],
 input[type=email]
@@ -227,7 +214,7 @@ input[type=email]
 }
   @media (min-width: 400px) and (max-width: 500px){
     .borderDesign {
-     width: 399px;
+    width:400px;
      right:7.8rem;
 
  }
@@ -242,11 +229,17 @@ input[type=email]
  
     @media (min-width: 700px)and (max-width:1000px){
       .borderDesign {
-     width: 744px;
+    width: 740px;
      right:7.4rem;
 
 
 }
+.borderDesigns
+   {
+    width:350px;
+    position: relative;
+    left:7rem;
+  }
  input[type=text],
 input[type=tel],
 input[type=email]
@@ -257,7 +250,7 @@ input[type=email]
 }
  @media (max-width: 350px) {
    .borderDesign {
-     width: 295px;
+    width: 294px;
      right:7.4rem;
    }
    input[type=text],
@@ -271,13 +264,19 @@ border-radius: 3.816px;
 height:36.63px;
 width: 206px;
 }
+  .borderDesigns
+   {
+    width:150px;
+    position: relative;
+    right:4rem;
+  }
 
  }
  
 
  @media (min-width: 450px) and (max-width: 460px){
   .borderDesign {
-     width: 665px;
+    
    right: 7.8rem; 
  }
    input[type=text],
@@ -293,6 +292,27 @@ width: 586px;
  
  @media (min-width: 460px) and (max-width: 700px){
   .borderDesign {
-     width: 465px;
+    width: 470px;
    right: 7.5rem; 
  }
+ .borderDesigns
+   {
+    width:250px;
+    position: relative;
+   left:0rem;
+  }
+}
+@media (min-width: 1000px){
+ .footer{
+  padding-right:10rem;
+padding-left: 0rem;
+margin-right: 0rem;
+ }
+ .footer-li .right {
+padding-left: 5rem;
+}
+
+/* HAMBURGER ANIMATION */
+
+
+ 
