@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+html{
+    height: 100;
+}
+body{
+  width:100%;
+height: 100vh;
+    margin: 0;
+    padding:0;
+   font-family: 'DM Sans', sans-serif;
+    background: #F0F0F0;
+    align-items: center;
+
+
+}
+.borderDesign {
+  border: 1px solid #00000040;
+  border-radius: 4px;
+  box-shadow: #00000040;
+}
+
+.lightColour {
+  color: #999898;
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+.darkColour1 {
+  color: #04172ab3;
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+.darkColour2 {
+  color: #04172a4d;
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+.contactUsForm {
+  flex: 2;
+  margin-left: 3em;
+  padding: 2em 3em;
+  margin-top: 7em;
+  
+}
+
+.contactUsForm button {
+  margin-top: 1em;
+  margin-left: auto;
+  width: 400px;
+}
+.error{
+  font-size: 12px;
+  text-align: center;
+  color: red;
+  padding-top: 10px;
+  }
+.page{
+    display: flex;
+   
+    margin-left: 5rem;
+    margin-right: 4rem;
+    padding-right: 5rem;
+    margin-top: 6rem;
+
+    
+
+}
+
+
+.space{
+    flex: 0.8;
+}
+.JANE{
+    font-size: 16px;
+line-height: 21px;
+display: inline-flex;
+ font-family: DM Sans;
+}
+.main{
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.spaces{
+    flex:1;
+    
+}
+
+
+label{
+   font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+width: 131px;
+height: 21px;
+color: #04172A;
+
+}
+
+input[type=name]{
+   width: 492px;
+height: 48px;
+    border: 2px solid #989898;
+box-sizing: border-box;
+border-radius: 5px;
+padding-left: 0.5rem;
+
+margin-top: 2rem;
+margin-bottom: 2rem;
+
+}
+
+
+.exp{
+    width: 100px;
+    height: 30px;
+    border: 2px solid #989898;
+box-sizing: border-box;
+border-radius: 5px;
+width: 140px;
+height: 48px;
+margin-bottom: 2rem;
+padding-left: 0.5rem;
+
+}
+input[type=submit]{
+    background: linear-gradient(270deg, #FB3F5C 0%, #FC657D 80.86%);
+box-shadow: 0px 2.76726px 2.21381px rgba(251, 63, 92, 0.0196802), 0px 6.6501px 5.32008px rgba(251, 63, 92, 0.0282725), 0px 12.5216px 10.0172px rgba(251, 63, 92, 0.035), 0px 22.3363px 17.869px rgba(251, 63, 92, 0.0417275), 0px 41.7776px 33.4221px rgba(251, 63, 92, 0.0503198), 0px 100px 80px rgba(251, 63, 92, 0.07);
+border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.2s;
+    width: 492px;
+height: 48px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+color: #fff;
+width: 492px;
+height: 48px;
+}
+input[type=submit]:hover{
+    background: red;
+
+    color: black;
+}
+.text{
+    padding-top: 10rem;
+    padding-left: 5rem;
+    padding-right: 2rem;
+
+}
+
+.text li{
+    padding-bottom: 10px;
+    list-style: none;
+   font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 42px;
+/* identical to box height */
+
+
+color: rgba(0, 0, 0, 0.59);
+
+}
+h3{
+    font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 42px;
+width: 197px;
+height: 42px;
+}
+ins{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+line-height: 42px;
+ font-family: DM Sans;
+}
+.page img{
+    width: 64px;
+height: 64px;
+}
+
+#body.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.3);
+    z-index:500;
+}
+
+
+.second_navigation ul{
+ list-style: none;
+    margin: 0;
+    padding-right: 0;
+    display: flex;
+    padding-right: 10px;
+    margin-left: 50%;
+    padding-bottom: 0px;
+    position: fixed;
+}
+.second_navigation li{
+    padding:0 2rem;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: DM Sans;
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+
+}
+.second_navigation a{
+width: 77px;
+height: 23px;
+
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+text-decoration: none;
+/* identical to box height, or 140% */
+
+
+color: #04172A;
+
+}
+
+.passive-nav{
+    border-bottom: 2px solid #fB3F5C;
+    padding-bottom: 5px;
+    width: 156px;
+height: 3px;
+
+
+}
+.second-nav{
+    background: white;
+ box-shadow: 0px 4px 11px rgba(150, 150, 150, 0.25);
+ margin-top: 0px;
+ padding-top: 10px;
+ top: 0;
+    left: 0;
+    width: 100%;
+    position: relative;
+    background: #FFFFFF;
+    height: 32px;
+    
+    z-index: 800;
+}
+ }
+ .spacee{
+   flex: 5;
+ }
+
+
+/* MEDIA QUERIES */
+
+
+
+
+
+@media screen and (max-width: 850px){
+.contactUsForm {
+    width:600px;}
+
+
+.page{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    align-self:center; 
+    padding-top: 5rem;
+margin-bottom: 0em;
+    margin-right: 4rem; 
+    padding-right: 2rem; 
+}
+.contactUsForm {
+  flex: 1;
+  margin-left: 5.5rem;
+  padding: 2em 1em;
+  margin-top: 2em;
+  align-content: center;
+  margin-right: 0rem;
+  margin-bottom: 2rem;
+  
+
+
+}
+h3{
+  font-size: 22px;
+
+}
+ins{
+    font-size: 22px;
+}
+.text li{
+    font-size: 22px;
+}
+
+.text{
+    padding-top: 2rem;
+    align-items: center;
+    padding-left: 3rem;
+    
+
+}
+
+ins{
+    font-weight: bold;
+    color:#fB3F5C;}
+body{
+    width: 100%;
+    align-items: center;
+    margin-left: 0px;
+
+
+}
+#body{
+    height: 100%;
+    align-items: center;
+}
+
+.JANE{
+color:black;
+}
+.second-nav{
+    display: none;
+height: 0px;}
+.spaces{
+    flex:0.93;
+}
+input[type=name],
+input[type=submit]
+{
+    width: 432.72px;
+height: 48px;
+}
+.exp{
+    width: 89.55px;
+height: 48px;
+}
+
+.main-body{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media screen and (max-width: 850px) {
+    
+@media screen and (max-width: 1200px){
+    .page{
+    align-items: center;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 0px;
+    }
+    .second_navigation ul{
+ list-style: none;
+    margin: 0;
+    padding-right: 0;
+    display: flex;
+    padding-right: 10px;
+    margin-left: 20rem;
+    padding-bottom: 0px
+}
+
+}
+@media screen and (max-width: 450px){
+ .contactUsForm {
+  flex: 1;
+  margin-left: 2.0rem;
+  padding: 2em 1em;
+  margin-top: 2em;
+  align-content: center;
+  margin-right: 0rem;
+  margin-bottom: 2rem;
+  padding-right: 0rem;
+  width: 340px;
+
+
+  
+
+
+}
+}
+
+@media screen and (max-width: 450px){
+
+.page{
+    margin-left: 2rem;
+    margin-right: 0rem;
+    padding-right: 2rem;
+}
+.text{
+    margin-right: 0rem;
+}
+body{
+    width: 100%;
+
+    margin-bottom: 2rem;
+    position: relative;
+   
+}
+input[type=name],
+input[type=submit]
+{
+    width: 280.72px;
+height: 48px;
+}
+.exp{
+    width: 89.55px;
+height: 48px;
+}
+}
+@media screen and (max-width: 600px){
+   .contactUsForm {
+    margin-left: 6rem;
+    width: 400px;
+}
+@media screen and (max-width: 320px){
+    body{
+        position: relative;
+    }
+    .card{
+        width: 254px;
+    height: 454px;
+
+
+    }
+    
+input[type=name],
+input[type=submit]
+{
+    width: 220.72px;
+height: 48px;
+}
+.page li ,h3,ins{
+    font-size: 120%;
+}
+.page{
+    margin-left: 7rem;
+}
+}
+
+
+
+
+/* HAMBURGER ANIMATION */
+
+
+    
