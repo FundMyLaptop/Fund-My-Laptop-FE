@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 .navbar {
   background-color: #ffffff !important;
-  padding-left: 80px;
-  padding-right: 40px;
-
+  padding-left: 55px;
+  padding-right: 30px;
   color: black;
 }
 .navbar-dark .navbar-toggler span {
@@ -95,9 +94,17 @@ nav ul li a {
 }
 
 @media (max-width: 575px) {
-  .navbar-nav {
+  .navv {
     display: none;
   }
+
+  .navbar-nav {
+    display: none;}
+     
+  .navbar{
+  	padding-right: 30px;
+  }
+  
   .navbar-nav.show {
     display: block;
   }

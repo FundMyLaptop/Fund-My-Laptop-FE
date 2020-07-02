@@ -1,6 +1,7 @@
 .footer {
   background: #04172a;
   color: #ffffff;
+
 }
 
 .footer-li {
@@ -40,6 +41,7 @@
   display: inline;
   margin-right: 30px;
 }
+
 
 @media (max-width: 900px) {
   .footer-li {
