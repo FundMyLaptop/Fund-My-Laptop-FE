@@ -18,93 +18,169 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light port-nav shadow-sm pr-5 pl-5">
-        <a class="navbar-brand pt-0 brand-logo" href="#"><img src="img/logo.png" alt="" srcset=""></a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav ml-auto pr-5">
-                <li class="nav-item active">
-                    <a class="nav-link port-nav-link" href="#">Lend</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link port-nav-link" href="#">Borrow</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link port-nav-link" href="#">About</a>
-                </li>
-                <a name="login" id="login" class="ml-4 login-button text-white"#" role="button">Login</a>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light  pl-lg-4 pr-lg-5 shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand brand-logo ml-lg-5 pl-lg-5" href="#"><img src="../img/logo.png" class="img-fluid" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active px-4">
+                        <a class="nav-link port-nav-link text-center" href="#">Lend</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link port-nav-link text-center" href="#">Borrow</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link port-nav-link text-center" href="#">About</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="#" id="login" class="nav-link login-button text-center text-whit emb-sm-2" role="button">Login</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </nav> -->
-    <div class="row p-0 m-0">
-        <div class="col-md-7 mr-0 left-col">
-            <p class="top-text">Welcome to <br>
-                <b> Fund my Laptop</b>
-            </p>
-            <p class="text-muted">Help Achieve Your dreams with funding for your laptops at little or no cost</p>
-            
-            <form action="" method="post">
-                <div class="row justify-content-center">
-                   <div class="col-md-6">
-                        <div class="form-group mb-0">
-                          <label for=""></label>
-                          <input type="text"
-                              class="form-control form-control-lg" name="" id="" placeholder="First name" autofocus>
+    </nav>
+    
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-lg-1 d-lg-block d-none"></div>
+                <div class="col-12 col-lg-5 mt-5 pr-sm-2 pl-sm-2 su-form">
+                
+                    <p class="top-text">Welcome to <br>
+                        <b> Fund my Laptop</b>
+                    </p>
+                    <p class="text-muted">Help Achieve Your dreams with funding for your laptops at little or no cost</p>
+                <!--- start of sign up form -->    
+                    <form action="" method="post">
+                        <div class="form-row">
+                            <div class="col-6 col-sm-6 col-md-6">
+                                <div class="form-group mb-0">
+                                    <label for=""></label>
+                                    <input type="text" class="form-control form-control-lg" name="" id="" placeholder="First name" autofocus>
+                                </div>
+                            </div> 
+                            <div class="col-6 col-sm-6 col-md-6">
+                                <div class="form-group mb-0">
+                                    <label for=""></label>
+                                    <input type="text" class="form-control form-control-lg" name="" id="" placeholder="Last name">
+                                </div>
+                            </div>
+                        </div><!--- End of form-row -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for=""></label>
+                                    <input type="email" class="form-control form-control-lg" name="" id="" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for=""></label>
+                                    <input type="password" class="form-control form-control-lg" name="" id="" placeholder="Password">
+                                </div>
+                            </div>  
+                            <div class="col-12 mt-3">
+                                <div class="custom-control form-control-lg custom-checkbox">
+                                    <label class="custom-control-label check-text" for="customCheck1">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        I agree to the <a href="http://">Terms Policy Conditions</a> 
+                                    </label>
+                                </div>
+                            </div>  
+                            <div class="col-12 my-2 my-sm-2">
+                                <button type="submit" class="btn btn-danger signup-btn btn-lg">Sign up</button>
+                            </div> 
+                            <div class="col-12 mt-3 d-none d-lg-block">
+                                <div class="row justify-content-center">
+                                    <span class="float-left text-muted line"><hr></span>
+                                    <p class="float-left pr-3 pl-3 text-muted">OR</p>
+                                    <span class="float-left text-muted line"><hr></span>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 d-block d-lg-none">
+                                <div class="row justify-content-center">
+                                    <span class="float-left text-muted line"><hr></span>
+                                    <p class="float-left pr-2 pl-2 text-muted">or</p>
+                                    <span class="float-left text-muted line"><hr></span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-9 mx-auto">
+                                <a name="" id="" class="btn btn-danger google-btn btn-lg" href="#" role="button"><i class="fa fa-google" aria-hidden="true"></i>&nbsp; Sign up with Google</a>
+                            </div>
+                            <div class="mx-auto mt-3">
+                                <p class="have-acc">Already have an account?  <a href="http://">Sign in</a> </p>
+                            </div>
                         </div>
-                    </div> 
-                    <div class="col-md-6">
-                        <div class="form-group mb-0">
-                          <label for=""></label>
-                          <input type="text"
-                              class="form-control form-control-lg" name="" id="" placeholder="Last name">
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="form-group mb-0">
-                          <label for=""></label>
-                          <input type="email"
-                              class="form-control form-control-lg" name="" id="" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="form-group mb-0">
-                          <label for=""></label>
-                          <input type="password"
-                              class="form-control form-control-lg" name="" id="" placeholder="Password">
-                        </div>
-                    </div>  
-                    <div class="col-md-12 mt-3">
-                        <div class="custom-control form-control-lg custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label check-text" for="customCheck1">I agree to the <a href="http://">Terms Policy Conditions</a> </label>
-                        </div>
-                    </div>  
-                    <div class="col-md-12 mt-3">
-                        <button type="submit" class="btn btn-danger signup-btn btn-lg">Sign up</button>
-                    </div> 
-                    <div class="col-md-12 mt-3">
-                        <div class="row justify-content-center">
-                          <span class="float-left text-muted line"><hr>
-                          </span>
-                          <p class="float-left pr-3 pl-3 text-muted">OR</p>
-                          <span class="float-left text-muted line"><hr>
-                          </span>
-                        </div>
-                    </div>
-                    <div class="col-md-9"><a name="" id="" class="btn btn-danger google-btn btn-lg" href="#" role="button"><i class="fa fa-google" aria-hidden="true"></i>&nbsp; Sign up with Google</a></div>
-                    <div class="mt-3">
-                        <p class="have-acc">Already have an account?  <a href="http://">Sign in</a> </p>
-                    </div>
+                    </form><!---End of form -->
+                
+                </div><!--- End of Col-md-7 -->
+
+                <div class="col col-lg-1 d-lg-block d-none"></div>
+
+                <div class="col-lg-5 p-0 m-0 d-none d-lg-block ">
+                    <div class="laptop"> </div>
                 </div>
-            </form>
-            
+            </div>
         </div>
-        <div class="col-md-5 p-0 m-0 "><div class="laptop"></div></div>
-        <!-- <div class="col-md-12 footer"></div> -->
-    </div>
+    </section>
+
+    <!--////////////////////////////////////////////////////////
+                    START OF FOOTER
+    //////////////////////////////////////////////////////////-->
+    <footer>
+          <div class="container-fluid py-5">
+            <div class="row">
+              <div class="col-12 col-lg-9 pl-lg-5">
+                <ul class="list-unstyled">
+                  <li class="mb-4"><img src="../img/Group 3005.png" alt="" /></li>
+                  <li class="mb-4">address</li>
+                  <li class="mb-4">email address</li>
+                  <li class="mb-4">phone</li>
+                </ul>
+              </div>
+              
+              <div class="f-resource col-12 col-lg-3">
+                  
+                <ul class="list-unstyled">
+                  <h4 class="mb-4">RESOURCES</h4>
+                  <li class="mb-4">Why choose FundMyLaptop</li>
+                  <li class="mb-4">How P2P Lending works</li>
+                  <li class="mb-4">About FundMyLaptop</li>
+                  <li class="mb-4">Contact Us</li>
+                </ul>
+              </div>
+              <div class="col footer-icon mb-2 pl-lg-5">
+                <ul class="list-unstyled d-flex">
+                  <li class="mr-3">
+                    <a href="#"><img src="../img/Vector (1).png" alt="" /></a> 
+                  </li>
+                  <li class="mr-3"><a href="#"><img src="../img/Vector (2).png" alt="" /></a></li>
+                  <li><a href="#"><img src="../img/Vector (3).png" alt="" /></a></li>
+                </ul>
+              </div>
+            </div><!---End of row-->
+            
+            <div class="row foot-bottom pt-4 mr-lg-5">
+              <div class="col-12 col-lg-6 pl-lg-5">
+                <p>2020 &copy; Copyright All Rights Reserved</p>
+              </div>
+              <div class="col-12 col-lg-6 px-lg-5 foot-more">
+                <ul class="list-unstyled justify-content-end d-lg-flex">
+                  <li class="pt-3 pl-3">FAQ</li>
+                  <li class="pt-3 pl-3">Privacy Policy</li>
+                  <li class="pt-3 pl-2">Terms & Conditions</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
