@@ -5,6 +5,7 @@
   padding-bottom: 4rem;
   bottom: 0;
   left: 0;
+  position: absolute;
 }
 
 .footer-li {

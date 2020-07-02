@@ -13,15 +13,20 @@
     <title>Dashoard &mdash; Fundee</title>
     <style>
         * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
+
+        html,
+        body {
+            height: 100%;
+        }
+
         body {
             font-family: 'DM Sans', sans-serif;
-            padding: 0;
-            margin: 0;
             background-color: #fff;
             color: #04172A;
-            height: 100%;
         }
 
         body {
@@ -32,15 +37,19 @@
             position: relative;
             min-height: 100%;
         }
-        #content-wrap{
-            margin-bottom: 800px;
+
+        #content-wrap {
+            padding-bottom: 400px;
         }
-        /* #footer-main {
+
+        #footer-main {
             position: absolute;
             bottom: 0;
-            height: 400px;
             width: 100%;
-        } */
+            height: 400px;
+            background: #04172A;
+            margin-top: -400px;
+        }
 
         .container-main {
             margin-top: 100px;
@@ -60,7 +69,7 @@
 
         main {
             flex: 1 1 0;
-            height: 100vh;
+            /* height: 100vh; */
             padding: 0 20px;
         }
 
@@ -267,9 +276,7 @@
             .user p {
                 font-size: 11px;
             }
-            #content-wrap{
-            margin-bottom: 1000px;
-        }
+
             .fa {
                 font-size: 24px;
                 cursor: pointer;
@@ -397,6 +404,7 @@
 
 <body>
     <div id="page-container">
+
         <div id="content-wrap">
             <div class="nav-container container-fluid shadow-sm">
                 <nav class="navbar nav-top navbar-expand-md navbar-light container-md px-0">
@@ -573,7 +581,6 @@
                                 <i id="right-button" class="fa fa-chevron-right" aria-hidden="true"></i>
                             </div>
                         </section><br />
-
                         <header class='account-header'>Here is your account overview</header>
                         <section class="account">
                             <div class="account__block">
@@ -680,60 +687,61 @@
                         </section>
                     </main>
                 </div>
+
+                <footer id="footer-main">
+                    <footer class="footer container-fluid bg-fml-primary pt-5 pb-3">
+                        <div class="footer-li container">
+                            <div
+                                class="row mx-0 justify-content-center justify-content-md-between text-light text-center text-md-left">
+                                <div class="col-md-3 px-0">
+                                    <ul class="nav flex-column">
+                                        <li><img src="../img/Group 3005.png" alt="" /></li>
+                                        <li>address</li>
+                                        <li>email address</li>
+                                        <li>phone</li>
+                                    </ul>
+
+                                    <div>
+                                        <ul
+                                            class="footer-icons nav d-flex justify-content-center justify-content-md-start">
+                                            <li>
+                                                <a href="#"><img src="../img/Vector (1).png" alt="" /></a>
+                                            </li>
+                                            <li><a href="#"><img src="../img/Vector (2).png" alt="" /></li></a>
+                                            <li><a href="#"><img src="../img/Vector (3).png" alt="" /></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 px-0">
+                                    <ul class="nav resources flex-column pt-4 pt-md-0">
+                                        <h4>RESOURCES</h4>
+                                        <li>Why choose FundMyLaptop</li>
+                                        <li>How P2P Lending works</li>
+                                        <li>About FundMyLaptop</li>
+                                        <li>Contact Us</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-4 text-light">
+                            <div class="row mx-0 bye justify-content-md-between justify-content-center">
+                                <p class="mb-0">2020 &copy; Copyright All Rights Reserved</p>
+
+                                <ul class="nav bye">
+                                    <li>FAQ</li>
+                                    <li>Privacy Policy</li>
+                                    <li>Terms & Conditions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                </footer>
             </div>
         </div>
-        <footer class="footer container-fluid bg-fml-primary pt-5 pb-3">
-            <div class="footer-li container">
-                <div
-                    class="row mx-0 justify-content-center justify-content-md-between text-light text-center text-md-left">
-                    <div class="col-md-3 px-0">
-                        <ul class="nav flex-column">
-                            <li><img src="../img/Group 3005.png" alt="" /></li>
-                            <li>address</li>
-                            <li>email address</li>
-                            <li>phone</li>
-                        </ul>
-
-                        <div>
-                            <ul class="footer-icons nav d-flex justify-content-center justify-content-md-start">
-                                <li>
-                                    <a href="#"><img src="../img/Vector (1).png" alt="" /></a>
-                                </li>
-                                <li><a href="#"><img src="../img/Vector (2).png" alt="" /></li></a>
-                                <li><a href="#"><img src="../img/Vector (3).png" alt="" /></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 px-0">
-                        <ul class="nav resources flex-column pt-4 pt-md-0">
-                            <h4>RESOURCES</h4>
-                            <li>Why choose FundMyLaptop</li>
-                            <li>How P2P Lending works</li>
-                            <li>About FundMyLaptop</li>
-                            <li>Contact Us</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="container mt-4 text-light">
-                <div class="row mx-0 bye justify-content-md-between justify-content-center">
-                    <p class="mb-0">2020 &copy; Copyright All Rights Reserved</p>
-
-                    <ul class="nav bye">
-                        <li>FAQ</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms & Conditions</li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-
     </div>
 
-    <script src="../js/bootstrap-js/jquery.js"></script>
-    <script src="../js/bootstrap-js/bootstrap.js"></script>
-    <script src="../js/bootstrap-js/popper.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
         $("#right-button").click(function () {
@@ -756,6 +764,9 @@
             );
         });
     </script>
+    <script src="../js/bootstrap-js/jquery.js"></script>
+    <script src="../js/bootstrap-js/bootstrap.js"></script>
+    <script src="../js/bootstrap-js/popper.js"></script>
 </body>
 <script>
     var circle = document.getElementById('circle-level');
