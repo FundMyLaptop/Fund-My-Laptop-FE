@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/custom-css/investor-dashboard.css" />
+  </head>
+  <body>
+    <main>
+      <!-- dashboard section starts here -->
+      <div class="container">
+        <div class="row">
+          <div class="col col-md ml-2 mt-5 welcome">
+            <h1>
+              Welcome back,
+              <span class="username" id="user">Chandan.</span>
+            </h1>
+          </div>
+        </div>
+        <div class="row px-2 campaign">
+          <div class="col col-md welcome">
+            <p>
+              Campaigns available for investing.
+              <span>View more > </span>
+            </p>
+          </div>
+          <!-- <div class="col col-md-4">
+            <p class="px-3 details">
+              Show complete details
+              <label class="toggle-details">
+                <input type="checkbox" />
+                <span class="slide-toggle"></span>
+              </label>
+            </p>
+          </div> -->
+        </div>
+        <!-- intern section -->
+        <section id="interns">
+          <!-- an intern -->
+          <div class="intern-card bg-light border-0">
+            <div class="row intern-description">
+              <div class="col">
+                <img src="../img/Ellipse 63.png" alt="" />
+              </div>
+              <div class="col">
+                <div class="row">
+                  <p class="intern-placeholder">John Doe</p>
+                  <div class="status">
+                    <p class="">Intern</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- loan amount section -->
+            <div class="row">
+              <div class="col py-3">
+                <p class="loan-amount">Loan Amount: $1,000</p>
+              </div>
+            </div>
+            <!-- loan progress -->
+            <div class="row px-2">
+              <progress class="ml-2" max="100" value="75"></progress>
+            </div>
+            <div class="row amount-funded justify-content-center px-2">
+              <div class="col text-left">$700 Funded</div>
+              <div class="col text-right">$300 Left</div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="button" class="px-2 mt-3 btn intern-btn">
+                  invest now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- another intern -->
+          <div class="intern-card bg-light border-0 ml-3">
+            <div class="row intern-description">
+              <div class="col">
+                <img src="../img/Ellipse 63.png" alt="" />
+              </div>
+              <div class="col">
+                <div class="row">
+                  <p class="intern-placeholder">John Doe</p>
+                  <div class="status">
+                    <p class="">Intern</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- loan amount section -->
+            <div class="row">
+              <div class="col py-3">
+                <p class="loan-amount">Loan Amount: $1,000</p>
+              </div>
+            </div>
+            <!-- loan progress -->
+            <div class="row px-2">
+              <progress class="ml-2" max="100" value="75"></progress>
+            </div>
+            <div class="row amount-funded justify-content-center px-2">
+              <div class="col text-left">$700 Funded</div>
+              <div class="col text-right">$300 Left</div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="button" class="px-2 mt-3 btn intern-btn">
+                  invest now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- yet another intern -->
+          <div class="intern-card bg-light border-0 ml-3">
+            <div class="card-details">
+              <div class="row intern-description">
+                <div class="col">
+                  <img src="../img/Ellipse 63.png" alt="" />
+                </div>
+                <div class="col">
+                  <div class="row">
+                    <p class="intern-placeholder">John Doe</p>
+                    <div class="status">
+                      <p class="">Intern</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- loan amount section -->
+              <div class="row">
+                <div class="col py-3">
+                  <p class="loan-amount">Loan Amount: $1,000</p>
+                </div>
+              </div>
+              <!-- loan progress -->
+              <div class="row px-2">
+                <progress class="ml-2" max="100" value="75"></progress>
+              </div>
+              <div class="row amount-funded justify-content-center px-2">
+                <div class="col text-left">$700 Funded</div>
+                <div class="col text-right">$300 Left</div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <button type="button" class="px-2 mt-3 btn intern-btn">
+                    invest now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- again, another intern  -->
+          <div class="intern-card bg-light border-0 ml-3">
+            <div class="row intern-description">
+              <div class="col">
+                <img src="../img/Ellipse 63.png" alt="" />
+              </div>
+              <div class="col">
+                <div class="row">
+                  <p class="intern-placeholder">John Doe</p>
+                  <div class="status">
+                    <p class="">Intern</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- loan amount section -->
+            <div class="row">
+              <div class="col py-3">
+                <p class="loan-amount">Loan Amount: $1,000</p>
+              </div>
+            </div>
+            <!-- loan progress -->
+            <div class="row px-2">
+              <progress class="ml-2" max="100" value="75"></progress>
+            </div>
+            <div class="row amount-funded justify-content-center px-2">
+              <div class="col text-left">$700 Funded</div>
+              <div class="col text-right">$300 Left</div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="button" class="px-2 mt-3 btn intern-btn">
+                  invest now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- finally, the last intern -->
+          <div class="intern-card bg-light border-0 ml-3">
+            <div class="row intern-description">
+              <div class="col">
+                <img src="../img/Ellipse 63.png" alt="" />
+              </div>
+              <div class="col">
+                <div class="row">
+                  <p class="intern-placeholder">John Doe</p>
+                  <div class="status">
+                    <p class="">Intern</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- loan amount section -->
+            <div class="row">
+              <div class="col py-3">
+                <p class="loan-amount">Loan Amount: $1,000</p>
+              </div>
+            </div>
+            <!-- loan progress -->
+            <div class="row px-2">
+              <progress class="ml-2" max="100" value="75"></progress>
+            </div>
+            <div class="row amount-funded justify-content-center px-2">
+              <div class="col text-left">$700 Funded</div>
+              <div class="col text-right">$300 Left</div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="button" class="px-2 mt-3 btn intern-btn">
+                  invest now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- a test intern -->
+          <div class="intern-card ml-3 bg-light border-0">
+            <div class="row intern-description">
+              <div class="col">
+                <img src="../img/Ellipse 63.png" alt="" />
+              </div>
+              <div class="col">
+                <div class="row">
+                  <p class="intern-placeholder">John Doe</p>
+                  <div class="status">
+                    <p class="">Intern</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- loan amount section -->
+            <div class="row">
+              <div class="col py-3">
+                <p class="loan-amount">Loan Amount: $1,000</p>
+              </div>
+            </div>
+            <!-- loan progress -->
+            <div class="row px-2">
+              <progress class="ml-2" max="100" value="75"></progress>
+            </div>
+            <div class="row amount-funded justify-content-center px-2">
+              <div class="col text-left">$700 Funded</div>
+              <div class="col text-right">$300 Left</div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="button" class="px-2 mt-3 btn intern-btn">
+                  invest now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- another test intern -->
+          <div class="intern-card ml-3 bg-light border-0">
+            <div class="row intern-description">
+              <div class="col">
+                <img src="../img/Ellipse 63.png" alt="" />
+              </div>
+              <div class="col">
+                <div class="row">
+                  <p class="intern-placeholder">John Doe</p>
+                  <div class="status">
+                    <p class="">Intern</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- loan amount section -->
+            <div class="row">
+              <div class="col py-3">
+                <p class="loan-amount">Loan Amount: $1,000</p>
+              </div>
+            </div>
+            <!-- loan progress -->
+            <div class="row px-2">
+              <progress class="ml-2" max="100" value="75"></progress>
+            </div>
+            <div class="row amount-funded justify-content-center px-2">
+              <div class="col text-left">$700 Funded</div>
+              <div class="col text-right">$300 Left</div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="button" class="px-2 mt-3 btn intern-btn">
+                  invest now
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- account overview -->
+        <div class="row account-overview mt-5 px-2">
+          <div class="col col-md col-sm">
+            <h5>Here is your account overview</h5>
+            <div class="row">
+              <div class="col-md-3 col-6 mobile-overview">
+                <div class="card bg-light border-0 mt-1 px-3 py-2">
+                  <div class="card-title">
+                    <p>Invested amount</p>
+                  </div>
+                  <div class="card-text">
+                    <h4><sub>INR</sub> 50,000</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-6 mobile-overview">
+                <div class="card bg-light border-0 mt-1 px-3 py-2">
+                  <div class="card-title">
+                    <p>Repaid amount</p>
+                  </div>
+                  <div class="card-text">
+                    <h4><sub>INR</sub> 20,000</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-6">
+                <div class="card bg-light border-0 mt-1 px-3 py-2 none">
+                  <div class="card-title">
+                    <p>Remaining amount</p>
+                  </div>
+                  <div class="card-text">
+                    <h4><sub>INR</sub> 30,000</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="col-md-3 col-6">
+                <div class="card bg-light border-0 mt-1 px-3 py-2 none">
+                  <div class="card-title">
+                    <p>Investments</p>
+                  </div>
+                  <div class="card-text">
+                    <h4>6</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-6">
+                <div class="card bg-light border-0 mt-1 px-3 py-2 none">
+                  <div class="card-title">
+                    <p>Average investment</p>
+                  </div>
+                  <div class="card-text">
+                    <h4><sub>INR</sub> 25,000</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-6">
+                <div class="card bg-light border-0 mt-1 px-3 py-2 none">
+                  <div class="card-title">
+                    <p>Average interest</p>
+                  </div>
+                  <div class="card-text">
+                    <h4><sub>INR</sub> 50,000</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- payment progress -->
+              <div class="col campaign-col">
+                <div class="total-investments">
+                  <p class="investment-title">
+                    Total invested amount
+                  </p>
+                  <h5 class="invested-amount"><sub>INR</sub> 50,000</h5>
+                </div>
+
+                <div class="campaign-progress">
+                  <svg class="progress-ring" width="100%" height="280">
+                    <circle
+                      class="progress-ring__circle"
+                      stroke="#FB3F5C"
+                      stroke-width="20"
+                      fill="transparent"
+                      r="90"
+                      cx="50%"
+                      cy="50%"
+                    />
+                  </svg>
+                  <div class="progress__value">
+                    <h1 id="displayed_value"></h1>
+                    <h6>REPAID</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- investments-->
+        <div class="row investments">
+          <div class="col col-md mt-2">
+            <h4>Your Investments</h4>
+            <table class="table mt-4 col">
+              <thead class="">
+                <tr>
+                  <th scope="col">Loan</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Interest Rate</th>
+                  <th scope="col">Term</th>
+                  <th scope="col">Total Returns</th>
+                  <th scope="col">Payment Due</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">#7646446</th>
+                  <th>INR 50,000</th>
+                  <th>2.5%</th>
+                  <th>10</th>
+                  <th>INR 1,250</th>
+                  <th>27 <sub>JUNE</sub></th>
+                  <th>Active</th>
+                </tr>
+                <!-- second row starts here -->
+                <tr>
+                  <th scope="row">#7646446</th>
+                  <th>INR 50,000</th>
+                  <th>2.5%</th>
+                  <th>10</th>
+                  <th>INR 1,250</th>
+                  <th>27 <sub>JUNE</sub></th>
+                  <th>Active</th>
+                </tr>
+                <!-- third row starts here -->
+                <tr>
+                  <th scope="row">#7646446</th>
+                  <th>INR 50,000</th>
+                  <th>2.5%</th>
+                  <th>10</th>
+                  <th>INR 1,250</th>
+                  <th>27 <sub>JUNE</sub></th>
+                  <th>Active</th>
+                </tr>
+                <!-- fourth row starts here -->
+                <tr>
+                  <th scope="row">#7646446</th>
+                  <th>INR 50,000</th>
+                  <th>2.5%</th>
+                  <th>10</th>
+                  <th>INR 1,250</th>
+                  <th>27 <sub>JUNE</sub></th>
+                  <th>Active</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- dashboard script -->
+    <script>
+      const circle = document.querySelector('circle');
+      const radius = circle.r.baseVal.value;
+      const circumference = radius * 2 * Math.PI;
+
+      circle.style.strokeDasharray = `${circumference} ${circumference}`;
+      circle.style.strokeDashoffset = `${circumference}`;
+
+      const setProgress = (percent) => {
+        const offset = circumference - (percent / 100) * circumference;
+        circle.style.strokeDashoffset = offset;
+      };
+
+      const progress_value = 40;
+      const displayed_value = document.querySelector('#displayed_value');
+      displayed_value.innerHTML = `${progress_value}%`;
+      setProgress(progress_value);
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
