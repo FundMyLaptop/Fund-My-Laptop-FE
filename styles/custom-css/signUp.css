@@ -77,7 +77,9 @@ body{
     font-size: 36px;
     line-height: 44px;
 }
-
+label.error{
+    color:#ff0000!important;
+}
 
 .laptop{
     width: 100%;
@@ -176,6 +178,9 @@ footer {
         display: flex;
         justify-content: center;
         }
+        label.error{
+            color:#ff0000!important;
+        }
     }
 
  @media (max-width: 480px) {
@@ -207,5 +212,8 @@ footer {
     .footer-icon {
         display: flex;
         justify-content: center;
+        }
+        label.error{
+            color:#ff0000!important;
         }
     }
