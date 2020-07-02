@@ -292,17 +292,25 @@ width: 586px;
  
  @media (min-width: 460px) and (max-width: 700px){
   .borderDesign {
-    width: 570px;
+    width: 470px;
    right: 7.5rem; 
  }
  .borderDesigns
    {
     width:250px;
     position: relative;
-   left:2rem;
+   left:0rem;
   }
 }
-
+@media (min-width: 1000px){
+ .footer{
+  padding-right:10rem;
+padding-left: 0rem;
+margin-right: 0rem;
+ }
+ .footer-li .right {
+padding-left: 5rem;
+}
 
 /* HAMBURGER ANIMATION */
 
