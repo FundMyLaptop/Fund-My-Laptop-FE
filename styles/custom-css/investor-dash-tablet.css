@@ -243,6 +243,16 @@
         margin-top: -3%;
     }
 
+    .account-overview h4 {
+        font-weight: bold;
+    }
+
+    .account-overview .card-title {
+        padding-top: 9px;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
     /* progress payment  ends here */
 
     
@@ -301,19 +311,25 @@
         }
 
         .campaign-progress {
-            margin-left: 0%;
+            margin-left: -10%;
+            margin-bottom: 4%;
         }
 
         .campaign-col {
             display: flex;
-            margin-top: -70%;
+            margin-top: -68%;
         }
 
         .total-investments {
             font-size: 12px;
+            width: 250px;
             font-weight: normal;
             display: block;
             margin-left: -180px;
+        }
+
+        .total-investments h5 {
+            font-weight: bold;
         }
 
         .mobile-overview {
@@ -323,6 +339,11 @@
 
         .investments {
             margin-top: 5%;
+        }
+
+        .account-overview .card-title p {
+            font-size: 15px;
+            font-weight: normal;
         }
 
       }
