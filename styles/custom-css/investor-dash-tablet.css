@@ -77,8 +77,9 @@
       
       #interns  {
         min-width: 100%;
-        overflow-x: scroll;
+        overflow-x: auto;
         min-height: 200px;
+        display: flex;
       }
 
       #interns::-webkit-scrollbar {
@@ -86,13 +87,20 @@
       }
 
       .card {
-          width: 200px;
+          min-width: 200px;
           padding: 8px;
       } 
 
       /* new styles */
-      .status {
-          margin-top: -15px;
+
+      .intern-card {
+          min-width: 200px;
+          padding: 8px;
+      }
+
+      .intern-card .status {
+          margin-top: 18%;
+          margin-left: -64%;
       }
       /* new styles */
 
@@ -107,11 +115,6 @@
 
       .row-stack > div {
           margin-left: -36%;
-      }
-
-      .card-title .intern-name {
-          margin-left: -20%;
-          font-size: 17px;
       }
       
       progress[value] {
