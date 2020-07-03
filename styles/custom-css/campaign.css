@@ -224,7 +224,7 @@ main {
     padding-top: 40px;
   }
   .title_laptop_detail{
-    margin-left: 20px;
+    margin-left: 0;
   }
   .recommenders{
     margin-left: 20px;
@@ -241,6 +241,9 @@ main {
   }
   .fundButton{
     margin-top: 20px;
+  }
+  .description_detail{
+    margin-right: 20px;
   }
 }
 
