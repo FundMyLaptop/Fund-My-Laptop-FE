@@ -1,0 +1,24 @@
+
+
+.container{
+	
+	margin: auto;
+	margin-top:20px;
+	width: 100%
+}
+
+.cat{ margin-top: 10px;}
+
+.cat li {font-size: 26px; color: #04172a;
+	 list-style: none; 
+margin:auto;   
+}
+
+.cat li a {font-size: 26px; color: #04172a;
+	 list-style: none; 
+margin:auto;  display: inline; text-decoration: none; 
+}
+
+.cat a:hover{color:blue;
+	}
+
