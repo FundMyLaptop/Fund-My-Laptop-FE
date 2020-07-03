@@ -114,6 +114,7 @@ a:hover{
 
 .fa-chevron-right{
     font-size: 16px;
+    margin-top: 3px;
 }
 
 h4{
@@ -126,4 +127,18 @@ h4{
     font-size: 24px;
 }
 
+.inactive{
+    color: #E1E1E1;
+}
+
+@media (max-width: 640px) {
+    .search-bar{
+        max-width: 100%;
+    }
+
+    li.list-item.row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
 
