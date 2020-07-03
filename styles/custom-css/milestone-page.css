@@ -12,7 +12,7 @@ body {
   background: #E5E5E5;
   margin: 0;
   padding: 0;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Sans', sans-serif
 }
 
 .milestoneHeader {
@@ -26,7 +26,7 @@ body {
 }
 
 .milestoneHeader div {
-  margin-top: 7.5em;
+  margin-top: 7.2em;
 }
 
 .milestoneHeader h1 {
@@ -70,44 +70,30 @@ hr.headerHr {
 
 .box { margin: 20px; }
 
+.card-img-overlay p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 .cardOne h5{
   font-size: 3em;
   border-bottom: 8px solid #FB3F5C;
 }
-.cardOne p {
-  font-size: 1.2em;
-  font-weight: bold;
-}
 
 .cardTwo h5{
-  color: #000d1a;
   font-size: 3em;
-  border-bottom: 8px solid #04172a;
-}
-.cardTwo p {
-  font-size: 1.2em;
-  font-weight: bold;
+  border-bottom: 8px solid #FB3F5C;
 }
 
 .cardThree h5{
-  color: #000d1a;
   font-size: 3em;
-  border-bottom: 8px solid #04172a;
-}
-.cardThree p {
-  font-size: 1.2em;
-  font-weight: bold;
+  border-bottom: 8px solid #FB3F5C;
 }
 
 .cardFour h5{
   font-size: 3em;
   border-bottom: 8px solid #FB3F5C;
 }
-.cardFour p {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
 
 
 @media only screen and (max-width: 768px) {
