@@ -10,191 +10,244 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- <link rel="stylesheet" href="kss-assets/vendor/prism.css">
- <link rel="stylesheet" href="kss-assets/css/kss.css">
- <link rel="stylesheet" href="../styles/bootstrap-css/bootstrap.css"/>
+ <link rel="stylesheet" href="../kss-assets/vendor/prism.css">
+ <link rel="stylesheet" href="../kss-assets/css/kss.css">
+ <link rel="stylesheet" href="../../styles/bootstrap-css/bootstrap.css"/>
+<link rel="stylesheet" href="../styles/custom-css/blog-list.css" />
+ <link rel="stylesheet" href="../styles/custom-css/contact-us.css">
  <link rel="stylesheet" href="../styles/custom-css/faq.css">
- 
 
- <title>faq page</title>
+ <title>FAQ | Contact Us</title>
 </head>
 
 <body>
- <section class="head">
-  <div>
-   <center>
-    <p class="hat"> How can we Help You</p>
-    <br>
-    <br>
-    <div class="">
-     
-     <form>
-      <div class="search-bar">
-       <input type="text" class="form-control search-form-control formlength" placeholder="Describe your issue...">
-       <i class="fa fa-search"></i>
+<div class="nav-container container-fluid shadow-sm">
+          <nav class="navbar nav-top navbar-expand-md navbar-light container-md px-0">
+              <a class="navbar-brand" href="#">
+                <img src="../img/layer1.png" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link px-4 font-weight-bold" href="#">Lend</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-4 font-weight-bold" href="#">Borrow</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-4 font-weight-bold" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link pl-md-4 font-weight-bold" href="#">
+                      <button class="btn btn-fml-secondary px-4">
+                        Login
+                      </button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
       </div>
-     </form>
-     <div>
-      <br>
-      <br>
-      <p> You can also browse the topic below to fnd what you are looking for</p>
-   </center>
-  </div>
- </section>
 
+  <main id="main"> 
+    <section class="header"> 
+        <div class="container"> 
+          <div id="titi" class="mb-4 d-flex justify-content-center text-center align-center"> 
+              <h3> How can we help you </h3>
+          </div>
+          <div class="form mb-4"> 
+              <form> 
+                <div class="search-bar">
+                  <input type="text" class="form-control " placeholder="Describe your issue...">
+                  <i class="fa fa-search "></i>
+                </div>
+              </form>
+          </div>
 
- <section>
-  <div class="row pad">
-   <div class="col-sm-4 pad1">
-    <ul>
-     <li class="active">getting started</li>
-     <li>Funding</li>
-     <li>Menu III</li>
-     <li>Menu IV</li>
-     <li>Menu V</li>
-    </ul>
-   </div>
-   <div class="col-sm-8">
-    <div class="head-text">
-     <h1>Getting Started</h1>
-    </div>
-    <!--Accordion wrapper-->
-     <div id="accordion">
-      <div class="card">
-       <div class="card-header">
-        <a class="card-link" data-toggle="collapse" href="#menu1" aria-expanded="false" aria-controls="menu1">What is FundMy<span class="lap">Laptop</span> and how does it work
-         <span class="collapsed">
-          <i class="fa icon fa-plus"></i>
-         </span>
-         <span class="expanded">
-          <i class="fa icon fa-minus"></i>
-         </span> 
-        </a> 
-          </div> 
-          <div id="menu1" class="collapse">
-             <div class="card-body">
-              Taj Mahal is built on the banks of river Yamuna and is surrounded by a beautiful garden. Mughal Emperor Shah
-             </div>
-       </div>
+          <div class="text-center mt-4"> 
+            <p class="lead"> You can also browse the topics below to find what you're looking for</p>
+          </div>
+        </div>
+    </section>
+
+    <section id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 mt-5">
+            <aside>
+              
+              <ul class="list-unstyled ">
+                <li class="list-item row">
+                  <header> Getting Started</header>
+                  <i class="fa fa-chevron-right d-lg-none ml-auto"></i>
+                </li>
+                <li class="list-item row">
+                  <a href=""> Funding </a>
+                  <i class="fa fa-chevron-right  d-lg-none ml-auto inactive"></i>
+                </li>
+                <li class="list-item row">
+                  <a href=""> Menu III </a>
+                  <i class="fa fa-chevron-right  d-lg-none ml-auto inactive"></i>
+                </li>
+                <li class="list-item row">
+                  <a href=""> Menu IV </a>
+                  <i class="fa fa-chevron-right  d-lg-none ml-auto inactive"></i>
+                </li>
+                <li class="list-item row">
+                  <a href=""> Menu V </a>
+                  <i class="fa fa-chevron-right d-lg-none ml-auto inactive"></i>
+                </li>
+              </ul>
+            </aside>
+          </div>
+
+          <div class="col-md-9 col-lg-9">
+              <div  id="titi">
+                <h3> Getting Started</h3>
+              </div>
+
+              <div class="my-5">
+                <div id="accordion" class="accordion">
+                  <div class="card mb-0">
+                    <div class="card-header bg-fml-primary collapsed" data-toggle="collapse" href="#fund1">
+                        <a class="card-title">
+                            What is FundMy<span class="text-fml-secondary">Laptop</span> and how does it work ?
+                        </a>
+                    </div>
+                    <div id="fund1" class="card-body border rounded-bottom collapse" data-parent="#accordion" >
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                          Repellendus vitae velit inventore natus ratione eligendi sit dicta tempore, 
+                          numquam similique, iste esse odit necessitatibus ut? Aliquid ipsum quo iure nesciunt.
+                        </p>
+                    </div>
+              </div>
+
+              <div class="my-5">
+                <div id="accordion" class="accordion">
+                  <div class="card mb-0">
+                    <div class="card-header bg-fml-primary collapsed" data-toggle="collapse" href="#fund2">
+                        <a class="card-title">
+                            In what countries can i apply for a laptop ?
+                        </a>
+                    </div>
+                    <div id="fund2" class="card-body collapse  border rounded-bottom" data-parent="#accordion" >
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                          Repellendus vitae velit inventore natus ratione eligendi sit dicta tempore, 
+                          numquam similique, iste esse odit necessitatibus ut? Aliquid ipsum quo iure nesciunt.
+                        </p>
+                    </div>
+              </div>
+
+              <div class="my-5">
+                <div id="accordion" class="accordion">
+                  <div class="card mb-0">
+                    <div class="card-header bg-fml-primary collapsed" data-toggle="collapse" href="#fund3">
+                        <a class="card-title">
+                            Question III ?
+                        </a>
+                    </div>
+                    <div id="fund3" class="card-body border rounded-bottom collapse" data-parent="#accordion" >
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                          Repellendus vitae velit inventore natus ratione eligendi sit dicta tempore, 
+                          numquam similique, iste esse odit necessitatibus ut? Aliquid ipsum quo iure nesciunt.
+                        </p>
+                    </div>
+              </div>
+
+              <div class="my-5">
+                <div id="accordion" class="accordion">
+                  <div class="card mb-0">
+                    <div class="card-header bg-fml-primary collapsed" data-toggle="collapse" href="#fund4">
+                        <a class="card-title">
+                            Question IV ?
+                        </a>
+                    </div>
+                    <div id="fund4" class="card-body collapse" data-parent="#accordion" >
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                          Repellendus vitae velit inventore natus ratione eligendi sit dicta tempore, 
+                          numquam similique, iste esse odit necessitatibus ut? Aliquid ipsum quo iure nesciunt.
+                        </p>
+                    </div>
+              </div>
+          </div>
+        </div>
       </div>
-   
-      <div class="card">
-       <div class="card-header">
-        <a class="card-link" data-toggle="collapse" href="#menutwo" aria-expanded="false" aria-controls="menutwo">In what countries can i apply for a laptop? 
-         <span class="collapsed">
-          <i class="fa icon fa-plus"></i>
-         </span>
-         <span class="expanded">
-          <i class="fa icon fa-minus"></i>
-         </span> 
-        </a> 
-          </div> 
-          <div id="menutwo" class="collapse">
-             <div class="card-body">
-              Taj Mahal is built on the banks of river Yamuna and is surrounded by a beautiful garden. Mughal Emperor Shah
-             </div>
-       </div>
+    </section>
+
+    <section class="col cta">
+        <div class="mx-auto text-center">
+          <h4> Looking for Something Else ?</h4>
+          <button class="btn btn-fml-secondary btn-faq"> Contact Us <i class="fa fa-chevron-right"></i></button>
+        </div>
+    </section>
+  </main>
+
+  <footer class="footer container-fluid bg-fml-primary pt-5 pb-3">
+      <div class="footer-li container">
+        <div class="row mx-0 justify-content-center justify-content-md-between text-light text-center text-md-left">
+          <div class="col-md-3 px-0">
+            <ul class="nav flex-column">
+              <li><img src="../img/Group 3005.png" alt="" /></li>
+              <li>address</li>
+              <li>email address</li>
+              <li>phone</li>
+            </ul>
+  
+            <div>
+              <ul class="footer-icons nav d-flex justify-content-center justify-content-md-start">
+                <li>
+                 <a href="#"><img src="../img/Vector (1).png" alt="" /></a> 
+                </li>
+                <li ><a href="#"><img src="../img/Vector (2).png" alt="" /></li></a>
+                <li><a href="#"><img src="../img/Vector (3).png" alt="" /></a></li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="col-md-3 px-0">
+            <ul class="nav resources flex-column pt-4 pt-md-0">
+              <h4>RESOURCES</h4>
+              <li>Why choose FundMyLaptop</li>
+              <li>How P2P Lending works</li>
+              <li>About FundMyLaptop</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
       </div>
-   
-      <div class="card">
-       <div class="card-header">
-        <a class="card-link" data-toggle="collapse" href="#menu3" aria-expanded="false" aria-controls="menu3">Question III?
-         <span class="collapsed">
-          <i class="fa icon fa-plus"></i>
-         </span>
-         <span class="expanded">
-          <i class="fa icon fa-minus"></i>
-         </span> 
-        </a> 
-          </div> 
-          <div id="menu3" class="collapse">
-             <div class="card-body">
-              Taj Mahal is built on the banks of river Yamuna and is surrounded by a beautiful garden. Mughal Emperor Shah
-             </div>
-       </div>
+      <div class="container mt-4 text-light">
+        <div class="row mx-0 bye justify-content-md-between justify-content-center">
+          <p class="mb-0">2020 &copy; Copyright All Rights Reserved</p>
+  
+          <ul class="nav bye">
+            <li>FAQ</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+          </ul>
+        </div>
       </div>
-   
-      <div class="card">
-       <div class="card-header">
-        <a class="card-link" data-toggle="collapse" href="#menu4" aria-expanded="false" aria-controls="menu4">Question iv?
-         <span class="collapsed">
-          <i class="fa icon fa-plus"></i>
-         </span>
-         <span class="expanded">
-          <i class="fa icon fa-minus"></i>
-         </span> 
-        </a> 
-          </div> 
-          <div id="menu4" class="collapse">
-             <div class="card-body">
-              Taj Mahal is built on the banks of river Yamuna and is surrounded by a beautiful garden. Mughal Emperor Shah
-             </div>
-       </div>
-      </div>
-      
-     </div>
-   </div>
-  </div>
- </section>
- <section>
-  <center>
-   <div class="down">
-    <p class="">Looking for something else?</p>
-    <br>
-    <button class="btn fml-btn-icon btn-outline-fml-secondary">Contact Us</button>
-   </div>
-  </center>
- </section>
+    </footer>
 
 
- <footer class="footer">
-  <div class="footer-li">
-   <div class="left">
-    <ul>
-     <li><img src="../img/Group 3005.png" alt="" /></li>
-     <li>address</li>
-     <li>email address</li>
-     <li>phone</li>
-    </ul>
-
-    <div>
-     <ul class="footer-icons">
-      <li>
-       <a href="#"><img src="../img/Vector (1).png" alt="" /></a>
-      </li>
-      <li><a href="#"><img src="../img/Vector (2).png" alt="" /></li></a>
-      <li><a href="#"><img src="../img/Vector (3).png" alt="" /></a></li>
-     </ul>
-    </div>
-   </div>
-
-   <div class="right">
-    <ul>
-     <h4>RESOURCES</h4>
-     <li>Why choose FundMyLaptop</li>
-     <li>How P2P Lending works</li>
-     <li>About FundMyLaptop</li>
-     <li>Contact Us</li>
-    </ul>
-   </div>
-  </div>
-  <div class="container mt-4 bottom">
-   <p>2020 &copy; Copyright All Rights Reserved</p>
-
-   <ul>
-    <li>FAQ</li>
-    <li>Privacy Policy</li>
-    <li>Terms & Conditions</li>
-   </ul>
-  </div>
- </footer>
-
- <script src="../js/bootstrap-js/jquery.js"></script>
- <script src="../js/bootstrap-js/bootstrap.js"></script>
- <script src="../js/bootstrap-js/popper.js"></script>
- <script src="../styleguide/kss-assets/vendor/jquery.js"></script>
-  <script src="../styleguide/kss-assets/vendor/prism.js"></script>
-  <script src="../styleguide/kss-assets/js/kss.js"></script>
+    <script src="../js/bootstrap-js/jquery.js"></script>
+    <script src="../js/bootstrap-js/bootstrap.js"></script>
+    <script src="../js/bootstrap-js/popper.js"></script>
 </body>
 
 </html>
