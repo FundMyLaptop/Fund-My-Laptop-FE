@@ -42,3 +42,48 @@ p {
     transition: ease-in-out 0.7s;
 
 }
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+@media (max-width: 100px) {
+    p {
+      font-size: 3px;
+      line-height: 0;
+    }
+  }
+  #main {
+    margin: 0;
+    padding: 10px;
+    border-radius: 1px;
+    text-align: center;
+    
+  }
+  @media (max-width: 100px) {
+    #main {
+      margin: 0;
+    }
+  }
+    img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 100px) {
+    #background-img {
+        max-width: 50%;
+        display: block;
+        height: auto;
+        margin: 0 auto;
+    }
+  }

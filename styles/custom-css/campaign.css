@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   color: rgba(4, 23, 42, 0.8);
   overflow-x: hidden;
@@ -9,19 +14,21 @@ main {
   background: #fafafa;
 }
 
-.pleading_funding {
-  margin: 50px 80px 50px 0px;
-  align-items: flex-start;
+.content{
+  padding-left: 5rem !important;
 }
-
+.pleading_funding{
+  padding: 0.5rem 2rem !important;
+  margin-top: 100px !important;
+}
 .plead_fund {
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 47px;
   color: rgba(4, 23, 42, 0.8);
-  margin-left: 22px;
-  margin-bottom: 30px;
+  /* margin-left: 22px;
+  margin-bottom: 30px; */
 }
 
 .page-links {
@@ -39,6 +46,11 @@ main {
   font-size: 24px;
   line-height: 31px;
   color: rgba(4, 23, 42, 0.8);
+}
+
+.deVideoDiv video{
+  width: 95%;
+  height: 450px;
 }
 
 .showcase {
@@ -103,6 +115,7 @@ main {
   font-size: 16px;
   line-height: 36px;
   color: rgba(4, 23, 42, 0.8);
+  text-align: justify;
 }
 
 .recommendations {
@@ -180,7 +193,7 @@ main {
 }
 
 .funding_socials a {
-  margin-right: 20px;
+  margin-right: 25px;
   color: rgba(4, 23, 42, 0.8);
   justify-content: flex-end;
 }
@@ -191,43 +204,43 @@ main {
 
 
 
-@media only screen and (max-width: 480px) {
-
-  .showcase {
-    width: 100%;
-    height: 179px;
+@media(max-width:800px){
+  .pleading_funding{
+    padding: 0.5rem 2rem !important;
   }
-
-  .pleading_funding {
-    margin: auto 5px;
-  }
-
-  .page-links a, .page-links span {
+  .page-links a{
     font-size: 16px;
-    line-height: 21px;
   }
-
-  .row {
-    margin: auto;
+  .page-links span{
+    font-size: 16px;
   }
-
-  .pleading_funding p {
+  .plead_fund{
     font-size: 26px;
-    line-height: 31px;
   }
-
-}
-
-@media only screen and (max-width: 600px){
-
-  .pleading_funding {
-    margin: auto 5px;
+  .deVideoDiv video{
+    height: 250px;
   }
-}
-
-@media only screen and (max-width: 970px) {
-  .showcase {
-    width: 100%;
+  .anotherSwipe{
+    padding-top: 40px;
+  }
+  .title_laptop_detail{
+    margin-left: 20px;
+  }
+  .recommenders{
+    margin-left: 20px;
+  }
+  .no_of_recommmendations{
+    margin: 5px;
+    padding-left: 4px;
+  }
+  .each_detail_row{
+    margin-left: 20px;
+  }
+  .toAdjust{
+    margin-left: 0 !important;
+  }
+  .fundButton{
+    margin-top: 20px;
   }
 }
 
