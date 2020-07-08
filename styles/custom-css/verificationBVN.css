@@ -1,0 +1,71 @@
+/* verification progress indicator styles */
+.verification-progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.verify-item {
+  width: 25%;
+  border-top: 3px solid #c0c0c0;
+  text-align: center;
+  position: relative;
+}
+
+.verify-item.active {
+  border-top-color: var(--fml-secondary);
+}
+
+.verify-item .text {
+  font-size: 12px;
+  padding-top: 30%;
+  display: block;
+}
+
+.verify-item .verify-circle {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 0;
+  width: 45%;
+  padding-top: 45%;
+  border-radius: 50%;
+  background: #c0c0c0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  color: white;
+}
+
+.verify-item .verify-circle .progress-number {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  font-size: calc(12px + 12 * ((100vw - 320px) / (1366 - 320)));
+  font-weight: 500;
+}
+
+.verify-item .verify-circle.active {
+  background: var(--fml-secondary);
+}
+
+.required {
+  font-size: 80%;
+  color: red;
+}
+
+.verify-form-bvn input,
+.verify-form-bvn select {
+  height: 45px;
+  border: 1px solid rgba(4, 23, 42, 0.7);
+}
+
+.verify-form-bvn button {
+  font-weight: 500;
+}
+/*# sourceMappingURL=verificationBVN.css.map */
