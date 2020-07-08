@@ -1,0 +1,87 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    margin: 0 auto;
+    width: 50%;
+}
+
+
+.wrapper-content {
+    width: 23%;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.number {
+    border-radius: 80%;
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    background-color: #C0C0C0;
+}
+
+
+#active-number {
+    background-color: #FB3F5C;
+    color: #ffffff;
+}
+
+
+.divider-line {
+    height: 1px;
+    border: 1px solid #C0C0C0;
+    position: absolute;
+    width: 7.5rem;
+    top: 33%;
+    left: 80%;
+}
+
+
+.save {
+    text-align: right;
+    text-decoration: none;
+}
+
+
+.skip {
+    height: 43px;
+    margin-bottom: 5px;
+    background-color: #E5E5E5;
+    color: #04172A;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+.save-btn {
+    background-color: #FB3F5C;
+    color: #ffffff;
+    border: none;
+}
+
+
+.p-text {
+    margin-right: 5rem;
+}
+
+
+.fund-color {
+    color: #FB3F5C;
+}
+
+
+.call-us {
+    color: #FB3F5C;
+}
+
+
+.account-info {
+    width: 50%;
+}
