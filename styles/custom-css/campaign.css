@@ -17,6 +17,10 @@ main {
 .content{
   padding-left: 5rem !important;
 }
+.pleading_funding{
+  padding: 0.5rem 2rem !important;
+  margin-top: 100px !important;
+}
 .plead_fund {
   font-style: normal;
   font-weight: normal;
@@ -42,6 +46,11 @@ main {
   font-size: 24px;
   line-height: 31px;
   color: rgba(4, 23, 42, 0.8);
+}
+
+.deVideoDiv video{
+  width: 95%;
+  height: 450px;
 }
 
 .showcase {
@@ -184,7 +193,7 @@ main {
 }
 
 .funding_socials a {
-  margin-right: 20px;
+  margin-right: 25px;
   color: rgba(4, 23, 42, 0.8);
   justify-content: flex-end;
 }
@@ -195,63 +204,43 @@ main {
 
 
 
-@media only screen and (max-width: 578px) {
-
-  .showcase {
-    width: 100%;
-    height: 179px;
-    background-size: none;
-    background-position: none;
+@media(max-width:800px){
+  .pleading_funding{
+    padding: 0.5rem 2rem !important;
   }
-  .content{
-    padding-left: 0 !important;
-  }
-  .pleading_funding {
-    margin: auto 5px;
-  }
-
-  .page-links a, .page-links span {
+  .page-links a{
     font-size: 16px;
-    line-height: 21px;
   }
-
-  .row {
-    /* margin: auto; */
+  .page-links span{
+    font-size: 16px;
   }
-
-  .pleading_funding p {
+  .plead_fund{
     font-size: 26px;
-    line-height: 31px;
   }
-  .description_detail {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 36px;
-    color: rgba(4, 23, 42, 0.8);
-    text-align: justify;
+  .deVideoDiv video{
+    height: 250px;
   }
-  .btn-down{
-    margin-top: .5rem;
+  .anotherSwipe{
+    padding-top: 40px;
   }
-}
-
-@media only screen and (min-width: 768px){
-
-  .pleading_funding {
-    margin: auto 5px;
+  .title_laptop_detail{
+    margin-left: 20px;
   }
-  .content{
-    padding-left: 0 !important;
+  .recommenders{
+    margin-left: 20px;
   }
-}
-
-@media only screen and (max-width: 970px) {
-  .showcase {
-    width: 100%;
+  .no_of_recommmendations{
+    margin: 5px;
+    padding-left: 4px;
   }
-    .content{
-    padding-left: 0;
+  .each_detail_row{
+    margin-left: 20px;
+  }
+  .toAdjust{
+    margin-left: 0 !important;
+  }
+  .fundButton{
+    margin-top: 20px;
   }
 }
 
