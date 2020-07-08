@@ -1,0 +1,125 @@
+.loginbtn{
+    background: #FB3F5C;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+.verification-title{
+margin: 0 auto;
+font-family: DM Sans;
+text-align: center;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+color: #04172A;
+}
+
+.numbers{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    left: 50%;
+
+    transform: translateX(-50%);
+    
+}
+.number{
+    text-align: center;
+    z-index: 1500;
+    margin: 0 40px;
+    background-color: #C0C0C0;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+.number-texts{
+    margin: 0 14px;
+    margin-left: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.line{
+    background-color: #C0C0C0;
+    width: 430px;
+    height: 3px;
+    margin: 0 auto;
+    display: flex;
+    transform: translateY(13px);
+}
+.line3{
+    background-color: #FB3F5C;
+    width: 60px;
+    height: 3px;
+    margin: 0 auto;
+    display: flex;
+    transform: translate(56px,10px);
+}
+.row-body{
+    margin: 0 auto;
+}
+.text-heading{
+font-weight: 600;
+text-align: left;
+font-size: 18px;
+color: #04172A;
+}
+.lists{
+    font-size: 12px;
+    margin-left: 0;
+}
+.sub-heading{
+    font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height */
+
+
+color: #04172A;
+}
+
+.example{
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 31px;
+
+color: #04172A;
+}
+.btn-correct{
+    background: #FB3F5C;
+border-radius: 19.5px;
+padding: 0 20px;
+outline: none;
+border: none;
+color: white;
+display: flex;
+transform: translate(428px,-26px);
+}
+.btn-incorrect{
+    background: #04172A;
+    border-radius: 19.5px;
+    padding: 0 20px;
+    outline: none;
+    border: none;
+    color: white;
+    display: flex;
+    transform: translate(416px,-30px);
+}
+.list1{
+    margin: 10px 0;
+}
+.submit{
+background: #FB3F5C;
+margin: 0 auto;
+color: white;
+box-shadow: 0px 4px 15px rgba(251, 63, 92, 0.2);
+outline: none;
+border: 0;
+font-size: 20px;
+padding: 2px 50px;
+border-radius: 5px;
+}
