@@ -41,14 +41,18 @@
             </ul>
         </div>
     </nav>
-    <div class="section ">
+    <div class="section py-5 ">
 
         <div class="container">
             <div class="col-md-12 pb-4">
 
                 <form>
-                    <label for="customRange" style="font-size: 36px !important; font-weight: 500;">User Profile</label>
-                    <input type="range" min="0" max="100" class="custom-range" id="customRange" name="points1">
+                    <label for="customRange" style="font-size: 36px !important; font-weight: 500;">User Profile is
+                        almost Complete!</label>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-animated bg-danger" role="progressbar" style="width: 70%"
+                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </form>
             </div>
 
@@ -59,9 +63,9 @@
                     <div class="card py-2 px-2">
                         <div class="card-title px-3 py-2">
 
-                            <h5 class="pt-3" style="font-size: 20px !important;">This helps us verify your identity and
-                                provides additional security to your
-                                account</h5>
+                            <h5 class="pt-3" style="font-size: 32px !important;">Link your Accounts</h5>
+                            <p class="pt-3" style="font-size: 20px !important;">This helps us verify your identity and
+                                provides additional security to your account</p>
                         </div>
 
                         <div class="row">
@@ -69,43 +73,43 @@
 
                             <div class="col-md-9 mx-auto">
                                 <div class="card-title">
-                                    <div class="row">
-                                        <div class="col-md-3"> <img src="../img/BO.png" alt="..."
-                                                class="float-left img-thumbnail rounded-circle"
-                                                style="width: 80px; height: 80px;"></div>
-                                        <div class="col-md-5">
-                                            <div class="custom-file mt-4 ">
-                                                <input type="file" class="custom-file-input float-right"
-                                                    id="customFile">
-                                                <label class="custom-file-label" for="customFile">Upload your
-                                                    picture</label>
+                                    <div class="row py-5 ">
+
+                                        <div class="col-md-12">
+                                            <p class="float-left"><img src="../img/facebook.svg" alt=""> Facebook</p>
+                                            <div class=" float-right custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1"></label>
                                             </div>
+
+                                        </div>
+                                        <div class="col-md-12">
+                                            <p class="float-left"> <img src="../img/twitter.svg" alt=""> Twitter</p>
+                                            <div class="float-right custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                                <label class="custom-control-label" for="customSwitch2"></label>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-12">
+                                            <p class="float-left"> <img src="../img/linkedin.svg" alt=""> LinkedIn</p>
+                                            <div class=" float-right custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                                <label class="custom-control-label" for="customSwitch3"></label>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="card-body">
+                                <div class="card-body pb-4">
 
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Full Name</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp" placeholder="Blessing Jou">
+                                    <form class="pb-4">
 
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Location</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1"
-                                                placeholder="Abuja">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Occupation</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1"
-                                                placeholder="Designer">
-                                        </div>
-
-                                        <button type="submit"
-                                            class="float-right btn btn-primary px-5 py-2">Next</button>
+                                        <button type="submit" class="float-left btn btn-secondary px-4 py-2"><img
+                                                src="../img/left.svg" alt=""> Back</button>
+                                        <button type="submit" class="float-right btn btn-primary px-4 py-2">Next <img
+                                                src="../img/right.svg" alt=""></button>
                                     </form>
                                 </div>
                             </div>
