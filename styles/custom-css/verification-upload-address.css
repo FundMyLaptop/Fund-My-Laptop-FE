@@ -86,3 +86,10 @@
   font-size: initial;
   text-transform: uppercase;
 }
+.dropzone .dz-preview.dz-image-preview {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  max-width: 100%;
+  height: auto;
+}
