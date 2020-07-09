@@ -21,11 +21,14 @@ body {
       padding: 48px 0 39px 0;
       margin-left: 60px;
     }
+    .breadcrumb-item{
+        font-size: 15px;
+    }
     .pcolor{
         color: #707070;
       }
       .f-12{
-        font-size: 12px;
+        font-size: 15px;
         margin-left: 60px;
       }
       .rowbar{
@@ -145,9 +148,6 @@ h5{
     padding-bottom: 15px;
 }
 
- /*footer styles */
-/* Foooter start here */
-
 @media only screen and (max-width: 812px) {
     .rowbar{
       width: 50%;
@@ -198,16 +198,21 @@ h5{
     
     }  
     .name{
-        width: 140%;
+        width: 135%;
+        margin-bottom: 0;
+    }
+    .email{
+        width: 98%;
         margin-bottom: 0;
     }
     .message-area{
-        width: 140%;
+        width: 135%;
         margin-top: 10px;
+      
     }
     .pfg-email{
         margin-top: 130px;
-        margin-left: -255px;
+        margin-left: -258px;
     }
     
     .p-message{
