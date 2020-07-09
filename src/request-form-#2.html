@@ -22,6 +22,12 @@
             margin-bottom: 50px;
             border-radius: 3px;
         }
+        
+        li {
+            display: inline-flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
 
         i {
             color: white;
@@ -59,7 +65,7 @@
         }
 
         .continue {
-            background-color: #BABABA;
+            background-color: gray;
         }
 
         .buttons {
@@ -74,10 +80,39 @@
             width: 95%;
             border-top: 1px solid white;
         }
+        
+        .pcolor{
+            color: #707070;
+        }        
+        
+        .pcolor.Upload{
+            color: #999898;
+        }
 
-        textarea {
-    resize: none;
-}
+        
+        .f-12 {
+            padding-inline-start: 0;
+        }
+
+        .h4p, textarea {
+            color: rgba(4, 23, 42, 0.3);
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: normal;
+            padding: .5rem ;
+            resize: none;
+        }
+
+        textarea:active, textarea:focus {
+            color: unset;
+        }
+
+
+        @media only screen and (min-width: 775px) {
+        .f-12 {
+            font-size: 16px;
+        }
+    }
     </style>
 </head>
 
@@ -86,7 +121,7 @@
     <header class="container-fluid shadow-sm">
         <nav class="navbar nav-top navbar-expand-md navbar-light container-md px-0">
             <a class="navbar-brand" href="#">
-                <img style="width: 100%; height: 100%;" src="../img/layer1.png" alt="#" />
+                <img style="width: 100%; height: 100%;" src="../img/layer1.png" alt="" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,14 +152,24 @@
 
     <section class="container py-5">
         <div class="row d-none d-sm-block">
-            <div class="col-sm-4">
-                <p class=""> Dashboard > Create Request <span class="font-weight-bold">Add Description</span></p>
+            <div class="col-12">
+                <ol class="f-12" style="background:none;">
+                    <li>
+                        <a class="pcolor" href="#"> Dashboard ></a>
+                    </li>
+                    <li>
+                        <a class="pcolor" href="#"> Create Request</a>
+                    </li>
+                    <li>
+                        <a class="pcolor" href="#"> <b> > </b> <span class="font-weight-bold"> Add Description</span></a>
+                    </li>
+                </ol>
             </div>
         </div>
         <h3 class="mt-4 font-weight-bold">Add a description</h3>
-        <p class="Upload">This description would be visible to potential funders </p>
+        <p class="pcolor Upload">This description would be visible to potential funders </p>
         <div class="row">
-            <div class="col-3 col-sm-2 hr-disabled "></div>
+            <div class="col-3 col-sm-2 hr-disabled d-none d-sm-block"></div>
             <div class="col-3 col-sm-2 hr-disabled hr-active"></div>
             <div class="col-3 col-sm-2 hr-disabled "></div>
             <div class="col-sm-6"></div>
@@ -135,9 +180,9 @@
             <div class="col-sm-3"></div>
             <div class=" col-12 col-sm-6">
                 <h4 class="font-weight-bold text-center">Add a description</h4>
-                <p class="text-center mb-5">Why should people invest in this cause?</p>
+                <p class=" h4p text-center mb-5">Why should people invest in this cause?</p>
                 <!-- <input class="w-100" type="range" name="" id="" style="background-color:red"> -->
-                <textarea class="w-100" name="" id="" cols="30" rows="10"></textarea>
+                <textarea placeholder="Writing a good description usually increases your chances of getting funds by 63%" class="w-100" name="" id="" cols="30" rows="10"></textarea>
                 <div class="d-flex justify-content-between mt-4">
                     <button class="btn  px-4 my-2 my-sm-0" type="submit">Back</button>
                     <button class="continue btn btn-light text-white px-4 my-2 my-sm-0" type="submit">continue
