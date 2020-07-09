@@ -96,3 +96,10 @@ body {
   max-width: 100%;
   height: auto;
 }
+.dropzone .dz-preview .dz-image {
+  width: 100%;
+  height: 100%;
+}
+.dropzone .dz-preview .dz-error-message {
+  display: none;
+}
