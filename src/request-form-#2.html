@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Request Form Two</title>
+    <style>
+        body {
+            font-family: "DM Sans", Sans-Serif;
+        }
+
+        .hr-tabs {
+            width: 80px;
+            height: 13px;
+            margin-bottom: 50px;
+            border-radius: 3px;
+        }
+
+        i {
+            color: white;
+        }
+
+        .hr-active {
+            background-color: red !important;
+        }
+
+        .hr-disabled {
+            margin-left: 10px;
+            height: 10px;
+            background-color: grey;
+            width: 40px;
+            border-radius: 3px;
+        }
+
+        .divbig {
+            background-color: grey;
+            width: 800px;
+            height: 400px;
+            position: relative;
+            border-radius: 4px;
+            align-self: center;
+            margin: 0 auto;
+        }
+
+        .largemb {
+            margin-bottom: 100px;
+            font-size: 12px;
+        }
+
+        footer {
+            background-color: black;
+        }
+
+        .continue {
+            background-color: #BABABA;
+        }
+
+        .buttons {
+            position: relative;
+            bottom: 150px;
+        }
+
+        .break {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: 0;
+            width: 95%;
+            border-top: 1px solid white;
+        }
+
+        textarea {
+    resize: none;
+}
+    </style>
+</head>
+
+
+<body>
+    <header class="container-fluid shadow-sm">
+        <nav class="navbar nav-top navbar-expand-md navbar-light container-md px-0">
+            <a class="navbar-brand" href="#">
+                <img style="width: 100%; height: 100%;" src="../img/layer1.png" alt="#" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link px-4 font-weight-bold" href="#">Lend</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 font-weight-bold" href="#">Borrow</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 font-weight-bold" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-md-4 font-weight-bold" href="#">
+                            <img width="100%" height="100%" src="../img/UnleDoePix.png" alt="#"
+                                class="px-4 mx-3 my-2 my-sm-0" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container py-5">
+        <div class="row d-none d-sm-block">
+            <div class="col-sm-4">
+                <p class=""> Dashboard > Create Request <span class="font-weight-bold">Add Description</span></p>
+            </div>
+        </div>
+        <h3 class="mt-4 font-weight-bold">Add a description</h3>
+        <p class="Upload">This description would be visible to potential funders </p>
+        <div class="row">
+            <div class="col-3 col-sm-2 hr-disabled "></div>
+            <div class="col-3 col-sm-2 hr-disabled hr-active"></div>
+            <div class="col-3 col-sm-2 hr-disabled "></div>
+            <div class="col-sm-6"></div>
+        </div>
+    </section>
+    <section class="container px-4 px-sm-auto ">
+        <div class="row py-5 mb-5 rounded" style="background-color:#EFEFEF">
+            <div class="col-sm-3"></div>
+            <div class=" col-12 col-sm-6">
+                <h4 class="font-weight-bold text-center">Add a description</h4>
+                <p class="text-center mb-5">Why should people invest in this cause?</p>
+                <!-- <input class="w-100" type="range" name="" id="" style="background-color:red"> -->
+                <textarea class="w-100" name="" id="" cols="30" rows="10"></textarea>
+                <div class="d-flex justify-content-between mt-4">
+                    <button class="btn  px-4 my-2 my-sm-0" type="submit">Back</button>
+                    <button class="continue btn btn-light text-white px-4 my-2 my-sm-0" type="submit">continue
+                        ></button>
+                </div>
+
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </section>
+
+
+    <footer class="container-fluid" style="background-color: #041721;">
+        <div class="container pt-5" style="color: white;">
+            <div class="row">
+                <div class="d-none d-sm-block col-sm-4">
+                    <a class="navbar-brand" href="#">
+                        <img style="width: 100%; height: 100%;" src="../img/footer-logo.png" alt="#" />
+                    </a>
+                    <p>23, intel chip silicon valley</p>
+                    <p>info@fundmylaptop.com</p>
+                    <p>09023144819</p>
+                </div>
+                <div class="col-sm-4 pt-sm-5 text-center text-sm-left">
+                    <p class="">Why choose FundMyLaptop</p>
+                    <p>How P2P Lending works</p>
+                </div>
+                <div class="col-sm-4 pt-sm-5 text-center text-sm-left">
+                    <p>About FundMyLaptop</p>
+                    <p>Contact Us</p>
+                </div>
+            </div>
+            <hr class="d-block d-sm-none" style="background-color: white; opacity: 0.5;" />
+            <div class="row">
+                <div class="col-12 d-block d-sm-none text-center text-sm-left">
+
+                    <p>23, intel chip silicon valley</p>
+                    <p>info@fundmylaptop.com</p>
+                    <p>09023144819</p>
+                </div>
+            </div>
+            <hr class="d-block d-sm-none" style="background-color: white; opacity: 0.5;" />
+            <div class="row pt-sm-2 pb-sm-3">
+                <div class="col-12 col-sm-12 text-center text-sm-left">
+                    <i class="fa fa-facebook pr-sm-4 px-3 pl-sm-0"></i>
+                    <i class="fa fa-instagram pr-sm-4 px-3"></i>
+                    <i class="fa fa-twitter pr-sm-4 px-3"></i>
+                </div>
+            </div>
+            <hr class="d-block d-sm-none" style="background-color: white; opacity: 0.5;" />
+            <hr class="d-none d-sm-block" style="background-color: white; opacity: 0.3;" />
+            <div class="row text-center text-sm-left">
+                <div class="col-12 col-sm-6 pt-4 pt-sm-0">
+                    <p>2020 Coyright All rights reserved</p>
+                </div>
+                <div class="col-12 col-sm-6 order-first order-sm-last">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a>FAQ</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a>Privacy Policy</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a>Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
