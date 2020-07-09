@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 /* verification progress indicator styles */
 .verification-progress {
   display: -webkit-box;
