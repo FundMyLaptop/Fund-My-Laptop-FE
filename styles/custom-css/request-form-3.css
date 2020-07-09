@@ -145,64 +145,8 @@ h5{
     padding-bottom: 15px;
 }
 
-/* .card-body{
-    margin-top: 15px;
-    padding-bottom: 0;
-} */
-
-
-  /*footer styles */
+ /*footer styles */
 /* Foooter start here */
-.news-letter{
-    background: url(/img/newsLetter.png) center  no-repeat;
-    background-size: cover;
-    min-height: 578px;
-}
-.news-letter-text>p{
-    font-size: 24px;
-    line-height: 35px;
-    color: white;
-    width: 75%;
-}
-#subscribe-input{
-    width: 100%;
-    height: 80px;
-    border: 3px solid rgba(255, 255, 255, 0.7);
-    border-radius: 5px;
-    background: transparent;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    color: white;
-    font-size: 32px;
-    line-height: 42px
-}
-#subscribe-input::placeholder{
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 42px;
-    color: rgba(255, 255, 255, 0.5);
- 
-}
-.subscribe-btn{
-    width: 100%;
-    height: 80px;
-    background: #FB3F5C;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 42px;
-    color: white;
-
-}
-.page-footer{
-    background: #04172A;
-    color: white;
-}
-.page-footer a{
-    font-size: 18px;
-    line-height: 24px;
-}
 
 @media only screen and (max-width: 812px) {
     .rowbar{
