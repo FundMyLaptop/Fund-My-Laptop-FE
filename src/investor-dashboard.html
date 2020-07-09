@@ -2,811 +2,805 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../styles/bootstrap-css/bootstrap.css" />
-    <link rel="stylesheet" href="../styles/custom-css/blog-list.css" />
-    <link rel="stylesheet" href="../styles/custom-css/contact-us.css">
-
-    <title>Dashoard &mdash; Fundee</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
-            font-family: 'DM Sans', sans-serif;
-            background-color: #fff;
-            color: #04172A;
-        }
-
-        body {
-            height: 100%;
-        }
-
-        #page-container {
-            position: relative;
-            min-height: 100%;
-        }
-
-        #content-wrap {
-            padding-bottom: 400px;
-        }
-
-        #footer-main {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 400px;
-            background: #04172A;
-            margin-top: -400px;
-        }
-
-        .container-main {
-            margin-top: 100px;
-        }
-
-        .pink-text {
-            text-decoration: none;
-            color: #FB3F5C
-        }
-
-        nav {
-            background: rgba(4, 23, 42, 0.03);
-            padding: 15px 30px;
-            font-weight: 500;
-            font-size: 1em;
-        }
-
-        main {
-            flex: 1 1 0;
-            /* height: 100vh; */
-            padding: 0 20px;
-        }
-
-        .text--secondary {
-            color: #FB3F5C;
-        }
-
-        .user {
-            margin-top: 50px;
-            margin-left: 10px;
-        }
-
-        .user__intro,
-        .user p {
-            margin: 5px 0;
-        }
-
-        .user-carousel {
-            margin-top: 50px;
-            margin-bottom: 50px;
-            margin-left: 10px;
-            margin-right: 10px;
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: hidden;
-        }
-
-        .fa {
-            font-size: 30px;
-            cursor: pointer;
-        }
-
-        .left-arrow {
-            margin-top: 120px;
-            position: absolute;
-            left: 0;
-            margin-left: 60px;
-        }
-
-        .right-arrow {
-            margin-top: 120px;
-            position: absolute;
-            right: 0;
-            margin-right: 60px;
-        }
-
-        .user-financials {
-            display: flex;
-            flex-direction: column;
-            flex: 0 0 auto;
-            margin-right: 20px;
-            width: 250px;
-            height: 258px;
-            background: rgba(4, 23, 42, 0.03);
-        }
-
-        .user-financials button {
-            width: 100px;
-            margin-top: 20px;
-            background: #FB3F5C;
-            box-shadow: 0px 4px 15px rgba(251, 63, 92, 0.2);
-            border-radius: 5px;
-            border: none;
-            padding: 10px 0px 10px 0px;
-            color: #FFFFFF;
-            cursor: pointer;
-        }
-
-        .user-details {
-            display: flex;
-            width: 100%;
-        }
-
-        progress[value] {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 95%;
-            margin: auto;
-            height: 15px;
-        }
-
-        progress[value]::-webkit-progress-bar {
-            background-color: #eee;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-            border-radius: 3px;
-        }
-
-        progress[value]::-webkit-progress-value {
-            background: #04172A;
-            border-radius: 3px
-        }
-
-        .account {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .account-header {
-            font-size: 1.2em;
-            margin-bottom: 0;
-            margin-left: 10px;
-        }
-
-        .account__block {
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: 10px;
-        }
-
-        .account__block--details {
-            max-width: 100%;
-            flex: 0 0 48%;
-            padding: 15px;
-            background: rgba(4, 23, 42, 0.05);
-            margin-right: auto;
-            margin-bottom: 10px;
-        }
-
-        .account__block--details span {
-            font-size: .7em;
-            font-weight: lighter;
-            margin-right: 5px;
-        }
-
-        .account__progress {
-            flex: 1 1 0;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .progress-ring__circle {
-            transition: 0.35s stroke-dashoffset;
-            transform: rotate(-90deg);
-            transform-origin: 50% 50%;
-        }
-
-        .progress__value {
-            position: relative;
-            margin: 0;
-            background-color: transparent;
-            top: -180px;
-        }
-
-        .progress__value h1,
-        .progress__value h6 {
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            font-size: 3em;
-        }
-
-        .progress__value h6 {
-            font-size: 1em;
-            font-weight: lighter;
-        }
-
-        .table {
-            margin-top: -70px;
-        }
-
-        .table header {
-            font-size: 1.2em;
-        }
-
-        .table__container {
-            overflow: scroll;
-            margin-top: 10px;
-            margin-bottom: 50px;
-        }
-
-        .table__container::-webkit-scrollbar {
-            display: none;
-        }
-
-        table {
-            font-size: .8em;
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        tr {
-            border-bottom: 2px solid rgba(4, 23, 42, 0.1);
-        }
-
-        thead {
-            font-weight: bold;
-            background: #FB3F5C;
-            color: #fff;
-            border-bottom: 0px;
-        }
-
-        td {
-            padding: 10px 10px;
-            text-align: center;
-            font-weight: normal;
-        }
-
-        tbody td {
-            padding: 15px 5px;
-        }
-
-
-        @media screen and (max-width: 768px) {
-            .user p {
-                font-size: 11px;
-            }
-
-            .fa {
-                font-size: 24px;
-                cursor: pointer;
-            }
-
-            .left-arrow {
-                margin-top: 120px;
-                position: absolute;
-                left: 0;
-                margin-left: 10px;
-            }
-
-            .right-arrow {
-                margin-top: 120px;
-                position: absolute;
-                right: 10px;
-                margin-right: 0px;
-            }
-
-            td {
-                padding: 5px 5px;
-                font-size: 8px;
-            }
-
-            tbody td {
-                padding: 10px 5px;
-            }
-
-            thead {
-                font-weight: bold;
-                font-size: 12px;
-                background: #FB3F5C;
-                color: #fff;
-                border-bottom: 0px;
-            }
-
-            .account {
-                margin-top: 40px;
-                text-align: center;
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            .account__block {
-                margin: auto;
-            }
-            .account__block--details small{
-                font-size: 12px;
-            }
-            .account__block--details h2{
-                font-size: 16px;
-            }
-            .account__block--details span{
-                font-size: 14px;
-            }
-
-        }
-
-        @media screen and (min-width: 768px) {
-            nav {
-                padding: 25px 50px;
-                font-size: 1.5em;
-            }
-
-            main {
-                padding: 0 50px;
-            }
-
-            .account {
-                margin-top: 40px;
-            }
-
-            .account__block {
-                width: 80%;
-            }
-
-            .account__block--details {
-                width: 100%;
-                flex: 0 0 32%;
-                padding: 20px;
-            }
-
-            .account__progress {
-                width: 100%;
-                margin-top: -20px;
-            }
-
-            .table__container {
-                overflow: auto;
-            }
-
-            thead td {
-                padding: 20px;
-            }
-
-            td {
-                padding: 10px 10px;
-                font-size: 14px;
-            }
-
-            tbody td {
-                padding: 25px 15px;
-            }
-
-            tr {
-                border-bottom: 2px solid rgba(4, 23, 42, 0.1);
-            }
-        }
-
-        @media screen and (min-width: 992px) {
-            nav {
-                padding: 25px 9%;
-                font-size: 1.5em;
-            }
-
-            main {
-                padding: 0 9%;
-            }
-
-            .user__intro {
-                font-size: 2em;
-            }
-
-            .account {
-                flex-direction: initial;
-            }
-
-            .account__block {
-                width: 75%;
-                height: 0;
-            }
-
-            .account__block--details {
-                padding: 20px 40px;
-                padding-bottom: 0;
-            }
-
-            .table {
-                margin-top: -40px;
-            }
-
-        }
-    </style>
-</head>
-
-<body>
-    <div id="page-container">
-
-        <div id="content-wrap">
-            <div class="nav-container container-fluid shadow-sm">
-                <nav class="navbar nav-top navbar-expand-md navbar-light container-md px-0">
-                    <a class="navbar-brand" href="#">
-                        <img src="../img/layer1.png" />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto align-items-center">
-                            <li class="nav-item">
-                                <a class="nav-link px-4 font-weight-bold" href="#">Lend</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link px-4 font-weight-bold" href="#">Borrow</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link px-4 font-weight-bold" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pl-md-4 font-weight-bold" href="#">
-                                    <button class="btn btn-fml-secondary px-4">
-                                        Login
-                                    </button>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="container-main">
-                <div class="">
-                    <main>
-                        <section class="user">
-                            <h1 class="user__intro">Welcome Back, <span class="text--secondary">Chandan</span></h1>
-                            <p>Campaingn available for investing. <span><a class="pink-text" href="#">View More
-                                        ></a></span>
-                            </p>
-                        </section>
-                        <section class="user-carousel" id="user-main">
-                            <div class="left-arrow">
-                                <i id="left-button" class="fa fa-chevron-left" aria-hidden="true"></i>
-                            </div>
-                            <div class="user-financials">
-                                <div style="margin-left: 20px;">
-                                    <div class="user-details">
-                                        <img src="../img/Ellipse_43.png" alt="A" style="height: 60px; width: 60px;">
-                                        <div style="margin-left: 10px;">
-                                            <h1 style="font-size: 24px; line-height: 24px; margin-bottom: 0;">John Doe
-                                            </h1>
-                                            <p style="margin: 0;">Intern</p>
-                                        </div>
-                                    </div>
-                                    <p style="margin-bottom: 20px;"><b>Loan Amount: $1,000</b></p>
-                                    <progress style="margin: 0;" value="70" max="100"></progress>
-                                    <div style="display: flex;">
-                                        <p style="font-size: 10px; line-height: 10px; margin-top: 10px;">$700 Funded</p>
-                                        <div style="flex: 1"></div>
-                                        <p
-                                            style="font-size: 10px; line-height: 10px; margin-top: 10px; margin-right: 15px;">
-                                            $300 Left</p>
-                                    </div>
-                                    <button>
-                                        Invest Now
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="user-financials">
-                                <div style="margin-left: 20px;">
-                                    <div class="user-details">
-                                        <img src="../img/Ellipse_44.png" alt="A" style="height: 60px; width: 60px;">
-                                        <div style="margin-left: 10px;">
-                                            <h1 style="font-size: 24px; line-height: 24px; margin-bottom: 0;">John Doe
-                                            </h1>
-                                            <p style="margin: 0;">Intern</p>
-                                        </div>
-                                    </div>
-                                    <p style="margin-bottom: 20px;"><b>Loan Amount: $1,000</b></p>
-                                    <progress style="margin: 0;" value="70" max="100"></progress>
-                                    <div style="display: flex;">
-                                        <p style="font-size: 10px; line-height: 10px; margin-top: 10px;">$700 Funded</p>
-                                        <div style="flex: 1"></div>
-                                        <p
-                                            style="font-size: 10px; line-height: 10px; margin-top: 10px; margin-right: 15px;">
-                                            $300 Left</p>
-                                    </div>
-                                    <button>
-                                        Invest Now
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="user-financials">
-                                <div style="margin-left: 20px;">
-                                    <div class="user-details">
-                                        <img src="../img/Ellips_ 46.png" alt="A" style="height: 60px; width: 60px;">
-                                        <div style="margin-left: 10px;">
-                                            <h1 style="font-size: 24px; line-height: 24px; margin-bottom: 0;">Jane Doe
-                                            </h1>
-                                            <p style="margin: 0;">Intern</p>
-                                        </div>
-                                    </div>
-                                    <p style="margin-bottom: 20px;"><b>Loan Amount: $1,000</b></p>
-                                    <progress style="margin: 0;" value="70" max="100"></progress>
-                                    <div style="display: flex;">
-                                        <p style="font-size: 10px; line-height: 10px; margin-top: 10px;">$700 Funded</p>
-                                        <div style="flex: 1"></div>
-                                        <p
-                                            style="font-size: 10px; line-height: 10px; margin-top: 10px; margin-right: 15px;">
-                                            $300 Left</p>
-                                    </div>
-                                    <button>
-                                        Invest Now
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="user-financials">
-                                <div style="margin-left: 20px;">
-                                    <div class="user-details">
-                                        <img src="../img/Ellipse_47.png" alt="A" style="height: 60px; width: 60px;">
-                                        <div style="margin-left: 10px;">
-                                            <h1 style="font-size: 24px; line-height: 24px; margin-bottom:0px;">Jane Doe
-                                            </h1>
-                                            <p style="margin: 0;">Intern</p>
-                                        </div>
-                                    </div>
-                                    <p style="margin-bottom: 20px;"><b>Loan Amount: $1,000</b></p>
-                                    <progress style="margin: 0;" value="70" max="100"></progress>
-                                    <div style="display: flex;">
-                                        <p style="font-size: 10px; line-height: 10px; margin-top: 10px;">$700 Funded</p>
-                                        <div style="flex: 1"></div>
-                                        <p
-                                            style="font-size: 10px; line-height: 10px; margin-top: 10px; margin-right: 15px;">
-                                            $300 Left</p>
-                                    </div>
-                                    <button>
-                                        Invest Now
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="user-financials">
-                                <div style="margin-left: 20px;">
-                                    <div class="user-details">
-                                        <img src="../img/Ellipse_48.png" alt="A"
-                                            style="height: 60px; width: 60px; margin-top: 10px;">
-                                        <div style="margin-left: 10px;">
-                                            <h1 style="font-size: 24px; line-height: 24px; margin-bottom: 0px;">John Doe
-                                            </h1>
-                                            <p style="margin: 0;">Intern</p>
-                                        </div>
-                                    </div>
-                                    <p style="margin-bottom: 20px;"><b>Loan Amount: $1,000</b></p>
-                                    <progress style="margin: 0;" value="70" max="100"></progress>
-                                    <div style="display: flex;">
-                                        <p style="font-size: 10px; line-height: 10px; margin-top: 10px;">$700 Funded</p>
-                                        <div style="flex: 1"></div>
-                                        <p
-                                            style="font-size: 10px; line-height: 10px; margin-top: 10px; margin-right: 15px;">
-                                            $300 Left</p>
-                                    </div>
-                                    <button>
-                                        Invest Now
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="right-arrow">
-                                <i id="right-button" class="fa fa-chevron-right" aria-hidden="true"></i>
-                            </div>
-                        </section><br />
-                        <header class='account-header'>Here is your account overview</header>
-                        <section class="account">
-                            <div class="account__block">
-                                <div class="account__block--details">
-                                    <small>Invested Amount</small><br>
-                                    <h2><span>INR</span>50,000</h2>
-                                </div>
-                                <div class="account__block--details">
-                                    <small>Repaid Amount</small><br>
-                                    <h2><span>INR</span>20,000</h2>
-                                </div>
-                                <div class="account__block--details">
-                                    <small>Remaining Amount</small><br>
-                                    <h2><span>INR</span>30,000</h2>
-                                </div>
-                                <div class="account__block--details">
-                                    <small>Investments</small><br>
-                                    <h2>6</h2>
-                                </div>
-                                <div class="account__block--details">
-                                    <small>Average Investment</small><br>
-                                    <h2><span>INR</span>25,000</h2>
-                                </div>
-                                <div class="account__block--details">
-                                    <small>Average Interest</small><br>
-                                    <h2>2.5<span>%</span></h2>
-                                </div>
-                            </div>
-                            <div class="account__progress">
-                                <svg class="progress-ring" width="100%" height="280">
-                                    <circle stroke="#eee" stroke-dasharray="2,2" stroke-width="20" fill="none" r="90"
-                                        cx="50%" cy="50%" />
-                                    <circle id="circle-level" class="progress-ring__circle" stroke="#FB3F5C"
-                                        stroke-width="20" fill="none" r="90" cx="50%" cy="50%" />
-                                </svg>
-                                <div class="progress__value">
-                                    <h1 id="displayed_value"></h1>
-                                    <h6>REPAID</h6>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="table">
-                            <header>Here is your account overview</header>
-                            <div class="table__container">
-                                <table>
-                                    <thead>
-                                        <td>LOAN</td>
-                                        <td>AMOUNT</td>
-                                        <td>INTEREST RATE</td>
-                                        <td>TERM</td>
-                                        <td>TOTAL RETURNS</td>
-                                        <td>PAYMENT DUE</td>
-                                        <td>STATUS</td>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>#7646446</td>
-                                            <td>INR 50,000</td>
-                                            <td>2.5%</td>
-                                            <td>10</td>
-                                            <td>INR 1,250</td>
-                                            <td> <span><b style="font-size: 22px;">27</b></span> JUNE</td>
-                                            <td>Active</td>
-                                        </tr>
-                                        <tr>
-                                            <td>#7646446</td>
-                                            <td>INR 50,000</td>
-                                            <td>2.5%</td>
-                                            <td>10</td>
-                                            <td>INR 1,250</td>
-                                            <td> <span><b style="font-size: 22px;">27</b></span> JUNE</td>
-                                            <td>Active</td>
-                                        </tr>
-                                        <tr>
-                                            <td>#7646446</td>
-                                            <td>INR 50,000</td>
-                                            <td>2.5%</td>
-                                            <td>10</td>
-                                            <td>INR 1,250</td>
-                                            <td> <span><b style="font-size: 22px;">27</b></span> JUNE</td>
-                                            <td>Active</td>
-                                        </tr>
-                                        <tr>
-                                            <td>#7646446</td>
-                                            <td>INR 50,000</td>
-                                            <td>2.5%</td>
-                                            <td>10</td>
-                                            <td>INR 1,250</td>
-                                            <td> <span><b style="font-size: 22px;">27</b></span> JUNE</td>
-                                            <td>Active</td>
-                                        </tr>
-                                        <tr>
-                                            <td>#7646446</td>
-                                            <td>INR 50,000</td>
-                                            <td>2.5%</td>
-                                            <td>10</td>
-                                            <td>INR 1,250</td>
-                                            <td> <span><b style="font-size: 22px;">27</b></span> JUNE</td>
-                                            <td>Active</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </section>
-                    </main>
-                </div>
-
-                <footer id="footer-main">
-                    <footer class="footer container-fluid bg-fml-primary pt-5 pb-3">
-                        <div class="footer-li container">
-                            <div
-                                class="row mx-0 justify-content-center justify-content-md-between text-light text-center text-md-left">
-                                <div class="col-md-3 px-0">
-                                    <ul class="nav flex-column">
-                                        <li><img src="../img/Group 3005.png" alt="" /></li>
-                                        <li>address</li>
-                                        <li>email address</li>
-                                        <li>phone</li>
-                                    </ul>
-
-                                    <div>
-                                        <ul
-                                            class="footer-icons nav d-flex justify-content-center justify-content-md-start">
-                                            <li>
-                                                <a href="#"><img src="../img/Vector (1).png" alt="" /></a>
-                                            </li>
-                                            <li><a href="#"><img src="../img/Vector (2).png" alt="" /></li></a>
-                                            <li><a href="#"><img src="../img/Vector (3).png" alt="" /></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 px-0">
-                                    <ul class="nav resources flex-column pt-4 pt-md-0">
-                                        <h4>RESOURCES</h4>
-                                        <li>Why choose FundMyLaptop</li>
-                                        <li>How P2P Lending works</li>
-                                        <li>About FundMyLaptop</li>
-                                        <li>Contact Us</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container mt-4 text-light">
-                            <div class="row mx-0 bye justify-content-md-between justify-content-center">
-                                <p class="mb-0">2020 &copy; Copyright All Rights Reserved</p>
-
-                                <ul class="nav bye">
-                                    <li>FAQ</li>
-                                    <li>Privacy Policy</li>
-                                    <li>Terms & Conditions</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </footer>
-                </footer>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script>
-        $("#right-button").click(function () {
-            event.preventDefault();
-            $("#user-main").animate(
-                {
-                    scrollLeft: "+=200px"
-                },
-                "fast"
-            );
-        });
-
-        $("#left-button").click(function () {
-            event.preventDefault();
-            $("#user-main").animate(
-                {
-                    scrollLeft: "-=200px"
-                },
-                "fast"
-            );
-        });
-    </script>
-    <script src="../js/bootstrap-js/jquery.js"></script>
-    <script src="../js/bootstrap-js/bootstrap.js"></script>
-    <script src="../js/bootstrap-js/popper.js"></script>
-</body>
-<script>
-    var circle = document.getElementById('circle-level');
-    var radius = circle.r.baseVal.value;
-    var circumference = radius * 2 * Math.PI;
-
-    circle.style.strokeDasharray = `${circumference} ${circumference}`;
-    circle.style.strokeDashoffset = `${circumference}`;
-
-    function setProgress(percent) {
-        const offset = circumference - percent / 100 * circumference;
-        circle.style.strokeDashoffset = offset;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../styles/bootstrap-css/bootstrap.css" />
+  <!-- <link rel="stylesheet" href="../styles/custom-css/blog-list.css" />
+  <link rel="stylesheet" href="../styles/custom-css/contact-us.css"> -->
+  <link rel="stylesheet" href="../styles/custom-css/footer.css">
+
+  <title>Dashoard &mdash; Funder</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    const progress_value = 40;
-    const displayed_value = document.querySelector('#displayed_value')
-    displayed_value.innerHTML = `${progress_value}%`
-    setProgress(progress_value);
+    body {
+      font-family: 'DM Sans', sans-serif;
+      /* background-color: #fff;
+      color: #04172A; */
+    }
+    /* #page-container {
+      position: relative;
+      min-height: 100%;
+    }
+
+    #content-wrap {
+      padding-bottom: 400px;
+    }
+
+    #footer-main {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 400px;
+      background: #04172A;
+      margin-top: -400px;
+    }
+
+    .container-main {
+      margin-top: 100px;
+    } */
+
+    .pink-text {
+      text-decoration: none;
+      color: #FB3F5C
+    }
+/*
+    nav {
+      background: rgba(4, 23, 42, 0.03);
+      padding: 15px 30px;
+      font-weight: 500;
+      font-size: 1em;
+    } */
+
+    main {
+      flex: 1 1 0;
+      /* height: 100vh; */
+      padding: 0 20px;
+    }
+
+    .text--secondary {
+      color: #FB3F5C;
+    }
+
+    .user {
+      margin-top: 50px;
+      margin-left: 10px;
+    }
+
+    .user__intro,
+    .user p {
+      margin: 5px 0;
+    }
+
+    .user-carousel {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: hidden;
+    }
+
+    .fa {
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .left-arrow {
+      margin-top: 120px;
+      position: absolute;
+      left: 0;
+      margin-left: 60px;
+    }
+
+    .right-arrow {
+      margin-top: 120px;
+      position: absolute;
+      right: 0;
+      margin-right: 60px;
+    }
+
+    .user-financials {
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 auto;
+      margin-right: 20px;
+      width: 250px;
+      height: 258px;
+      background: rgba(4, 23, 42, 0.03);
+    }
+
+    .user-financials button {
+      width: 100px;
+      margin-top: 20px;
+      background: #FB3F5C;
+      box-shadow: 0px 4px 15px rgba(251, 63, 92, 0.2);
+      border-radius: 5px;
+      border: none;
+      padding: 10px 0px 10px 0px;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+
+    .user-details {
+      display: flex;
+      width: 100%;
+    }
+
+    progress[value] {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 95%;
+      margin: auto;
+      height: 15px;
+    }
+
+    progress[value]::-webkit-progress-bar {
+      background-color: #eee;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+      border-radius: 3px;
+    }
+
+    progress[value]::-webkit-progress-value {
+      background: #04172A;
+      border-radius: 3px
+    }
+
+    .account {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .account-header {
+      font-size: 1.2em;
+      margin-bottom: 0;
+      margin-left: 10px;
+    }
+
+    .account__block {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 10px;
+    }
+
+    .account__block--details {
+      max-width: 100%;
+      flex: 0 0 48%;
+      padding: 15px;
+      background: rgba(4, 23, 42, 0.05);
+      margin-right: auto;
+      margin-bottom: 10px;
+    }
+
+    .account__block--details span {
+      font-size: .7em;
+      font-weight: lighter;
+      margin-right: 5px;
+    }
+
+    .account__progress {
+      flex: 1 1 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .progress-ring__circle {
+      transition: 0.35s stroke-dashoffset;
+      transform: rotate(-90deg);
+      transform-origin: 50% 50%;
+    }
+
+    .progress__value {
+      position: relative;
+      margin: 0;
+      background-color: transparent;
+      top: -180px;
+    }
+
+    .progress__value h1,
+    .progress__value h6 {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-size: 3em;
+    }
+
+    .progress__value h6 {
+      font-size: 1em;
+      font-weight: lighter;
+    }
+
+    .table {
+      margin-top: -70px;
+    }
+
+    .table header {
+      font-size: 1.2em;
+    }
+
+    .table__container {
+      overflow: scroll;
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
+
+    .table__container::-webkit-scrollbar {
+      display: none;
+    }
+
+    table {
+      font-size: .8em;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    tr {
+      border-bottom: 2px solid rgba(4, 23, 42, 0.1);
+    }
+
+    thead {
+      font-weight: bold;
+      background: #FB3F5C;
+      color: #fff;
+      border-bottom: 0px;
+    }
+
+    td {
+      padding: 10px 10px;
+      text-align: center;
+      font-weight: normal;
+    }
+
+    tbody td {
+      padding: 15px 5px;
+    }
 
 
+    @media screen and (max-width: 768px) {
+      .user p {
+        font-size: 11px;
+      }
+
+      .fa {
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      .left-arrow {
+        margin-top: 120px;
+        position: absolute;
+        left: 0;
+        margin-left: 10px;
+      }
+
+      .right-arrow {
+        margin-top: 120px;
+        position: absolute;
+        right: 10px;
+        margin-right: 0px;
+      }
+
+      td {
+        padding: 5px 5px;
+        font-size: 8px;
+      }
+
+      tbody td {
+        padding: 10px 5px;
+      }
+
+      thead {
+        font-weight: bold;
+        font-size: 12px;
+        background: #FB3F5C;
+        color: #fff;
+        border-bottom: 0px;
+      }
+
+      .account {
+        margin-top: 40px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .account__block {
+        margin: auto;
+      }
+
+      .account__block--details small {
+        font-size: 12px;
+      }
+
+      .account__block--details h2 {
+        font-size: 16px;
+      }
+
+      .account__block--details span {
+        font-size: 14px;
+      }
+
+    }
+
+    @media screen and (min-width: 768px) {
+      nav {
+        padding: 25px 50px;
+        font-size: 1.5em;
+      }
+
+      main {
+        padding: 0 50px;
+      }
+
+      .account {
+        margin-top: 40px;
+      }
+
+      .account__block {
+        width: 80%;
+      }
+
+      .account__block--details {
+        width: 100%;
+        flex: 0 0 32%;
+        padding: 20px;
+      }
+
+      .account__progress {
+        width: 100%;
+        margin-top: -20px;
+      }
+
+      .table__container {
+        overflow: auto;
+      }
+
+      thead td {
+        padding: 20px;
+      }
+
+      td {
+        padding: 10px 10px;
+        font-size: 14px;
+      }
+
+      tbody td {
+        padding: 25px 15px;
+      }
+
+      tr {
+        border-bottom: 2px solid rgba(4, 23, 42, 0.1);
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      nav {
+        padding: 25px 9%;
+        font-size: 1.5em;
+      }
+
+      main {
+        padding: 0 9%;
+      }
+
+      .user__intro {
+        font-size: 2em;
+      }
+
+      .account {
+        flex-direction: initial;
+      }
+
+      .account__block {
+        width: 75%;
+        height: 0;
+      }
+
+      .account__block--details {
+        padding: 20px 40px;
+        padding-bottom: 0;
+      }
+
+      .table {
+        margin-top: -40px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <!--Header-->
+  <div class="nav-container container-fluid shadow-sm">
+    <nav class="navbar nav-top navbar-expand-md navbar-light container-md px-0">
+      <a class="navbar-brand" href="#">
+        <img src="../img/Logo 01 Main 01.svg" width="81px" height="44px" />
+      </a>
+      <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto align-items-center top-navigation">
+          <li class="nav-item dropdown">
+            <a class="nav-link px-4 dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lend</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-4 dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Borrow</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="#">About</a>
+          </li>
+          <button class="btn btn-fml-secondary align-self-center nav-item view-dashboard-btn">
+            View Dashboard
+          </button>
+        </ul>
+      </div>
+      <div class="navbar-nav flex-row">
+        <a class="nav-item nav-link px-4">
+          <img src="../img/user-photo.png" />
+        </a>
+        <a class="nav-item nav-link pr-0 align-self-center" href="#">
+          <div class="position-relative">
+            <img src="../img/notification-dot.svg" alt="new notifications" class="position-absolute notification-dot" />
+            <img src="../img/notification.svg" class="notification-icon" alt="notification icon" />
+          </div>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <!--Container starts-->
+  <div id="page-container">
+
+    <div id="content-wrap">
+      <div class="container-main">
+        <div class="">
+          <main>
+            <section class="user">
+              <h1 class="user__intro">Welcome Back, <span class="text--secondary">Chandan</span></h1>
+              <p>Campaingn available for investing. <span><a class="pink-text" href="#">View More
+                    ></a></span>
+              </p>
+            </section>
+            <section class="user-carousel" id="user-main">
+              <div class="left-arrow">
+                <i id="left-button" class="fa fa-chevron-left" aria-hidden="true"></i>
+              </div>
+              <div class="user-financials">
+                <div style="margin-left: 20px;">
+                  <div class="user-details">
+                    <img src="../img/Ellipse_43.png" alt="A" style="height: 60px; width: 60px;">
+                    <div style="margin-left: 10px;">
+                      <h1 style="font-size: 24px; line-height: 24px; margin-bottom: 0;">John Doe
+                      </h1>
+                      <p style="margin: 0;">Intern</p>
+                    </div>
+                  </div>
+                  <p style="margin-bottom: 20px;"><b>Loan Amount: $1,000</b></p>
+                  <progress style="margin: 0;" value="70" max="100"></progress>
+                  <div style="display: flex;">
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px;">$700 Funded</p>
+                    <div style="flex: 1"></div>
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px; margin-right: 15px;">
+                      $300 Left</p>
+                  </div>
+                  <button>
+                    Invest Now
+                  </button>
+                </div>
+              </div>
+
+              <div class="user-financials">
+                <div style="margin-left: 20px;">
+                  <div class="user-details">
+                    <img src="../img/Ellipse_44.png" alt="A" style="height: 60px; width: 60px;">
+                    <div style="margin-left: 10px;">
+                      <h1 style="font-size: 24px; line-height: 24px; margin-bottom: 0;">John Doe
+                      </h1>
+                      <p style="margin: 0;">Intern</p>
+                    </div>
+                  </div>
+                  <p style="margin-bottom: 20px;"><b>Loan Amount: $1,000</b></p>
+                  <progress style="margin: 0;" value="70" max="100"></progress>
+                  <div style="display: flex;">
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px;">$700 Funded</p>
+                    <div style="flex: 1"></div>
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px; margin-right: 15px;">
+                      $300 Left</p>
+                  </div>
+                  <button>
+                    Invest Now
+                  </button>
+                </div>
+              </div>
+
+              <div class="user-financials">
+                <div style="margin-left: 20px;">
+                  <div class="user-details">
+                    <img src="../img/Ellips_ 46.png" alt="A" style="height: 60px; width: 60px;">
+                    <div style="margin-left: 10px;">
+                      <h1 style="font-size: 24px; line-height: 24px; margin-bottom: 0;">Jane Doe
+                      </h1>
+                      <p style="margin: 0;">Intern</p>
+                    </div>
+                  </div>
+                  <p style="margin-bottom: 20px;"><b>Loan Amount: $1,000</b></p>
+                  <progress style="margin: 0;" value="70" max="100"></progress>
+                  <div style="display: flex;">
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px;">$700 Funded</p>
+                    <div style="flex: 1"></div>
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px; margin-right: 15px;">
+                      $300 Left</p>
+                  </div>
+                  <button>
+                    Invest Now
+                  </button>
+                </div>
+              </div>
+
+              <div class="user-financials">
+                <div style="margin-left: 20px;">
+                  <div class="user-details">
+                    <img src="../img/Ellipse_47.png" alt="A" style="height: 60px; width: 60px;">
+                    <div style="margin-left: 10px;">
+                      <h1 style="font-size: 24px; line-height: 24px; margin-bottom:0px;">Jane Doe
+                      </h1>
+                      <p style="margin: 0;">Intern</p>
+                    </div>
+                  </div>
+                  <p style="margin-bottom: 20px;"><b>Loan Amount: $1,000</b></p>
+                  <progress style="margin: 0;" value="70" max="100"></progress>
+                  <div style="display: flex;">
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px;">$700 Funded</p>
+                    <div style="flex: 1"></div>
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px; margin-right: 15px;">
+                      $300 Left</p>
+                  </div>
+                  <button>
+                    Invest Now
+                  </button>
+                </div>
+              </div>
+
+              <div class="user-financials">
+                <div style="margin-left: 20px;">
+                  <div class="user-details">
+                    <img src="../img/Ellipse_48.png" alt="A" style="height: 60px; width: 60px; margin-top: 10px;">
+                    <div style="margin-left: 10px;">
+                      <h1 style="font-size: 24px; line-height: 24px; margin-bottom: 0px;">John Doe
+                      </h1>
+                      <p style="margin: 0;">Intern</p>
+                    </div>
+                  </div>
+                  <p style="margin-bottom: 20px;"><b>Loan Amount: $1,000</b></p>
+                  <progress style="margin: 0;" value="70" max="100"></progress>
+                  <div style="display: flex;">
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px;">$700 Funded</p>
+                    <div style="flex: 1"></div>
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px; margin-right: 15px;">
+                      $300 Left</p>
+                  </div>
+                  <button>
+                    Invest Now
+                  </button>
+                </div>
+              </div>
+              <div class="right-arrow">
+                <i id="right-button" class="fa fa-chevron-right" aria-hidden="true"></i>
+              </div>
+            </section><br />
+            <header class='account-header'>Here is your account overview</header>
+            <section class="account">
+              <div class="account__block">
+                <div class="account__block--details">
+                  <small>Invested Amount</small><br>
+                  <h2><span>INR</span>50,000</h2>
+                </div>
+                <div class="account__block--details">
+                  <small>Repaid Amount</small><br>
+                  <h2><span>INR</span>20,000</h2>
+                </div>
+                <div class="account__block--details">
+                  <small>Remaining Amount</small><br>
+                  <h2><span>INR</span>30,000</h2>
+                </div>
+                <div class="account__block--details">
+                  <small>Investments</small><br>
+                  <h2>6</h2>
+                </div>
+                <div class="account__block--details">
+                  <small>Average Investment</small><br>
+                  <h2><span>INR</span>25,000</h2>
+                </div>
+                <div class="account__block--details">
+                  <small>Average Interest</small><br>
+                  <h2>2.5<span>%</span></h2>
+                </div>
+              </div>
+              <div class="account__progress">
+                <svg class="progress-ring" width="100%" height="280">
+                  <circle stroke="#eee" stroke-dasharray="2,2" stroke-width="20" fill="none" r="90" cx="50%" cy="50%" />
+                  <circle id="circle-level" class="progress-ring__circle" stroke="#FB3F5C" stroke-width="20" fill="none" r="90" cx="50%" cy="50%" />
+                </svg>
+                <div class="progress__value">
+                  <h1 id="displayed_value"></h1>
+                  <h6>REPAID</h6>
+                </div>
+              </div>
+            </section>
+            <section class="table">
+              <header>Here is your account overview</header>
+              <div class="table__container">
+                <table>
+                  <thead>
+                    <td>LOAN</td>
+                    <td>AMOUNT</td>
+                    <td>INTEREST RATE</td>
+                    <td>TERM</td>
+                    <td>TOTAL RETURNS</td>
+                    <td>PAYMENT DUE</td>
+                    <td>STATUS</td>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#7646446</td>
+                      <td>INR 50,000</td>
+                      <td>2.5%</td>
+                      <td>10</td>
+                      <td>INR 1,250</td>
+                      <td> <span><b style="font-size: 22px;">27</b></span> JUNE</td>
+                      <td>Active</td>
+                    </tr>
+                    <tr>
+                      <td>#7646446</td>
+                      <td>INR 50,000</td>
+                      <td>2.5%</td>
+                      <td>10</td>
+                      <td>INR 1,250</td>
+                      <td> <span><b style="font-size: 22px;">27</b></span> JUNE</td>
+                      <td>Active</td>
+                    </tr>
+                    <tr>
+                      <td>#7646446</td>
+                      <td>INR 50,000</td>
+                      <td>2.5%</td>
+                      <td>10</td>
+                      <td>INR 1,250</td>
+                      <td> <span><b style="font-size: 22px;">27</b></span> JUNE</td>
+                      <td>Active</td>
+                    </tr>
+                    <tr>
+                      <td>#7646446</td>
+                      <td>INR 50,000</td>
+                      <td>2.5%</td>
+                      <td>10</td>
+                      <td>INR 1,250</td>
+                      <td> <span><b style="font-size: 22px;">27</b></span> JUNE</td>
+                      <td>Active</td>
+                    </tr>
+                    <tr>
+                      <td>#7646446</td>
+                      <td>INR 50,000</td>
+                      <td>2.5%</td>
+                      <td>10</td>
+                      <td>INR 1,250</td>
+                      <td> <span><b style="font-size: 22px;">27</b></span> JUNE</td>
+                      <td>Active</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer container-fluid bg-fml-primary pt-4 pt-md-5 pb-3 mt-5">
+          <div class="footer-li container">
+            <div class="row mx-0 d-none d-md-flex mb-3">
+              <a href="#" class="footer-logo">
+                <img src="../../img/logo-footer.svg" alt="" width="154px" height="80px" />
+              </a>
+            </div>
+            <div class="row flex-column flex-md-row footer-links mx-0 justify-content-center justify-content-md-between text-center text-md-left">
+              <ul class="nav flex-column order-3 order-md-1 why mt-4 pt-4 pt-md-0 mt-md-0">
+                <li><a href="#">23, Intel Chip, Silicon Valley</a></li>
+                <li><a href="#">info@fundmylaptop.com</a></li>
+                <li><a href="#">09023144819</a></li>
+              </ul>
+              <ul class="nav flex-column mt-md-3 order-1 order-md-2">
+                <li><a href="aboutus.html">Why choose fundmylaptop?</a></li>
+                <li><a href="aboutus.html">How P2P lending works</a></li>
+              </ul>
+              <ul class="nav flex-column mt-md-3 order-2 order-md-3">
+                <li><a href="about-us.html">About fundmylaptop</a></li>
+                <li><a href="contact-us.html">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="row mx-0 mt-4 mt-md-2 pt-4 pt-md-5 social-footer-icons-container text-center justify-content-center justify-content-md-start">
+              <ul class="nav social-footer-icons">
+                <li>
+                  <a href=""><img src="../../img/brandico_facebook.svg" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="../../img/ant-design_instagram-outlined.svg" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="../../img/ant-design_twitter-outlined.svg" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="container mt-4 mt-md-3 text-light">
+            <div class="row flex-column flex-md-row mx-0 credits-container pt-3 justify-content-md-between justify-content-center">
+              <p class="mb-0 text-center text-md-left">
+                2020 &copy; Copyright All Rights Reserved
+              </p>
+
+              <ul class="nav bye">
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+          $("#right-button").click(function() {
+            event.preventDefault();
+            $("#user-main").animate({
+                scrollLeft: "+=200px"
+              },
+              "fast"
+            );
+          });
+
+          $("#left-button").click(function() {
+            event.preventDefault();
+            $("#user-main").animate({
+                scrollLeft: "-=200px"
+              },
+              "fast"
+            );
+          });
+        </script>
+        <script src="../js/bootstrap-js/jquery.js"></script>
+        <script src="../js/bootstrap-js/bootstrap.js"></script>
+        <script src="../js/bootstrap-js/popper.js"></script>
+</body>
+<script>
+  var circle = document.getElementById('circle-level');
+  var radius = circle.r.baseVal.value;
+  var circumference = radius * 2 * Math.PI;
+
+  circle.style.strokeDasharray = `${circumference} ${circumference}`;
+  circle.style.strokeDashoffset = `${circumference}`;
+
+  function setProgress(percent) {
+    const offset = circumference - percent / 100 * circumference;
+    circle.style.strokeDashoffset = offset;
+  }
+
+  const progress_value = 40;
+  const displayed_value = document.querySelector('#displayed_value')
+  displayed_value.innerHTML = `${progress_value}%`
+  setProgress(progress_value);
 </script>
 
 </html>
