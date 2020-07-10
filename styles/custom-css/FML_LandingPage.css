@@ -20,6 +20,7 @@ a{
 color: white;}
 a:hover{
     color: #FB3F5C;
+    ;
 }
 h1{
     font-style: normal;
@@ -290,8 +291,8 @@ h5{
 /* **************** Media queries *************** */
 @media only screen and (max-width:650px){
     .jumbotron {
-        background: url(/img/headerHero-phone.png) top  no-repeat;
-        background-size: contain;
+      background-position: top;
+      background-size: contain;
     }
     .testimonials-section{
         
@@ -311,12 +312,8 @@ h5{
         text-align: center;
         color: rgba(255, 255, 255, 0.9)
     }
-    .testimonials-text::before {
+    .testimonials-text::before ,  .testimonials-text::after{
         content: unset;
-    }
-    .testimonials-text::after{
-        content: url(/img/“\ mobile.png);
-        right: 7%;
     }
         
     h3{
@@ -382,40 +379,5 @@ h5{
     hr{
         border: 1px solid #FFFFFF;
         
-    }
-} 
-@media only screen and (max-width:500px){
-    .header-form{
-        margin-top: 6rem !important;
-        
-    }
-    .aboutus-text{
-        font-size: 21px;
-        line-height: 30px;
-    }
-}
-@media only screen and (max-width: 303px){
-    .header-text, .jumbotron>div{
-    margin-top: 0 !important;   
- }
- .aboutus-text{
-    font-size: 19px;
-    line-height: 30px;
-}
-} 
-@media only screen and (max-width: 269px){
-    h1{
-        font-size: 26px;        
-    }
-} 
-@media only screen and (max-width: 254px){
-    h1{
-        font-size: 22px;        
-    }
-    .header-text>p{
-        font-size: 10px ;
-    }
-    .btn-form{
-        font-size: 18px;
     }
 } 
