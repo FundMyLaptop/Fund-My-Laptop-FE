@@ -20,6 +20,16 @@
 			}
 		}
 		
+		.hide{
+		display:block;
+	}
+	@media screen and (max-width:1200px){
+		.hide{
+			display:none;
+		}
+		
+	}
+		
 		.row{
 			display:flex;
 			justify-content:space-between;
