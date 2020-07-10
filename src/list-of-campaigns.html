@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,11 +13,10 @@
 
 	<link rel="stylesheet" href="../styles/custom-css/listOfCampaign.css"/>
   <link rel="stylesheet" href="../../styles/custom-css/nav.css" />
-  <link rel="stylesheet" href="../styles/custom-css/footer.css">
+ 
 
-    <link rel="stylesheet" href="../styles/custom-css/blog-list.css" />
-    <link rel="stylesheet" href="../styles/custom-css/contact-us.css">
 	<link rel="stylesheet" href="../styles/bootstrap-css/bootstrap.css" />
+	 <link rel="stylesheet" href="../styles/custom-css/footer.css">
   </head>
   <body>
     <!-- header -->
@@ -25,7 +25,7 @@
         class="navbar nav-top navbar-expand-md navbar-light container-md px-0"
       >
         <a class="navbar-brand" href="#">
-          <img src="../../img/Logo 01 Main 01.svg" width="81px" height="44px" />
+          <img src="../img/Logo 01 Main 01.svg" width="81px" height="44px" />
         </a>
         <button
           class="navbar-toggler"
@@ -64,7 +64,7 @@
 
 
 
-	<section>
+	<section class="container">
 	<div class="top">
 		<h3>Home / <a href="#" style="color:blue">Campaign</a></h3>
 	</div>
@@ -119,7 +119,7 @@
 				</div>
 				<button class="detailsButton">View Details <i class="fas fa-arrow-right"></i></button>
 			</div>
-			<div class="box">
+			<div class="box hide">
 				<img class="img" src="../img/pic3.png"/>
 				<div class="boxContent">
 					<h2 class="name">Kunle Doe</h2>
@@ -150,7 +150,7 @@
 	</section>
 
 
-	<section>
+	<section class="container">
 		<h2 class="topCampaigns">Featured Campaigns</h2>
 		<div class="row">
 			<div class="box">
@@ -249,7 +249,7 @@
 				</div>
 				<button class="detailsButton">View Details <i class="fas fa-arrow-right"></i></button>
 			</div>
-			<div class="box">
+			<div class="box hide">
 				<img class="img" src="../img/pic2.png"/>
 				<div class="boxContent">
 					<h2 class="name">Genesis Anosike</h2>
@@ -273,7 +273,7 @@
 				</div>
 				<button class="detailsButton">View Details <i class="fas fa-arrow-right"></i></button>
 			</div>
-			<div class="box">
+			<div class="box hide">
 				<img class="img" src="../img/pic3.png"/>
 				<div class="boxContent">
 					<h2 class="name">Richard Popsabey</h2>
@@ -309,7 +309,7 @@
       <div class="row mx-0 d-none d-md-flex mb-3">
         <a href="#" class="footer-logo">
           <img
-            src="../../img/logo-footer.svg"
+            src="../img/logo-footer.svg"
             alt=""
             width="154px"
             height="80px"
@@ -322,57 +322,61 @@
         <ul
           class="nav flex-column order-3 order-md-1 why mt-4 pt-4 pt-md-0 mt-md-0"
         >
+
           <li><a href="#">23, Intel Chip, Silicon Valley</a></li>
           <li><a href="#">info@fundmylaptop.com</a></li>
           <li><a href="#">09023144819</a></li>
         </ul>
         <ul class="nav flex-column mt-md-3 order-1 order-md-2">
-          <li><a href="#">Why choose fundmylaptop?</a></li>
-          <li><a href="#">How P2P lending works</a></li>
+
+          <li><a href="aboutus.html">Why choose fundmylaptop?</a></li>
+          <li><a href="aboutus.html">How P2P lending works</a></li>
         </ul>
         <ul class="nav flex-column mt-md-3 order-2 order-md-3">
-          <li><a href="#">About fundmylaptop</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><a href="about-us.html">About fundmylaptop</a></li>
+          <li><a href="contact-us.html">Contact us</a></li>
         </ul>
       </div>
-      <div
-        class="row mx-0 mt-4 mt-md-2 pt-4 pt-md-5 social-footer-icons-container text-center justify-content-center justify-content-md-start"
-      >
+      <div class="row mx-0 mt-4 mt-md-2 pt-4 pt-md-5 social-footer-icons-container text-center justify-content-center justify-content-md-start">
         <ul class="nav social-footer-icons">
           <li>
             <a href=""><img src="../../img/brandico_facebook.svg" /></a>
           </li>
           <li>
-            <a href=""
-              ><img src="../../img/ant-design_instagram-outlined.svg"
-            /></a>
+            <a href=""><img src="../../img/ant-design_instagram-outlined.svg" /></a>
           </li>
           <li>
-            <a href=""
-              ><img src="../../img/ant-design_twitter-outlined.svg"
-            /></a>
+            <a href=""><img src="../../img/ant-design_twitter-outlined.svg" /></a>
+
           </li>
         </ul>
       </div>
     </div>
     <div class="container mt-4 mt-md-3 text-light">
-      <div
-        class="row flex-column flex-md-row mx-0 credits-container pt-3 justify-content-md-between justify-content-center"
-      >
+
+      <div class="row flex-column flex-md-row mx-0 credits-container pt-3 justify-content-md-between justify-content-center">
+
         <p class="mb-0 text-center text-md-left">
           2020 &copy; Copyright All Rights Reserved
         </p>
 
         <ul class="nav bye">
-          <li>FAQ</li>
-          <li>Privacy Policy</li>
-          <li>Terms & Conditions</li>
+ 
+
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+
         </ul>
       </div>
     </div>
   </footer>
-    <script src="../js/bootstrap-js/jquery.js"></script>
-    <script src="../js/bootstrap-js/bootstrap.js"></script>
-    <script src="../js/bootstrap-js/popper.js"></script>
+
+
+  <script src="../js/bootstrap-js/jquery.js"></script>
+  <script src="../js/bootstrap-js/bootstrap.js"></script>
+  <script src="../js/bootstrap-js/popper.js"></script>
 </body>
+
+
 </html>
