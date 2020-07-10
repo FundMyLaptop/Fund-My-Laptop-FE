@@ -138,7 +138,7 @@ border-radius: 5px;
 
 @media screen and (max-width: 768px){
     #upload{
-        width:400px;
+        width:300px;
     }
 
     .line{
