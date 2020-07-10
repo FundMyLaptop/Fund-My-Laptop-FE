@@ -5992,6 +5992,8 @@ a.badge-dark:focus {
   color: #040505;
 }
 
+
+
 @-webkit-keyframes progress-bar-stripes {
   from {
     background-position: 1rem 0;
@@ -6015,12 +6017,13 @@ a.badge-dark:focus {
 .progress {
   display: -ms-flexbox;
   display: flex;
-  height: 1rem;
+  height: 0.2rem !important;
   overflow: hidden;
   line-height: 0;
   font-size: 0.75rem;
   background-color: #e9ecef;
-  border-radius: 0.25rem;
+  border-radius: 0rem !important;
+
 }
 
 .progress-bar {
@@ -6038,6 +6041,22 @@ a.badge-dark:focus {
   transition: width 0.6s ease;
 }
 
+.progress-container {
+  position: relative;
+}
+
+.progress-item {
+  position: absolute;
+  width: 2rem !important;
+  height: 2rem !important;
+  border-radius: 50% !important;
+  background: #fff !important;
+  border: 8px solid #fb3f5c;
+  left: 50%;
+  top: -40%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
 
 
 @media (prefers-reduced-motion: reduce) {
