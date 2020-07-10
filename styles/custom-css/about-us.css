@@ -6,6 +6,12 @@
 span {
      color: #FB3F5C;
 }
+.pcolor{
+  color: #707070;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+content: ">";
+}
 
 .start-btn {
     text-decoration: none;
@@ -13,4 +19,3 @@ span {
     color: #ffffff;
     border: 1px solid #FB3F5C;
 }
-
