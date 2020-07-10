@@ -62,13 +62,13 @@ body {
   color: red;
 }
 
-.verify-form-bvn input,
-.verify-form-bvn select {
+.verify-form-address input,
+.verify-form-address select {
   height: 45px;
   border: 1px solid rgba(4, 23, 42, 0.7);
 }
 
-.verify-form-bvn button {
+.verify-form-address button {
   font-weight: 500;
 }
 
