@@ -423,39 +423,156 @@
 </head>
 
 <body>
-    <div id="page-container">
+  <!--Header-->
+  <div class="nav-container container-fluid shadow-sm">
+    <nav class="navbar nav-top navbar-expand-md navbar-light container-md px-0">
+      <a class="navbar-brand" href="#">
+        <img src="../img/Logo 01 Main 01.svg" width="81px" height="44px" />
+      </a>
+      <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div id="content-wrap">
-            <div class="nav-container container-fluid shadow-sm">
-                <nav class="navbar nav-top navbar-expand-md navbar-light container-md px-0">
-                    <a class="navbar-brand" href="#">
-                        <img src="../img/layer1.png" />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto align-items-center top-navigation">
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link px-4 dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lend</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </div>
+          </li> -->
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link px-4 dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Borrow</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </div>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link px-4" href="list-of-campaigns.html">Lend</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="request-form1.html">Borrow</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="aboutus.html">About</a>
+          </li>
+          <button class="btn btn-fml-secondary align-self-center nav-item view-dashboard-btn">
+            View Dashboard
+          </button>
+        </ul>
+      </div>
+      <div class="navbar-nav flex-row">
+        <a class="nav-item nav-link px-4">
+          <img src="../img/user-photo.png" />
+        </a>
+        <a class="nav-item nav-link pr-0 align-self-center" href="#">
+          <div class="position-relative">
+            <img src="../img/notification-dot.svg" alt="new notifications" class="position-absolute notification-dot" />
+            <img src="../img/notification.svg" class="notification-icon" alt="notification icon" />
+          </div>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <!--Container starts-->
+  <div id="page-container">
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto align-items-center">
-                            <li class="nav-item">
-                                <a class="nav-link px-4 font-weight-bold" href="#">Lend</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link px-4 font-weight-bold" href="#">Borrow</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link px-4 font-weight-bold" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pl-md-4 font-weight-bold" href="#">
-                                    <button class="btn btn-fml-secondary px-4">
-                                        Login
-                                    </button>
-                                </a>
-                            </li>
-                        </ul>
+    <div id="content-wrap">
+      <div class="container-main">
+        <div class="">
+          <main>
+            <section class="user">
+              <h1 class="user__intro">Welcome Back, <span class="text--secondary">Chandan</span></h1>
+              <p>Campaingn available for investing. <span><a class="pink-text" href="#">View More
+                    ></a></span>
+              </p>
+            </section>
+            <section class="user-carousel" id="user-main">
+              <div class="left-arrow">
+                <i id="left-button" class="fa fa-chevron-left" aria-hidden="true"></i>
+              </div>
+              <div class="user-financials">
+                <div style="margin-left: 20px;">
+                  <div class="user-details">
+                    <img src="../img/Ellipse_43.png" alt="A" style="height: 60px; width: 60px;">
+                    <div style="margin-left: 10px;">
+                      <h1 style="font-size: 24px; line-height: 24px; margin-bottom: 0;">John Doe
+                      </h1>
+                      <p style="margin: 0;">Intern</p>
+                    </div>
+                  </div>
+                  <p style="margin-bottom: 20px;"><b>Loan Amount: $1,000</b></p>
+                  <progress style="margin: 0;" value="70" max="100"></progress>
+                  <div style="display: flex;">
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px;">$700 Funded</p>
+                    <div style="flex: 1"></div>
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px; margin-right: 15px;">
+                      $300 Left</p>
+                  </div>
+                  <button>
+                    Invest Now
+                  </button>
+                </div>
+              </div>
+
+              <div class="user-financials">
+                <div style="margin-left: 20px;">
+                  <div class="user-details">
+                    <img src="../img/Ellipse_44.png" alt="A" style="height: 60px; width: 60px;">
+                    <div style="margin-left: 10px;">
+                      <h1 style="font-size: 24px; line-height: 24px; margin-bottom: 0;">John Doe
+                      </h1>
+                      <p style="margin: 0;">Intern</p>
+                    </div>
+                  </div>
+                  <p style="margin-bottom: 20px;"><b>Loan Amount: $1,000</b></p>
+                  <progress style="margin: 0;" value="70" max="100"></progress>
+                  <div style="display: flex;">
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px;">$700 Funded</p>
+                    <div style="flex: 1"></div>
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px; margin-right: 15px;">
+                      $300 Left</p>
+                  </div>
+                  <button>
+                    Invest Now
+                  </button>
+                </div>
+              </div>
+
+              <div class="user-financials">
+                <div style="margin-left: 20px;">
+                  <div class="user-details">
+                    <img src="../img/Ellips_ 46.png" alt="A" style="height: 60px; width: 60px;">
+                    <div style="margin-left: 10px;">
+                      <h1 style="font-size: 24px; line-height: 24px; margin-bottom: 0;">Jane Doe
+                      </h1>
+                      <p style="margin: 0;">Intern</p>
+                    </div>
+                  </div>
+                  <p style="margin-bottom: 20px;"><b>Loan Amount: $1,000</b></p>
+                  <progress style="margin: 0;" value="70" max="100"></progress>
+                  <div style="display: flex;">
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px;">$700 Funded</p>
+                    <div style="flex: 1"></div>
+                    <p style="font-size: 10px; line-height: 10px; margin-top: 10px; margin-right: 15px;">
+                      $300 Left</p>
+                  </div>
+                  <button>
+                    Invest Now
+                  </button>
+                </div>
+              </div>
+
+              <div class="user-financials">
+                <div style="margin-left: 20px;">
+                  <div class="user-details">
+                    <img src="../img/Ellipse_47.png" alt="A" style="height: 60px; width: 60px;">
+                    <div style="margin-left: 10px;">
+                      <h1 style="font-size: 24px; line-height: 24px; margin-bottom:0px;">Jane Doe
+                      </h1>
+                      <p style="margin: 0;">Intern</p>
                     </div>
                 </nav>
             </div>
