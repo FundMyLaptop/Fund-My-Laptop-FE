@@ -62,7 +62,7 @@ color: #04172A;
 .text-heading{
 font-weight: 600;
 text-align: left;
-font-size: 18px;
+font-size: 24px;
 color: #04172A;
 }
 .lists{
@@ -73,7 +73,7 @@ color: #04172A;
     font-family: DM Sans;
 font-style: normal;
 font-weight: normal;
-font-size: 16px;
+font-size: 20px;
 line-height: 26px;
 /* identical to box height */
 
@@ -114,6 +114,11 @@ display: flex;
 }
 .list1{
     margin: 10px 0;
+    font-size: 16px;
+}
+.click{
+    color: #04172A;
+    font-size: 20px;
 }
 .submit{
 background: #FB3F5C;
@@ -194,5 +199,20 @@ border-radius: 5px;
 
     .example{
         font-size: 13px;
+    }
+    .click{
+        color: #04172A;
+        font-size: 12px;
+    }
+    .submit{
+        background: #FB3F5C;
+        margin: 0 auto;
+        color: white;
+        box-shadow: 0px 4px 15px rgba(251, 63, 92, 0.2);
+        outline: none;
+        border: 0;
+        font-size: 15px;
+        padding: 2px 50px;
+        border-radius: 5px;
     }
 }
