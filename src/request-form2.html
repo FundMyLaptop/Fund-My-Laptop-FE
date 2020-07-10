@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../styles/bootstrap-css/bootstrap.css" />
+  <link rel="stylesheet" href="../styles/custom-css/footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Request Form Two</title>
+    <style>
+        body {
+            font-family: "DM Sans", Sans-Serif;
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+        content: ">";
+        }
+        .upldBreadcrumb{
+          padding: 48px 0 39px 0;
+        }
+        .pcolor{
+          color: #707070;
+        }
+        .hr-tabs {
+            width: 80px;
+            height: 13px;
+            margin-bottom: 50px;
+            border-radius: 3px;
+        }
+
+        li {
+            display: inline-flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+
+        .divbig {
+            background-color: grey;
+            width: 800px;
+            height: 400px;
+            position: relative;
+            border-radius: 4px;
+            align-self: center;
+            margin: 0 auto;
+        }
+        .f-12{
+          font-size: 12px;
+        }
+        .vidprogress{
+          width: 100%;
+          margin-right: -25px;
+
+        }
+        progress {
+            height: 6px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        progress[value] {
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        progress[value]::-webkit-progress-bar {
+            background-color: #C4C4C4;
+            border-radius: 10px;
+        }
+
+        progress[value]::-webkit-progress-value {
+            background-color: #FB3F5C;
+            border-radius: 10px;
+        }
+        /* Cross browser compatability  */
+
+        progress::-moz-progress-bar {
+            background-color: #FB3F5C;
+            border-radius: 10px;
+        }
+
+        .largemb {
+            margin-bottom: 100px;
+            font-size: 12px;
+        }
+
+        .btnDes{
+          font-size: 12px;
+          background: #fff;
+          color: #FB3F5C;
+          padding: 10px 18px;
+          border-radius: 8px;
+
+        }
+        .btnDes:hover{
+          background:  #FB3F5C;
+          color: white;
+        }
+
+        .btnUpld{
+          font-size: 12px;
+          background: #fff;
+          color: #FB3F5C;
+          padding: 10px 18px;
+          border-radius: 8px;
+
+        }
+        .btnUpld:hover{
+          background:  #FB3F5C;
+          color: white;
+        }
+
+        .break {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: 0;
+            width: 95%;
+            border-top: 1px solid white;
+        }
+
+        .f-12 {
+            padding-inline-start: 0;
+        }
+
+        .h4p, textarea {
+            color: rgba(4, 23, 42, 0.3);
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: normal;
+            padding: .5rem ;
+            resize: none;
+        }
+
+        textarea:active, textarea:focus {
+            color: unset;
+        }
+
+
+        @media only screen and (min-width: 775px) {
+          progress{
+            height: 8px;
+          }
+          .rowprogress{
+            width: 50%;
+          }
+          .pcolor{
+            color: #707070;
+          }
+          .f-12{
+            font-size: 16px;
+          }
+          .rowprogress{
+            width: 50%;
+          }
+          .btnDes{
+            font-size: 20px;
+            background: #fff;
+            color: #FB3F5C;
+            padding: 11px 25px;
+            border-radius: 8px;
+
+          }
+          .btnDes:hover{
+            background:  #FB3F5C;
+            color: white;
+          }
+          .mb-40{
+            margin-bottom: 37px;
+          }
+    }
+    </style>
+</head>
+
+
+<body>
+    <header class="container-fluid shadow-sm">
+        <nav class="navbar nav-top navbar-expand-md navbar-light container-md px-0">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="../img/layer1.png" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link px-4 font-weight-bold" href="list-of-campaigns.html">Lend</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 font-weight-bold" href="#">Borrow</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 font-weight-bold" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-md-4 font-weight-bold" href="#">
+                            <img class="img-fluid" src="/img/profileSetup/Ellipse 8.png" alt="#"
+                                class="px-4 mx-3 my-2 my-sm-0" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Section begins-->
+  <section class="container mb-40">
+        <div class="row">
+          <div class="col-12">
+            <ol class="f-12 upldBreadcrumb breadcrumb" style="background:none;">
+              <li class="breadcrumb-item"><a class="pcolor" href="#">Dashboard</a></li>
+              <li class="breadcrumb-item"><a class="pcolor" href="#">Create Request</a></li>
+              <li class="breadcrumb-item active text-dark"><b>Add Description</b></li>
+            </ol>
+          </div>
+        </div>
+        <h2 class="font-weight-bold">Add a description</h2>
+        <p class="pcolor Upload">This description would be visible to potential funders </p>
+        <div class="row rowprogress">
+          <div class="col-4 col-md-4 vidprogress">
+            <progress class="vidprogress" value="0" max="20"></progress>
+          </div>
+          <div class="col-4 col-md-4 vidprogress">
+            <progress class="vidprogress" value="20" max="20"></progress>
+          </div>
+          <div class="col-4 col-md-4 vidprogress">
+            <progress class="vidprogress" value="0" max="20"></progress>
+          </div>
+        </div>
+    </section>
+
+    <section class="container  px-4 px-sm-auto ">
+        <div class="row py-5 mb-5 rounded" style="background-color:#EFEFEF">
+            <div class="col-sm-3"></div>
+            <div class=" col-12 col-sm-6">
+                <h4 class="font-weight-bold text-center">Add a description</h4>
+                <p class=" h4p text-center mb-5">Why should people invest in this cause?</p>
+                <textarea placeholder="Writing a good description usually increases your chances of getting funds by 63%" class="w-100" name="" id="" cols="30" rows="10"></textarea>
+                <div class="d-flex justify-content-between mt-4">
+                    <button class="btnDes px-4 my-2 my-sm-0" type="submit">Back</button>
+                    <button class="btnDes px-4 my-2 my-sm-0" type="submit">Continue &nbsp;<i class="font-weight-light fa fa-chevron-right"></i></button>
+                </div>
+
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer container-fluid bg-fml-primary pt-4 pt-md-5 pb-3 mt-5">
+      <div class="footer-li container">
+        <div class="row mx-0 d-none d-md-flex mb-3">
+          <a href="#" class="footer-logo">
+            <img src="../../img/logo-footer.svg" alt="" width="154px" height="80px" />
+          </a>
+        </div>
+        <div class="row flex-column flex-md-row footer-links mx-0 justify-content-center justify-content-md-between text-center text-md-left">
+          <ul class="nav flex-column order-3 order-md-1 why mt-4 pt-4 pt-md-0 mt-md-0">
+            <li><a href="#">23, Intel Chip, Silicon Valley</a></li>
+            <li><a href="#">info@fundmylaptop.com</a></li>
+            <li><a href="#">09023144819</a></li>
+          </ul>
+          <ul class="nav flex-column mt-md-3 order-1 order-md-2">
+            <li><a href="aboutus.html">Why choose fundmylaptop?</a></li>
+            <li><a href="aboutus.html">How P2P lending works</a></li>
+          </ul>
+          <ul class="nav flex-column mt-md-3 order-2 order-md-3">
+            <li><a href="about-us.html">About fundmylaptop</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="row mx-0 mt-4 mt-md-2 pt-4 pt-md-5 social-footer-icons-container text-center justify-content-center justify-content-md-start">
+          <ul class="nav social-footer-icons">
+            <li>
+              <a href=""><img src="../../img/brandico_facebook.svg" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../../img/ant-design_instagram-outlined.svg" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../../img/ant-design_twitter-outlined.svg" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container mt-4 mt-md-3 text-light">
+        <div class="row flex-column flex-md-row mx-0 credits-container pt-3 justify-content-md-between justify-content-center">
+          <p class="mb-0 text-center text-md-left">
+            2020 &copy; Copyright All Rights Reserved
+          </p>
+
+          <ul class="nav bye">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/bootstrap-js/jquery.js"></script>
+    <script src="/js/bootstrap-js/bootstrap.js"></script>
+    <script src="/js/bootstrap-js/popper.js"></script>
+</body>
+
+</html>
