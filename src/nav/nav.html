@@ -8,37 +8,41 @@
     <link rel="stylesheet" href="../../styles/custom-css/nav.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-light fixed-top">
-      <a class="navbar-brand" href="#">
-        <img src="../../img/layer1.png" alt="image"
-      /></a>
-      <div class="menu-btn">
-        <div class="menu-btn__burger"></div>
-      </div>
-      <div class="navbar-collapse navv" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto" id="ham">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">LEND</a>
-          </li>
+    <!--Header-->
+    <div class="nav-container container-fluid shadow-sm">
+      <nav class="navbar nav-top navbar-expand-md navbar-light container-md px-0">
+        <a class="navbar-brand" href="index.html">
+          <img src="../../img/Logo 01 Main 01.svg" width="81px" height="44px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#course">BORROW</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#features">ABOUT</a>
-          </li>
-
-          <li class="nav-item">
-            <button type="button" class="btn btn-danger nav-btn">Login</button>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link px-4 font-weight-bold" href="#">Lend</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 font-weight-bold" href="#">Borrow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 font-weight-bold" href="about-us.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-md-4 font-weight-bold" href="login.html">
+                <button class="btn btn-fml-secondary px-4">
+                  Login
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <script src="../../js/bootstrap-js/jquery.js"></script>
     <script src="../../js/bootstrap-js/bootstrap.js"></script>
     <script src="../../js/bootstrap-js/popper.js"></script>
-    <script src="../../js/custom-js/navBar.js"></script>
   </body>
 </html>
