@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <!-- Custom styles for side-bar -->
+    <link href="../styles/custom-css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- Custom CSS for rest of page -->
+    <link href="../styles/custom-css/admin-dashboard-2.css" rel="stylesheet">
+
+    <title>Admin Dashboard</title>
+ </head>
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom pb-0 pt-3 sticky-top">
+
+    <div class="container">
+      
+      <!-- <button class="btn btn-primary d-md-none mr-2 align-self-center mb-2" id="menu-toggle">Toggle</button> -->
+      <i class="fas fa-ellipsis-h btn btn-outline-primary d-md-none mr-2 align-self-center mb-2" id="menu-toggle"></i>
+
+      <a class="navbar-brand mr-auto" href="#"><svg width="78" height="40" viewBox="0 0 78 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.997" fill-rule="evenodd" clip-rule="evenodd" d="M28.7716 0C28.3833 4.32261e-05 28.011 0.154566 27.7365 0.429582C27.4619 0.704598 27.3077 1.07759 27.3076 1.46652V9.03009C27.3076 9.41903 27.4619 9.79204 27.7364 10.0671C28.011 10.3421 28.3833 10.4966 28.7716 10.4966C29.1598 10.4966 29.5322 10.3421 29.8068 10.0671C30.0813 9.79204 30.2355 9.41903 30.2355 9.03009V2.93304H74.2329V28.2442H60.1002C59.7119 28.2442 59.3395 28.3987 59.065 28.6737C58.7905 28.9487 58.6362 29.3217 58.6362 29.7107C58.6362 30.0996 58.7905 30.4726 59.065 30.7477C59.3395 31.0227 59.7119 31.1772 60.1002 31.1772H75.6969C76.0851 31.1772 76.4575 31.0226 76.732 30.7476C77.0065 30.4726 77.1608 30.0996 77.1608 29.7107V1.46652C77.1608 1.07759 77.0066 0.704598 76.732 0.429582C76.4575 0.154566 76.0851 4.36316e-05 75.6969 0H28.7716Z" fill="#FB3F5C"/>
+        <path d="M0 11.1335V13.1983H1.57397V20.8378H3.95366V13.1983H5.86492V11.1335H3.95366V10.7393C3.95366 10.3076 4.06609 9.95097 4.30968 9.68818C4.53453 9.42539 4.89055 9.294 5.34026 9.294H5.86492V7.22925H4.85308C3.8225 7.22925 3.01678 7.52957 2.43591 8.13023C1.85504 8.73088 1.57397 9.53802 1.57397 10.5704V11.1335H0Z" fill="#04172A"/>
+        <path d="M13.6313 16.8595C13.6313 17.5165 13.444 18.0421 13.0879 18.4175C12.7319 18.7929 12.2822 18.9806 11.7201 18.9806C11.1205 18.9806 10.652 18.7929 10.3335 18.3987C10.0149 18.0045 9.86505 17.4977 9.86505 16.8595V11.1345H7.48535V17.1411C7.48535 18.3236 7.78516 19.2809 8.4035 20.013C9.00311 20.7638 9.88378 21.1204 11.008 21.1204C11.5702 21.1204 12.0948 21.0078 12.5633 20.7638C13.013 20.5198 13.4065 20.1631 13.725 19.7126V20.8389H16.011V11.1345H13.6313V16.8595Z" fill="#04172A"/>
+        <path d="M20.8826 15.1326C20.8826 14.4756 21.07 13.95 21.4635 13.5746C21.8383 13.1992 22.3254 12.9927 22.8876 12.9927C23.5059 12.9927 23.9744 13.1992 24.2742 13.5934C24.574 13.9876 24.7426 14.5131 24.7426 15.1701V20.8388H27.1223V14.8135C27.1223 13.6309 26.8038 12.6736 26.2041 11.9416C25.5858 11.2283 24.7613 10.8529 23.712 10.8529C22.4566 10.8529 21.4822 11.3409 20.7889 12.2795V11.1345H18.5029V20.8388H20.8826V15.1326Z" fill="#04172A"/>
+        <path d="M33.247 21.1201C33.9028 21.1201 34.4837 20.9887 34.9896 20.7071C35.4768 20.4444 35.889 20.0502 36.2263 19.5621V20.8385H38.5123V7.22995H36.1514V12.3167C35.8141 11.8663 35.4018 11.5096 34.9147 11.2468C34.4275 10.984 33.8653 10.8526 33.247 10.8526C32.4038 10.8526 31.6543 11.0779 31.0172 11.5096C30.3801 11.9413 29.8742 12.542 29.4994 13.3116C29.1247 14.0812 28.9561 14.9634 28.9561 15.977C28.9561 16.9906 29.1247 17.8728 29.4994 18.6424C29.8742 19.4307 30.3801 20.0314 31.0172 20.4631C31.6543 20.9136 32.4038 21.1201 33.247 21.1201ZM33.8091 18.999C33.0971 18.999 32.4975 18.7362 32.0478 18.1731C31.5981 17.6288 31.3732 16.8967 31.3732 15.977C31.3732 15.0572 31.5981 14.3252 32.0478 13.7808C32.4975 13.2553 33.0971 12.9737 33.8091 12.9737C34.5212 12.9737 35.1208 13.2553 35.5705 13.7996C36.0202 14.344 36.2638 15.076 36.2638 15.977C36.2638 16.8967 36.0202 17.6288 35.5705 18.1731C35.1208 18.7362 34.5212 18.999 33.8091 18.999Z" fill="#04172A"/>
+        <path d="M44.5718 20.8698H46.9515V15.0698C46.9515 14.4316 47.1014 13.9435 47.4387 13.5681C47.7572 13.2115 48.1694 13.0238 48.6753 13.0238C49.1813 13.0238 49.5748 13.2115 49.8558 13.5681C50.1182 13.9435 50.2681 14.4316 50.2681 15.0698V20.8698H52.6478V15.0698C52.6478 14.4316 52.7977 13.9435 53.1349 13.5681C53.4722 13.2115 53.8844 13.0238 54.3904 13.0238C54.8963 13.0238 55.2898 13.2115 55.5708 13.5681C55.8332 13.9435 55.9831 14.4316 55.9831 15.0698V20.8698H58.3628V14.7694C58.3628 13.5681 58.063 12.6296 57.4821 11.9351C56.8825 11.2406 56.0955 10.8839 55.1211 10.8839C54.5215 10.8839 53.9407 11.0341 53.416 11.2969C52.8913 11.5784 52.4416 11.9726 52.1044 12.4794C51.8233 11.9914 51.4673 11.5972 51.0176 11.3157C50.5679 11.0341 50.0432 10.8839 49.4811 10.8839C48.9189 10.8839 48.4318 11.0153 47.9821 11.2406C47.5323 11.4658 47.1576 11.8037 46.8578 12.2166V11.1655H44.5718V20.8698Z" fill="#FB3F5C"/>
+        <path d="M61.4874 24.717H64.0358L69.3198 11.1647H66.7527L64.3918 18.091L61.9933 11.1647H59.2764L63.0801 20.8691L61.4874 24.717Z" fill="#FB3F5C"/>
+        <path d="M1.54834 36.1519H3.92803V22.5433H1.54834V36.1519Z" fill="#04172A"/>
+        <path d="M9.11364 36.434C9.67577 36.434 10.2192 36.3214 10.7438 36.0774C11.2685 35.8522 11.6994 35.4767 12.018 34.9512V36.1525H14.2103V30.0709C14.2103 28.7382 13.8356 27.7621 13.1235 27.1239C12.3927 26.4857 11.3996 26.1666 10.1442 26.1666C9.00121 26.1666 8.08306 26.4482 7.37103 26.9925C6.65899 27.5556 6.20929 28.2313 6.05939 29.0572H8.34539C8.42034 28.8132 8.60772 28.588 8.90753 28.4003C9.20733 28.2126 9.58208 28.1187 10.0693 28.1187C10.6127 28.1187 11.0436 28.2689 11.3809 28.5317C11.6995 28.7945 11.8681 29.2262 11.8681 29.8268V30.1835H9.90063C8.58898 30.1835 7.57715 30.465 6.86511 31.0281C6.13434 31.5913 5.77832 32.3796 5.77832 33.3745C5.77832 34.313 6.07812 35.045 6.67773 35.6081C7.27734 36.1713 8.1018 36.434 9.11364 36.434ZM9.71325 34.5195C9.22607 34.5195 8.85131 34.4256 8.55151 34.2004C8.2517 33.9751 8.1018 33.656 8.1018 33.2243C8.1018 32.8113 8.2517 32.4735 8.58898 32.2482C8.92626 32.023 9.39471 31.8916 10.0131 31.8916H11.8681V32.511C11.8681 32.9615 11.7557 33.3181 11.5308 33.6185C11.306 33.9188 11.0436 34.144 10.7063 34.2942C10.3691 34.4444 10.0505 34.5195 9.71325 34.5195Z" fill="#04172A"/>
+        <path d="M16.626 40.0004H18.9869V34.9699C19.3242 35.4392 19.7364 35.7958 20.2236 36.0586C20.7108 36.3214 21.2542 36.434 21.8913 36.434C22.7157 36.434 23.4653 36.2276 24.1023 35.7958C24.7394 35.3641 25.2453 34.7635 25.6201 33.9751C25.9948 33.2055 26.1822 32.3233 26.1822 31.3097C26.1822 30.2961 25.9948 29.4139 25.6201 28.6443C25.2453 27.8747 24.7394 27.274 24.1023 26.8236C23.4653 26.3918 22.7157 26.1666 21.8913 26.1666C21.2167 26.1666 20.6359 26.3168 20.1487 26.5795C19.6428 26.8611 19.2305 27.2365 18.912 27.7245V26.4482H16.626V40.0004ZM21.3292 34.313C20.5984 34.313 19.9988 34.0502 19.5491 33.5058C19.0994 32.9615 18.8745 32.2295 18.8745 31.3097C18.8745 30.4087 19.0994 29.6767 19.5491 29.1136C19.9988 28.5692 20.5984 28.2877 21.3292 28.2877C22.0412 28.2877 22.6221 28.5692 23.0718 29.1136C23.5215 29.6579 23.7651 30.3899 23.7651 31.3097C23.7651 32.2295 23.5215 32.9615 23.0718 33.5058C22.6221 34.0502 22.0412 34.313 21.3292 34.313Z" fill="#04172A"/>
+        <path d="M31.7913 36.2277H33.028V34.163H32.3347C31.9412 34.163 31.6414 34.0504 31.4353 33.8251C31.2104 33.5999 31.1168 33.2808 31.1168 32.8303V28.5131H33.028V26.4483H31.1168V23.1072C30.3485 23.3324 29.5615 23.4638 28.7371 23.5014V26.4483H27.1631V28.5131H28.7371V33.0931C28.7371 34.1254 28.9994 34.9138 29.524 35.4394C30.0487 35.9649 30.8169 36.2277 31.7913 36.2277Z" fill="#04172A"/>
+        <path d="M39.1788 36.434C40.1156 36.434 40.9588 36.2276 41.6896 35.7771C42.4204 35.3454 43.0013 34.7447 43.4135 33.9563C43.8257 33.1867 44.0318 32.3045 44.0318 31.2909C44.0318 30.2773 43.8257 29.3951 43.4135 28.6255C43.0013 27.8559 42.4204 27.2553 41.6896 26.8236C40.9588 26.3918 40.1156 26.1666 39.1788 26.1666C38.2231 26.1666 37.3799 26.3918 36.6492 26.8236C35.9184 27.2553 35.3563 27.8559 34.944 28.6255C34.5318 29.3951 34.3257 30.2773 34.3257 31.2909C34.3257 32.3045 34.5318 33.1867 34.944 33.9563C35.3563 34.7447 35.9184 35.3454 36.6492 35.7771C37.3799 36.2276 38.2231 36.434 39.1788 36.434ZM39.1788 34.313C38.448 34.313 37.8671 34.0502 37.4174 33.4871C36.9677 32.9427 36.7429 32.2107 36.7429 31.2909C36.7429 30.3712 36.9677 29.6391 37.4174 29.0948C37.8671 28.5692 38.448 28.2877 39.1788 28.2877C39.8908 28.2877 40.4904 28.5692 40.9401 29.0948C41.3898 29.6391 41.6147 30.3712 41.6147 31.2909C41.6147 32.2107 41.3898 32.9427 40.9401 33.4871C40.4904 34.0502 39.8908 34.313 39.1788 34.313Z" fill="#04172A"/>
+        <path d="M45.9404 40.0004H48.3014V34.9699C48.6387 35.4392 49.0509 35.7958 49.5381 36.0586C50.0253 36.3214 50.5687 36.434 51.2057 36.434C52.0302 36.434 52.7797 36.2276 53.4168 35.7958C54.0539 35.3641 54.5598 34.7635 54.9346 33.9751C55.3093 33.2055 55.4967 32.3233 55.4967 31.3097C55.4967 30.2961 55.3093 29.4139 54.9346 28.6443C54.5598 27.8747 54.0539 27.274 53.4168 26.8236C52.7797 26.3918 52.0302 26.1666 51.2057 26.1666C50.5312 26.1666 49.9503 26.3168 49.4631 26.5795C48.9572 26.8611 48.545 27.2365 48.2264 27.7245V26.4482H45.9404V40.0004ZM50.6436 34.313C49.9128 34.313 49.3132 34.0502 48.8635 33.5058C48.4138 32.9615 48.189 32.2295 48.189 31.3097C48.189 30.4087 48.4138 29.6767 48.8635 29.1136C49.3132 28.5692 49.9128 28.2877 50.6436 28.2877C51.3556 28.2877 51.9365 28.5692 52.3862 29.1136C52.8359 29.6579 53.0795 30.3899 53.0795 31.3097C53.0795 32.2295 52.8359 32.9615 52.3862 33.5058C51.9365 34.0502 51.3556 34.313 50.6436 34.313Z" fill="#04172A"/>
+        </svg>
+      </a>
+
+      <div class="navbar-nav mr-4 mb-2 d-lg-none">
+        <ul class="navbar-nav ml-auto d-flex flex-row" id="nav-bar-links">
+          <li class="mr-2 align-self-center">
+            <i class="far fa-bell"></i>
+          </li>
+          <li class="mr-2">
+            <img src="../img/admin-dashboard-avatar.png" alt="">
+          </li>
+          <li class="align-self-center">
+            <i class="fas fa-chevron-down"></i>
+          </li>
+        </ul>
+      </div>
+
+      <i class="fas fa-bars btn btn-outline-primary mb-2 d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></i>
+
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+        <ul class="navbar-nav ml-auto" id="nav-bar-links">
+          <li class="nav-item mr-3 active pb-lg-3">
+            <a class="nav-link" href="#">DASHBOARD</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">TRACK</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="mr-2 align-self-center pb-3 d-none d-lg-block">
+            <i class="far fa-bell"></i>
+          </li>
+          <li class="mr-2 d-none d-lg-block">
+            <img src="../img/admin-dashboard-avatar.png" alt="">
+          </li>
+          <li class="align-self-center pb-3 d-none d-lg-block">
+            <i class="fas fa-chevron-down"></i>
+          </li>
+        </ul>
+  
+      </div>
+
+    </div>
+
+  </nav>
+
+  <div class="d-flex container-lg" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="list-group list-group-flush align-items-center mt-4" id="list">
+        <a href="#" class="list-group-item list-group-item-action bg-light border-0 mb-4 px-0">Campaign</a>
+        <span class="w-100 d-flex align-items-center justify-content-center"><a href="#" class="list-group-item list-group-item-action bg-light border-0 mb-4 px-4 active">Fundings</a></span>
+        <a href="#" class="list-group-item list-group-item-action bg-light border-0 mb-4 px-0 ">Payments</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light border-0 mb-4 px-0 ">Settings</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" class="container-fluid px-0 mr-0">
+
+      <div class="container-fluid w-100 ">
+
+        <div class="header">
+          <h1 class="mt-4">Hello James <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C17.514 2 22 6.486 22 12C22 17.514 17.514 22 12 22C6.486 22 2 17.514 2 12C2 6.486 6.486 2 12 2ZM12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM17.507 13.941C15.995 15.136 14.333 15.872 12.001 15.872C9.667 15.872 8.005 15.136 6.493 13.941L6 14.434C7.127 16.154 9.2 18 12.001 18C14.801 18 16.873 16.154 18 14.434L17.507 13.941ZM8.5 8C7.672 8 7 8.671 7 9.5C7 10.329 7.672 11 8.5 11C9.328 11 10 10.329 10 9.5C10 8.671 9.328 8 8.5 8ZM15.5 8C14.672 8 14 8.671 14 9.5C14 10.329 14.672 11 15.5 11C16.328 11 17 10.329 17 9.5C17 8.671 16.328 8 15.5 8Z" fill="#FFB800"/></svg>
+          </h1>
+          <h2>Have a nice day at work</h2>
+          <p class="sub">28, Jun 2020</p>
+        </div>
+
+        <div id="tabs" class="my-4">
+          <a href="#" class="px-2 px-md-4 py-2 d-inline-block d-sm-inline mb-2 active">On-going Funding</a>
+          <a href="#" class="px-2 px-md-4 py-2 d-inline-block d-sm-inline mb-2">Completed Funding</a>
+          <a href="#" class="px-2 px-md-4 py-2 d-inline-block d-sm-inline mb-2">Repair Campaign</a>
+        </div>
+
+        <div id="input-fields" class="d-flex align-self-sm-center flex-column flex-sm-row pr-3">
+          <label for="date" class="mb-0">Schedule:</label>
+          <select name="date" id="date" class="bg-transparent px-3 py-2 py-md-1 mx-0 mx-sm-2 my-2 my-sm-0">
+            <option value="1">Week 1</option>
+            <option value="2">Week 2</option>
+            <option value="3">Week 3</option>
+            <option value="4">Week 4</option>
+          </select>
+          <p class="mb-0 px-3 py-2 py-md-1 mx-0 mx-sm-4 my-2 my-sm-0 ">Jun 21 <i class="fas fa-chevron-down mx-1 d-inline-block"></i> to Jun 27, 2020</p>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-sm-inline">
+            <path d="M5 12V10H7V12H5Z" fill="#04172A"/>
+            <path d="M9 12H11V10H9V12Z" fill="#04172A"/>
+            <path d="M13 12V10H15V12H13Z" fill="#04172A"/>
+            <path d="M5 14V16H7V14H5Z" fill="#04172A"/>
+            <path d="M11 16H9V14H11V16Z" fill="#04172A"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H6V0H4V1H2C0.89543 1 0 1.89543 0 3V18C0 19.1046 0.89543 20 2 20H18C19.1046 20 20 19.1046 20 18V3C20 1.89543 19.1046 1 18 1H16V0H14V1ZM6 4H4V3H2V6H18V3H16V4H14V3H6V4ZM18 8H2V18H18V8Z" fill="#04172A"/>
+          </svg>
+        </div>
+
+        <div id="board" class="p-4 my-4 rounded-lg mr-3">
+
+          <div class="row mb-4">
+            <div class="col-2 col-md-1">
+              <div class="card px-2 py-3 shadow-sm date text-center border-0"><span>MON</span>21</div>
+            </div>
+            <div class="col-10 col-md-11">
+              <div class="row row row-cols-1 row-cols-md-2 row-cols-xl-4">
+
+                <div class="col mb-4">
+                  <div class="card pink-card">
+
+                    <div class="d-flex align-items-center head py-2">
+                      <img class="img-fluid mr-3" src="../img/admin-dashboard-avatar.png" alt="">
+                      <p class="mb-0">Olatunde Ayoola</p>
+                    </div>
+                    <div class="card-body py-1 px-0">
+                      <p class="mb-0">Loan Amount</p>
+                      <h5 class="pink">N300,000</h5>
+                      
+                      <div class="row mx-0 align-items-center justify-content-between mb-1">
+                        <div class="col-8 px-0">
+                          <p class="mb-0">Funding Status</p>
+                          <div class="progress" style="height: 3px;">
+                            <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #FB405C;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <h5 class="mb-0 pink">80%</h5>
+                        </div>
+                      </div>
+
+                      <div class="row mx-0 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0">Interest Rate</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <h5 class="mb-0 pink">5%</h5>
+                        </div>
+                      </div>
+
+                      <p class="mb-1 mt-2">15 Investors</p>
+
+                      <div class="row mx-0 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0 gray">Adetobi Olaotan</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <p class="mb-0 pink">N40,000</p>
+                        </div>
+                      </div>
+
+                      <div class="row mx-0 mb-3 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0 gray">James Brandy</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <p class="mb-0 pink">N20,000</p>
+                        </div>
+                      </div>
+
+                      <a class="pink d-block" href="#">See More</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card blue-card">
+
+                      <div class="d-flex align-items-center head py-2">
+                        <img class="img-fluid mr-3" src="../img/admin-dashboard-avatar.png" alt="">
+                        <p class="mb-0">James Ibori</p>
+                      </div>
+                      <div class="card-body py-1 px-0">
+                        <p class="mb-0">Loan Amount</p>
+                        <h5 class="pink">N600,000</h5>
+                        
+                        <div class="row mx-0 align-items-center justify-content-between mb-1">
+                          <div class="col-8 px-0">
+                            <p class="mb-0">Funding Status</p>
+                            <div class="progress" style="height: 3px;">
+                              <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #FB405C;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <h5 class="mb-0 pink">80%</h5>
+                          </div>
+                        </div>
+
+                        <div class="row mx-0 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0">Interest Rate</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <h5 class="mb-0 pink">5%</h5>
+                          </div>
+                        </div>
+
+                        <p class="mb-1 mt-2">15 Investors</p>
+
+                        <div class="row mx-0 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0 gray">Adetobi Olaotan</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <p class="mb-0 pink">N40,000</p>
+                          </div>
+                        </div>
+
+                        <div class="row mx-0 mb-3 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0 gray">James Brandy</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <p class="mb-0 pink">N20,000</p>
+                          </div>
+                        </div>
+
+                        <a class="pink d-block" href="#">See More</a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                  <div class="card pink-card">
+
+                    <div class="d-flex align-items-center head py-2">
+                      <img class="img-fluid mr-3" src="../img/admin-dashboard-avatar.png" alt="">
+                      <p class="mb-0">Olatunde Ayoola</p>
+                    </div>
+                    <div class="card-body py-1 px-0">
+                      <p class="mb-0">Loan Amount</p>
+                      <h5 class="pink">N300,000</h5>
+                      
+                      <div class="row mx-0 align-items-center justify-content-between mb-1">
+                        <div class="col-8 px-0">
+                          <p class="mb-0">Funding Status</p>
+                          <div class="progress" style="height: 3px;">
+                            <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #FB405C;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <h5 class="mb-0 pink">80%</h5>
+                        </div>
+                      </div>
+
+                      <div class="row mx-0 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0">Interest Rate</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <h5 class="mb-0 pink">5%</h5>
+                        </div>
+                      </div>
+
+                      <p class="mb-1 mt-2">15 Investors</p>
+
+                      <div class="row mx-0 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0 gray">Adetobi Olaotan</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <p class="mb-0 pink">N40,000</p>
+                        </div>
+                      </div>
+
+                      <div class="row mx-0 mb-3 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0 gray">James Brandy</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <p class="mb-0 pink">N20,000</p>
+                        </div>
+                      </div>
+
+                      <a class="pink d-block" href="#">See More</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card blue-card">
+
+                      <div class="d-flex align-items-center head py-2">
+                        <img class="img-fluid mr-3" src="../img/admin-dashboard-avatar.png" alt="">
+                        <p class="mb-0">James Ibori</p>
+                      </div>
+                      <div class="card-body py-1 px-0">
+                        <p class="mb-0">Loan Amount</p>
+                        <h5 class="pink">N600,000</h5>
+                        
+                        <div class="row mx-0 align-items-center justify-content-between mb-1">
+                          <div class="col-8 px-0">
+                            <p class="mb-0">Funding Status</p>
+                            <div class="progress" style="height: 3px;">
+                              <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #FB405C;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <h5 class="mb-0 pink">80%</h5>
+                          </div>
+                        </div>
+
+                        <div class="row mx-0 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0">Interest Rate</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <h5 class="mb-0 pink">5%</h5>
+                          </div>
+                        </div>
+
+                        <p class="mb-1 mt-2">15 Investors</p>
+
+                        <div class="row mx-0 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0 gray">Adetobi Olaotan</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <p class="mb-0 pink">N40,000</p>
+                          </div>
+                        </div>
+
+                        <div class="row mx-0 mb-3 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0 gray">James Brandy</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <p class="mb-0 pink">N20,000</p>
+                          </div>
+                        </div>
+
+                        <a class="pink d-block" href="#">See More</a>
+                      </div>
+                    </div>
+                </div>
+                  
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-2 col-md-1">
+              <div class="card px-2 py-3 shadow-sm date text-center border-0"><span>TUE</span>22</div>
+            </div>
+            <div class="col-10 col-md-11">
+              <div class="row row row-cols-1 row-cols-md-2 row-cols-xl-4">
+                
+                <div class="col mb-4">
+                  <div class="card pink-card">
+
+                    <div class="d-flex align-items-center head py-2">
+                      <img class="img-fluid mr-3" src="../img/admin-dashboard-avatar.png" alt="">
+                      <p class="mb-0">Olatunde Ayoola</p>
+                    </div>
+                    <div class="card-body py-1 px-0">
+                      <p class="mb-0">Loan Amount</p>
+                      <h5 class="pink">N300,000</h5>
+                      
+                      <div class="row mx-0 align-items-center justify-content-between mb-1">
+                        <div class="col-8 px-0">
+                          <p class="mb-0">Funding Status</p>
+                          <div class="progress" style="height: 3px;">
+                            <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #FB405C;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <h5 class="mb-0 pink">80%</h5>
+                        </div>
+                      </div>
+
+                      <div class="row mx-0 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0">Interest Rate</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <h5 class="mb-0 pink">5%</h5>
+                        </div>
+                      </div>
+
+                      <p class="mb-1 mt-2">15 Investors</p>
+
+                      <div class="row mx-0 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0 gray">Adetobi Olaotan</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <p class="mb-0 pink">N40,000</p>
+                        </div>
+                      </div>
+
+                      <div class="row mx-0 mb-3 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0 gray">James Brandy</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <p class="mb-0 pink">N20,000</p>
+                        </div>
+                      </div>
+
+                      <a class="pink d-block" href="#">See More</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card blue-card">
+
+                      <div class="d-flex align-items-center head py-2">
+                        <img class="img-fluid mr-3" src="../img/admin-dashboard-avatar.png" alt="">
+                        <p class="mb-0">James Ibori</p>
+                      </div>
+                      <div class="card-body py-1 px-0">
+                        <p class="mb-0">Loan Amount</p>
+                        <h5 class="pink">N600,000</h5>
+                        
+                        <div class="row mx-0 align-items-center justify-content-between mb-1">
+                          <div class="col-8 px-0">
+                            <p class="mb-0">Funding Status</p>
+                            <div class="progress" style="height: 3px;">
+                              <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #FB405C;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <h5 class="mb-0 pink">80%</h5>
+                          </div>
+                        </div>
+
+                        <div class="row mx-0 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0">Interest Rate</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <h5 class="mb-0 pink">5%</h5>
+                          </div>
+                        </div>
+
+                        <p class="mb-1 mt-2">15 Investors</p>
+
+                        <div class="row mx-0 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0 gray">Adetobi Olaotan</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <p class="mb-0 pink">N40,000</p>
+                          </div>
+                        </div>
+
+                        <div class="row mx-0 mb-3 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0 gray">James Brandy</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <p class="mb-0 pink">N20,000</p>
+                          </div>
+                        </div>
+
+                        <a class="pink d-block" href="#">See More</a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                  <div class="card pink-card">
+
+                    <div class="d-flex align-items-center head py-2">
+                      <img class="img-fluid mr-3" src="../img/admin-dashboard-avatar.png" alt="">
+                      <p class="mb-0">Olatunde Ayoola</p>
+                    </div>
+                    <div class="card-body py-1 px-0">
+                      <p class="mb-0">Loan Amount</p>
+                      <h5 class="pink">N300,000</h5>
+                      
+                      <div class="row mx-0 align-items-center justify-content-between mb-1">
+                        <div class="col-8 px-0">
+                          <p class="mb-0">Funding Status</p>
+                          <div class="progress" style="height: 3px;">
+                            <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #FB405C;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <h5 class="mb-0 pink">80%</h5>
+                        </div>
+                      </div>
+
+                      <div class="row mx-0 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0">Interest Rate</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <h5 class="mb-0 pink">5%</h5>
+                        </div>
+                      </div>
+
+                      <p class="mb-1 mt-2">15 Investors</p>
+
+                      <div class="row mx-0 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0 gray">Adetobi Olaotan</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <p class="mb-0 pink">N40,000</p>
+                        </div>
+                      </div>
+
+                      <div class="row mx-0 mb-3 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0 gray">James Brandy</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <p class="mb-0 pink">N20,000</p>
+                        </div>
+                      </div>
+
+                      <a class="pink d-block" href="#">See More</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card blue-card">
+
+                      <div class="d-flex align-items-center head py-2">
+                        <img class="img-fluid mr-3" src="../img/admin-dashboard-avatar.png" alt="">
+                        <p class="mb-0">James Ibori</p>
+                      </div>
+                      <div class="card-body py-1 px-0">
+                        <p class="mb-0">Loan Amount</p>
+                        <h5 class="pink">N600,000</h5>
+                        
+                        <div class="row mx-0 align-items-center justify-content-between mb-1">
+                          <div class="col-8 px-0">
+                            <p class="mb-0">Funding Status</p>
+                            <div class="progress" style="height: 3px;">
+                              <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #FB405C;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <h5 class="mb-0 pink">80%</h5>
+                          </div>
+                        </div>
+
+                        <div class="row mx-0 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0">Interest Rate</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <h5 class="mb-0 pink">5%</h5>
+                          </div>
+                        </div>
+
+                        <p class="mb-1 mt-2">15 Investors</p>
+
+                        <div class="row mx-0 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0 gray">Adetobi Olaotan</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <p class="mb-0 pink">N40,000</p>
+                          </div>
+                        </div>
+
+                        <div class="row mx-0 mb-3 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0 gray">James Brandy</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <p class="mb-0 pink">N20,000</p>
+                          </div>
+                        </div>
+
+                        <a class="pink d-block" href="#">See More</a>
+                      </div>
+                    </div>
+                </div>
+                  
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-2 col-md-1">
+              <div class="card px-2 py-3 shadow-sm date text-center border-0"><span>WED</span>23</div>
+            </div>
+            <div class="col-10 col-md-11">
+              <div class="row row row-cols-1 row-cols-md-2 row-cols-xl-4">
+                
+                <div class="col mb-4">
+                  <div class="card pink-card">
+
+                    <div class="d-flex align-items-center head py-2">
+                      <img class="img-fluid mr-3" src="../img/admin-dashboard-avatar.png" alt="">
+                      <p class="mb-0">Olatunde Ayoola</p>
+                    </div>
+                    <div class="card-body py-1 px-0">
+                      <p class="mb-0">Loan Amount</p>
+                      <h5 class="pink">N300,000</h5>
+                      
+                      <div class="row mx-0 align-items-center justify-content-between mb-1">
+                        <div class="col-8 px-0">
+                          <p class="mb-0">Funding Status</p>
+                          <div class="progress" style="height: 3px;">
+                            <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #FB405C;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <h5 class="mb-0 pink">80%</h5>
+                        </div>
+                      </div>
+
+                      <div class="row mx-0 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0">Interest Rate</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <h5 class="mb-0 pink">5%</h5>
+                        </div>
+                      </div>
+
+                      <p class="mb-1 mt-2">15 Investors</p>
+
+                      <div class="row mx-0 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0 gray">Adetobi Olaotan</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <p class="mb-0 pink">N40,000</p>
+                        </div>
+                      </div>
+
+                      <div class="row mx-0 mb-3 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0 gray">James Brandy</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <p class="mb-0 pink">N20,000</p>
+                        </div>
+                      </div>
+
+                      <a class="pink d-block" href="#">See More</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card blue-card">
+
+                      <div class="d-flex align-items-center head py-2">
+                        <img class="img-fluid mr-3" src="../img/admin-dashboard-avatar.png" alt="">
+                        <p class="mb-0">James Ibori</p>
+                      </div>
+                      <div class="card-body py-1 px-0">
+                        <p class="mb-0">Loan Amount</p>
+                        <h5 class="pink">N600,000</h5>
+                        
+                        <div class="row mx-0 align-items-center justify-content-between mb-1">
+                          <div class="col-8 px-0">
+                            <p class="mb-0">Funding Status</p>
+                            <div class="progress" style="height: 3px;">
+                              <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #FB405C;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <h5 class="mb-0 pink">80%</h5>
+                          </div>
+                        </div>
+
+                        <div class="row mx-0 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0">Interest Rate</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <h5 class="mb-0 pink">5%</h5>
+                          </div>
+                        </div>
+
+                        <p class="mb-1 mt-2">15 Investors</p>
+
+                        <div class="row mx-0 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0 gray">Adetobi Olaotan</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <p class="mb-0 pink">N40,000</p>
+                          </div>
+                        </div>
+
+                        <div class="row mx-0 mb-3 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0 gray">James Brandy</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <p class="mb-0 pink">N20,000</p>
+                          </div>
+                        </div>
+
+                        <a class="pink d-block" href="#">See More</a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                  <div class="card pink-card">
+
+                    <div class="d-flex align-items-center head py-2">
+                      <img class="img-fluid mr-3" src="../img/admin-dashboard-avatar.png" alt="">
+                      <p class="mb-0">Olatunde Ayoola</p>
+                    </div>
+                    <div class="card-body py-1 px-0">
+                      <p class="mb-0">Loan Amount</p>
+                      <h5 class="pink">N300,000</h5>
+                      
+                      <div class="row mx-0 align-items-center justify-content-between mb-1">
+                        <div class="col-8 px-0">
+                          <p class="mb-0">Funding Status</p>
+                          <div class="progress" style="height: 3px;">
+                            <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #FB405C;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <h5 class="mb-0 pink">80%</h5>
+                        </div>
+                      </div>
+
+                      <div class="row mx-0 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0">Interest Rate</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <h5 class="mb-0 pink">5%</h5>
+                        </div>
+                      </div>
+
+                      <p class="mb-1 mt-2">15 Investors</p>
+
+                      <div class="row mx-0 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0 gray">Adetobi Olaotan</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <p class="mb-0 pink">N40,000</p>
+                        </div>
+                      </div>
+
+                      <div class="row mx-0 mb-3 align-items-center justify-content-between">
+                        <div class="col-8 px-0">
+                          <p class="mb-0 gray">James Brandy</p>
+                        </div> 
+                        <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                          <p class="mb-0 pink">N20,000</p>
+                        </div>
+                      </div>
+
+                      <a class="pink d-block" href="#">See More</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card blue-card">
+
+                      <div class="d-flex align-items-center head py-2">
+                        <img class="img-fluid mr-3" src="../img/admin-dashboard-avatar.png" alt="">
+                        <p class="mb-0">James Ibori</p>
+                      </div>
+                      <div class="card-body py-1 px-0">
+                        <p class="mb-0">Loan Amount</p>
+                        <h5 class="pink">N600,000</h5>
+                        
+                        <div class="row mx-0 align-items-center justify-content-between mb-1">
+                          <div class="col-8 px-0">
+                            <p class="mb-0">Funding Status</p>
+                            <div class="progress" style="height: 3px;">
+                              <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #FB405C;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <h5 class="mb-0 pink">80%</h5>
+                          </div>
+                        </div>
+
+                        <div class="row mx-0 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0">Interest Rate</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <h5 class="mb-0 pink">5%</h5>
+                          </div>
+                        </div>
+
+                        <p class="mb-1 mt-2">15 Investors</p>
+
+                        <div class="row mx-0 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0 gray">Adetobi Olaotan</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <p class="mb-0 pink">N40,000</p>
+                          </div>
+                        </div>
+
+                        <div class="row mx-0 mb-3 align-items-center justify-content-between">
+                          <div class="col-8 px-0">
+                            <p class="mb-0 gray">James Brandy</p>
+                          </div> 
+                          <div class="col-4 px-0 d-flex align-items-end justify-content-end">
+                            <p class="mb-0 pink">N20,000</p>
+                          </div>
+                        </div>
+
+                        <a class="pink d-block" href="#">See More</a>
+                      </div>
+                    </div>
+                </div>
+                  
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <footer>
+    <div class="container py-4">
+      
+      <div class="row mt-5">
+        <div class="col px-md-0 mx">
+          <a href="#"><svg width="155" height="80" viewBox="0 0 155 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.997" fill-rule="evenodd" clip-rule="evenodd" d="M57.5432 0C56.7667 8.64523e-05 56.022 0.309131 55.4729 0.859164C54.9238 1.4092 54.6153 2.15517 54.6152 2.93304V18.0602C54.6152 18.8381 54.9237 19.5841 55.4728 20.1341C56.0219 20.6842 56.7666 20.9932 57.5432 20.9932C58.3197 20.9932 59.0644 20.6842 59.6135 20.1341C60.1626 19.5841 60.4711 18.8381 60.4711 18.0602V5.86607H148.466V56.4883H120.2C119.424 56.4883 118.679 56.7974 118.13 57.3474C117.581 57.8975 117.272 58.6435 117.272 59.4214C117.272 60.1993 117.581 60.9453 118.13 61.4953C118.679 62.0454 119.424 62.3544 120.2 62.3544H151.394C152.17 62.3543 152.915 62.0453 153.464 61.4952C154.013 60.9452 154.322 60.1992 154.322 59.4214V2.93304C154.322 2.15517 154.013 1.4092 153.464 0.859164C152.915 0.309131 152.17 8.72633e-05 151.394 0H57.5432Z" fill="#FB3F5C"/>
+            <path d="M0 22.2668V26.3963H3.14794V41.6755H7.90733V26.3963H11.7298V22.2668H7.90733V21.4785C7.90733 20.615 8.13218 19.9017 8.61936 19.3762C9.06907 18.8506 9.78111 18.5878 10.6805 18.5878H11.7298V14.4583H9.70615C7.645 14.4583 6.03356 15.059 4.87182 16.2603C3.71008 17.4616 3.14794 19.0758 3.14794 21.1406V22.2668H0Z" fill="white"/>
+            <path d="M27.2627 33.7176C27.2627 35.0315 26.8879 36.0826 26.1759 36.8335C25.4638 37.5843 24.5644 37.9597 23.4402 37.9597C22.2409 37.9597 21.3041 37.5843 20.667 36.7959C20.0299 36.0076 19.7301 34.994 19.7301 33.7176V22.2676H14.9707V34.2807C14.9707 36.6458 15.5703 38.5604 16.807 40.0244C18.0062 41.5261 19.7676 42.2394 22.0161 42.2394C23.1404 42.2394 24.1897 42.0141 25.1266 41.5261C26.026 41.038 26.813 40.3248 27.45 39.4238V41.6762H32.0221V22.2676H27.2627V33.7176Z" fill="white"/>
+            <path d="M41.7653 30.2635C41.7653 28.9496 42.14 27.8984 42.927 27.1476C43.6765 26.3968 44.6509 25.9838 45.7751 25.9838C47.0118 25.9838 47.9487 26.3968 48.5483 27.1851C49.1479 27.9735 49.4852 29.0247 49.4852 30.3386V41.6759H54.2446V29.6253C54.2446 27.2602 53.6075 25.3456 52.4083 23.8815C51.1716 22.455 49.5227 21.7042 47.424 21.7042C44.9132 21.7042 42.9645 22.6802 41.5779 24.5573V22.2673H37.0059V41.6759H41.7653V30.2635Z" fill="white"/>
+            <path d="M66.494 42.2387C67.8056 42.2387 68.9674 41.9759 69.9792 41.4128C70.9536 40.8872 71.778 40.0988 72.4526 39.1228V41.6755H77.0246V14.4584H72.3027V24.632C71.6281 23.731 70.8037 23.0177 69.8293 22.4921C68.855 21.9666 67.7307 21.7038 66.494 21.7038C64.8076 21.7038 63.3086 22.1543 62.0344 23.0177C60.7603 23.8811 59.7484 25.0825 58.9989 26.6216C58.2494 28.1608 57.9121 29.9252 57.9121 31.9524C57.9121 33.9797 58.2494 35.7441 58.9989 37.2833C59.7484 38.86 60.7603 40.0613 62.0344 40.9247C63.3086 41.8257 64.8076 42.2387 66.494 42.2387ZM67.6183 37.9965C66.1942 37.9965 64.995 37.471 64.0956 36.3447C63.1962 35.256 62.7465 33.7919 62.7465 31.9524C62.7465 30.1129 63.1962 28.6488 64.0956 27.5602C64.995 26.509 66.1942 25.9459 67.6183 25.9459C69.0423 25.9459 70.2416 26.509 71.141 27.5977C72.0404 28.6864 72.5276 30.1505 72.5276 31.9524C72.5276 33.7919 72.0404 35.256 71.141 36.3447C70.2416 37.471 69.0423 37.9965 67.6183 37.9965Z" fill="white"/>
+            <path d="M89.1445 41.7395H93.9039V30.1394C93.9039 28.863 94.2037 27.8869 94.8783 27.1361C95.5154 26.4228 96.3398 26.0474 97.3517 26.0474C98.3635 26.0474 99.1505 26.4228 99.7126 27.1361C100.237 27.8869 100.537 28.863 100.537 30.1394V41.7395H105.296V30.1394C105.296 28.863 105.596 27.8869 106.271 27.1361C106.945 26.4228 107.77 26.0474 108.782 26.0474C109.794 26.0474 110.581 26.4228 111.143 27.1361C111.667 27.8869 111.967 28.863 111.967 30.1394V41.7395H116.726V29.5387C116.726 27.1361 116.127 25.2591 114.965 23.87C113.766 22.481 112.192 21.7678 110.243 21.7678C109.044 21.7678 107.882 22.0681 106.833 22.5937C105.784 23.1568 104.884 23.9451 104.21 24.9587C103.648 23.9827 102.936 23.1943 102.036 22.6312C101.137 22.0681 100.087 21.7678 98.9631 21.7678C97.8389 21.7678 96.8645 22.0305 95.9651 22.481C95.0657 22.9315 94.3162 23.6073 93.7165 24.4332V22.3309H89.1445V41.7395Z" fill="#FB3F5C"/>
+            <path d="M122.977 49.4357H128.073L138.642 22.3312H133.507L128.785 36.1838L123.989 22.3312H118.555L126.162 41.7398L122.977 49.4357Z" fill="#FB3F5C"/>
+            <path d="M3.09766 72.3037H7.85705V45.0865H3.09766V72.3037Z" fill="white"/>
+            <path d="M18.2292 72.8672C19.3535 72.8672 20.4403 72.642 21.4896 72.1539C22.5389 71.7035 23.4009 70.9526 24.0379 69.9015V72.3041H28.4226V60.1409C28.4226 57.4754 27.6731 55.5233 26.249 54.2469C24.7874 52.9705 22.8012 52.3323 20.2904 52.3323C18.0044 52.3323 16.1681 52.8955 14.744 53.9841C13.3199 55.1104 12.4205 56.4618 12.1207 58.1136H16.6927C16.8426 57.6256 17.2174 57.1751 17.817 56.7997C18.4166 56.4243 19.1661 56.2366 20.1405 56.2366C21.2273 56.2366 22.0892 56.5369 22.7638 57.0625C23.4009 57.5881 23.7381 58.4515 23.7381 59.6528V60.3661H19.8032C17.1799 60.3661 15.1562 60.9292 13.7322 62.0554C12.2706 63.1817 11.5586 64.7584 11.5586 66.7481C11.5586 68.6251 12.1582 70.0892 13.3574 71.2154C14.5566 72.3416 16.2056 72.8672 18.2292 72.8672ZM19.4285 69.038C18.4541 69.038 17.7046 68.8503 17.105 68.3999C16.5054 67.9494 16.2056 67.3112 16.2056 66.4477C16.2056 65.6218 16.5054 64.9461 17.1799 64.4956C17.8545 64.0451 18.7914 63.7823 20.0281 63.7823H23.7381V65.0212C23.7381 65.9222 23.5133 66.6354 23.0636 67.2361C22.6139 67.8367 22.0892 68.2872 21.4146 68.5876C20.7401 68.8879 20.103 69.038 19.4285 69.038Z" fill="white"/>
+            <path d="M33.2539 80H37.9758V69.939C38.6504 70.8776 39.4748 71.5908 40.4492 72.1164C41.4236 72.642 42.5104 72.8672 43.7845 72.8672C45.4334 72.8672 46.9325 72.4543 48.2066 71.5908C49.4808 70.7274 50.4926 69.5261 51.2421 67.9494C51.9916 66.4102 52.3664 64.6458 52.3664 62.6185C52.3664 60.5913 51.9916 58.8269 51.2421 57.2877C50.4926 55.7486 49.4808 54.5472 48.2066 53.6463C46.9325 52.7828 45.4334 52.3323 43.7845 52.3323C42.4354 52.3323 41.2737 52.6327 40.2993 53.1582C39.2875 53.7214 38.463 54.4722 37.8259 55.4482V52.8955H33.2539V80ZM42.6603 68.6251C41.1987 68.6251 39.9995 68.0995 39.1001 67.0108C38.2007 65.9221 37.751 64.458 37.751 62.6185C37.751 60.8166 38.2007 59.3525 39.1001 58.2263C39.9995 57.1376 41.1987 56.5745 42.6603 56.5745C44.0843 56.5745 45.2461 57.1376 46.1455 58.2263C47.0449 59.315 47.5321 60.779 47.5321 62.6185C47.5321 64.458 47.0449 65.9221 46.1455 67.0108C45.2461 68.0995 44.0843 68.6251 42.6603 68.6251Z" fill="white"/>
+            <path d="M63.5846 72.4544H66.058V68.3249H64.6714C63.8844 68.3249 63.2848 68.0997 62.8725 67.6492C62.4228 67.1987 62.2355 66.5605 62.2355 65.6595V57.0251H66.058V52.8956H62.2355V46.2133C60.699 46.6638 59.125 46.9266 57.4761 47.0017V52.8956H54.3281V57.0251H57.4761V66.1851C57.4761 68.2499 58.0007 69.8266 59.05 70.8777C60.0993 71.9289 61.6358 72.4544 63.5846 72.4544Z" fill="white"/>
+            <path d="M78.3585 72.8672C80.2323 72.8672 81.9187 72.4543 83.3802 71.5533C84.8418 70.6898 86.0035 69.4885 86.8279 67.9118C87.6524 66.3726 88.0646 64.6082 88.0646 62.581C88.0646 60.5538 87.6524 58.7894 86.8279 57.2502C86.0035 55.711 84.8418 54.5097 83.3802 53.6463C81.9187 52.7828 80.2323 52.3323 78.3585 52.3323C76.4473 52.3323 74.7609 52.7828 73.2993 53.6463C71.8378 54.5097 70.7135 55.711 69.889 57.2502C69.0646 58.7894 68.6523 60.5538 68.6523 62.581C68.6523 64.6082 69.0646 66.3726 69.889 67.9118C70.7135 69.4885 71.8378 70.6898 73.2993 71.5533C74.7609 72.4543 76.4473 72.8672 78.3585 72.8672ZM78.3585 68.6251C76.897 68.6251 75.7352 68.0995 74.8358 66.9733C73.9364 65.8846 73.4867 64.4205 73.4867 62.581C73.4867 60.7415 73.9364 59.2774 74.8358 58.1887C75.7352 57.1376 76.897 56.5745 78.3585 56.5745C79.7826 56.5745 80.9818 57.1376 81.8812 58.1887C82.7806 59.2774 83.2303 60.7415 83.2303 62.581C83.2303 64.4205 82.7806 65.8846 81.8812 66.9733C80.9818 68.0995 79.7826 68.6251 78.3585 68.6251Z" fill="white"/>
+            <path d="M91.8828 80H96.6047V69.939C97.2793 70.8776 98.1038 71.5908 99.0781 72.1164C100.052 72.642 101.139 72.8672 102.413 72.8672C104.062 72.8672 105.561 72.4543 106.836 71.5908C108.11 70.7274 109.122 69.5261 109.871 67.9494C110.621 66.4102 110.995 64.6458 110.995 62.6185C110.995 60.5913 110.621 58.8269 109.871 57.2877C109.122 55.7486 108.11 54.5472 106.836 53.6463C105.561 52.7828 104.062 52.3323 102.413 52.3323C101.064 52.3323 99.9026 52.6327 98.9282 53.1582C97.9164 53.7214 97.0919 54.4722 96.4548 55.4482V52.8955H91.8828V80ZM101.289 68.6251C99.8276 68.6251 98.6284 68.0995 97.729 67.0108C96.8296 65.9221 96.3799 64.458 96.3799 62.6185C96.3799 60.8166 96.8296 59.3525 97.729 58.2263C98.6284 57.1376 99.8276 56.5745 101.289 56.5745C102.713 56.5745 103.875 57.1376 104.774 58.2263C105.674 59.315 106.161 60.779 106.161 62.6185C106.161 64.458 105.674 65.9221 104.774 67.0108C103.875 68.0995 102.713 68.6251 101.289 68.6251Z" fill="white"/></svg>                      
+          </a>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+
+        <div class="col-12 col-md-4 pb-4 pb-0-md pl-sm-0">
+          <p>23, Intel Chip, Silicon Valley</p>
+          <p>info@fundmylaptop.com</p>
+          <p>09023144819</p>
+        </div>
+
+        <div class="col-12 col-md-4 pb-4 pb-0-md pl-sm-0">
+          <p>Why choose FundMyLaptop</p>
+          <p>How P2P Lending works</p>
+        </div>
+
+        <div class="col-12 col-md-4 pb-0-md pl-sm-0">
+          <p>About FundMyLaptop</p>
+          <p>Contact Us</p>
+        </div>
+
+      </div>
+
+      <div class="row mt-4 pl-sm-0">
+        <div class="col px-md-0 pl-sm-0">
+          <i class="fab mr-4 fa-facebook-f"></i>
+          <i class="fab mr-4 fa-instagram"></i>
+          <i class="fab mr-4 fa-twitter"></i>
+        </div>
+      </div>
+
+      <div class="row mt-4 copyright pt-2 pl-sm-0">
+        <div class="col-12 col-md-6 pl-md-0 order-2 order-md-1 pl-sm-0">
+          <p>2020 © Copyright All rights reserved</p>
+        </div>
+        <div class="col-12 col-md-6 pb-2 pb-md-0 pr-0 d-flex justify-content-md-end order-1 order-md-2 pl-sm-0">
+          <a class="ml-0 ml-md-3">FAQ</a>
+          <a class="ml-3">Privacy Policy</a>
+          <a class="ml-3">Terms & Conditions</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+ 
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="../js/bootstrap-js/popper.js"></script>
+  <script src="../js/bootstrap-js/bootstrap.js"></script>
+
+ <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+  
+</body>
+
+</html>

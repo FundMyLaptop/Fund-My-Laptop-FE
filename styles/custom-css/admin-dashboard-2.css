@@ -1,0 +1,172 @@
+* {
+   color: #04172A;
+   font-family: 'DM Sans', sans-serif;
+}
+
+body {
+   background-color: #F7F8F9;
+}
+
+h1 {
+   font-size: 2rem;
+}
+
+h2 {
+   font-size: 1.25rem;
+}
+
+footer {
+   background-color: #04172A;
+}
+
+footer *, footer hr {
+   color: #FFF;
+   font-weight: 400;
+}
+
+footer .copyright {
+   border-top: 1px solid rgba(255, 255, 255, 0.1);
+   color: rgba(255, 255, 255, 0.8);
+}
+
+footer .copyright p, footer .copyright a {
+   color: rgba(255, 255, 255, 0.8);
+}
+
+#nav-bar-links a {
+   font-weight: 500;
+   color: #04172A;
+}
+
+#nav-bar-links .active {
+   border-bottom: 3px solid #FB405C;
+}
+
+#nav-bar-links .active a{
+   color: #FB405C;
+}
+
+#tabs a {
+   color: #04172A;
+   font-weight: 500;
+}
+
+#tabs .active {
+   background-color: #FB405C;
+   color: #fff;
+   border: 0px solid #FB405C;
+   border-radius: 26px;
+}
+
+#input-fields select{
+   font-size: 13px;
+   border: 0.5px solid #04172A;
+   border-radius: 5px;
+}
+
+#input-fields p {
+   border: 0.5px solid #04172A;
+   font-size: 13px;
+   border-radius: 5px;
+}
+
+#board {
+   background-color: #fff;
+}
+
+#board img {
+   max-height: 28px;
+   max-width: 28px;
+}
+
+#board span {
+   font-size: 10px;
+}
+ 
+#board .date {
+   width: fit-content;
+   border-radius: 21px !important;
+   font-weight: 500;
+}
+
+#board .card {
+   padding: 0 12px;
+   border: 0px solid #fff;
+   border-radius: 5px;
+}
+
+#board .card a {
+   font-size: 9px;
+   text-decoration: underline;
+   text-align: center;
+}
+
+#board .pink {
+   font-weight: 500;
+   color: #FB405C;
+}
+
+#board .head p {
+   font-size: 12px;
+   font-weight: 500;
+}
+
+#board .card-body p {
+   font-size: 9px;
+}
+
+
+
+.bg-light {
+   background-color: #fff !important;
+}
+
+.navbar-brand {
+   padding-bottom: 0.85rem;
+}
+
+.sub {
+   font-size: 12px;
+}
+
+.gray {
+   color: #c4c4c4;
+}
+
+.pink-card {
+   background: #FFEDF0;
+   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.blue-card {
+   background: #EDECFF;
+}
+
+.btn-outline-primary {
+   color: #04172A;
+   border: 0.5px solid #FB405C;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:hover {
+   color: #FB405C;
+   border: 0.5px solid #04172A;
+   background-color: #04172A;
+}
+
+@media(max-width: 992px) {
+   #nav-bar-links .active {
+      border-bottom: 0px solid #FB405C;
+   }
+}
+
+@media(max-width: 768px) {
+   #wrapper {
+      margin: 0 !important;
+      padding: 0 !important;
+   }
+
+   #tabs a {
+      font-size: 14px;
+   }
+
+}
