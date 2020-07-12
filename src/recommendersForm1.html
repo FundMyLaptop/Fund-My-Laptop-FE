@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FUND MY LAPTOP - Recommenders Form - Identification</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
+  <link rel="stylesheet" href="../styles/bootstrap-css/bootstrap.css" />
+  <link rel="stylesheet" href="../styles/custom-css/footer.css" />
+  <link rel="stylesheet" href="../styles/custom-css/header.css" />
+  <link rel="stylesheet" href="../styles/custom-css/blog-list.css" />
+  <link rel="stylesheet" href="../styles/custom-css/recommendersForm1.css" />
+</head>
+
+<body>
+  <!--Header-->
+  <div class="nav-container container-fluid shadow-sm">
+    <nav class="navbar nav-top navbar-expand-md navbar-light container-md px-0">
+      <a class="navbar-brand" href="index.html">
+        <img src="../../img/Logo 01 Main 01.svg" width="81px" height="44px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link px-4 font-weight-bold" href="#">Lend</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4 font-weight-bold" href="#">Borrow</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4 font-weight-bold" href="about-us.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-md-4 font-weight-bold" href="login.html">
+              <button class="btn btn-fml-secondary px-4">
+                Login
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!--Verification-->
+  <div class="container mt-5 ">
+      <div class="row">
+          <div class="col-sm-12 col-lg-6">
+              <h4>Recommender’s form</h4>
+              <div class="mt3">
+              <span class="bizbut1">1</span>
+              <p>Provide Name and Scan ID</p>
+              </div>
+              <div class="mt3">
+              <a href="#"><span class="bizbut2">2</span></a>
+              <p>Link Social Accounts</p>
+              </div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <span class="bizbut1">1</span>
+            <span class="borderRight leftCol"></span>
+            <a href="#"><span class="bizbut2 float-right">2</span></a>
+            <div class="form-row mt-5">
+                <div class="col-md-6 mb-4 pr-md-3">
+                  <label for="address">Name </label>
+                  <input type="text" class="form-control" id="address" placeholder="Name" required="">
+                </div>
+                <div class="col-md-6 mb-4 pl-md-3">
+                  <label for="city">Uplaod Scanned ID </label>
+                  <div class="file-box">
+                    <span id="placeholder">Upload Image</span>
+                  <input type="file" class="form-control custom-file-input" id="firstName" placeholder="Your city" style="color:transparent;" onchange="this.style.color = 'black';" required="">
+                    <img id="upload-icon" src="../img/uploadicon.svg" alt="">
+                  </div>
+                </div>
+              </div>
+          </div>
+       </div>
+       <div class="form-buttons d-flex flex-column flex-md-row justify-content-center justify-content-md-end">
+         <button class="submit btn btn-fml-secondary align-self-center ml-md-3 mb-3 mb-md-0" type="submit">
+           Next
+       </div>
+   </div>
+
+  <!-- Footer -->
+  <footer class="footer container-fluid bg-fml-primary pt-4 pt-md-5 pb-3 mt-5">
+    <div class="footer-li container">
+      <div class="row mx-0 d-none d-md-flex mb-3">
+        <a href="#" class="footer-logo">
+          <img src="../../img/logo-footer.svg" alt="" width="154px" height="80px" />
+        </a>
+      </div>
+      <div class="row flex-column flex-md-row footer-links mx-0 justify-content-center justify-content-md-between text-center text-md-left">
+        <ul class="nav flex-column order-3 order-md-1 why mt-4 pt-4 pt-md-0 mt-md-0">
+          <li><a href="#">23, Intel Chip, Silicon Valley</a></li>
+          <li><a href="#">info@fundmylaptop.com</a></li>
+          <li><a href="#">09023144819</a></li>
+        </ul>
+        <ul class="nav flex-column mt-md-3 order-1 order-md-2">
+          <li><a href="aboutus.html">Why choose fundmylaptop?</a></li>
+          <li><a href="aboutus.html">How P2P lending works</a></li>
+        </ul>
+        <ul class="nav flex-column mt-md-3 order-2 order-md-3">
+          <li><a href="about-us.html">About fundmylaptop</a></li>
+          <li><a href="contact-us.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="row mx-0 mt-4 mt-md-2 pt-4 pt-md-5 social-footer-icons-container text-center justify-content-center justify-content-md-start">
+        <ul class="nav social-footer-icons">
+          <li>
+            <a href=""><img src="../../img/brandico_facebook.svg" /></a>
+          </li>
+          <li>
+            <a href=""><img src="../../img/ant-design_instagram-outlined.svg" /></a>
+          </li>
+          <li>
+            <a href=""><img src="../../img/ant-design_twitter-outlined.svg" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container mt-4 mt-md-3 text-light">
+      <div class="row flex-column flex-md-row mx-0 credits-container pt-3 justify-content-md-between justify-content-center">
+        <p class="mb-0 text-center text-md-left">
+          2020 &copy; Copyright All Rights Reserved
+        </p>
+        <ul class="nav bye">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="../js/bootstrap-js/jquery.js"></script>
+  <script src="../js/bootstrap-js/bootstrap.js"></script>
+  <script src="../js/bootstrap-js/popper.js"></script>
+  <script src="https://cdn.rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+  <script>
+    (function() {
+      'use strict';
+      window.addEventListener(
+        'load',
+        function() {
+          var forms = document.getElementsByClassName('needs-validation');
+          var validation = Array.prototype.filter.call(forms, function(
+            form
+          ) {
+            form.addEventListener(
+              'submit',
+              function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              },
+              false
+            );
+          });
+        },
+        false
+      );
+    })();
+  </script>
+</body>
+
+</html>
