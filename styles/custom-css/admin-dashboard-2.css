@@ -64,7 +64,7 @@ footer .copyright p, footer .copyright a {
    border-radius: 5px;
 }
 
-#input-fields input {
+#input-fields input, #input-fields p {
    padding: 0 0.25rem;
    background-color: transparent;
    border: 0.5px solid #04172A;
