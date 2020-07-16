@@ -92,13 +92,22 @@ h5{
 /* ***** Nav bar end here ***** */
 
 /* Header content start  Here */
-.hero-img-div {
+.jumbotron{
     margin-top: 5.5rem;
-    background: url("/img/HeaderHero-.png") center no-repeat;
+    background: url(/img/HeaderHero-.png) center  no-repeat;
     background-size: cover;
     min-height: 400px;
 
 }
+
+.hero-img-div {
+    margin-top: 5.5rem;
+    background: url(/img/HeaderHero-.png) center  no-repeat;
+    background-size: cover;
+    min-height: 400px;
+
+}
+
 .header-text>p{
     font-size: 24px;
     line-height: 31px;
