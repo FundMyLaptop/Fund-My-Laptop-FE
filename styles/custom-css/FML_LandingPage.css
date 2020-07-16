@@ -102,7 +102,7 @@ h5{
 
 .hero-img-div {
     margin-top: 5.5rem;
-    background: url(/img/HeaderHero-.png) center  no-repeat;
+    background: url('/img/headerHero-phone.png') center  no-repeat;
     background-size: cover;
     min-height: 400px;
 
