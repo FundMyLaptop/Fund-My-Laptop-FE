@@ -1,0 +1,63 @@
+h1{
+			ont-family: DM Sans;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 40px;
+			line-height: 52px;
+		}
+		
+		h6{
+			font-family: DM Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 31px;
+		}
+		h6 img{
+			width:24px;
+			height:24px;
+		}
+		button img{
+			width:30px;
+			height:30px;
+		}
+		button{
+			font-family: DM Sans;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 28px;
+			color: #FB3F5C;
+		}
+		.bigbutton{
+			width: 315px;
+			height: 52px;
+			border: 2px solid #FB3F5C;
+			box-sizing: border-box;
+			border-radius: 3px;
+			color:#FB3F5C;
+		}
+		.smallbutton{
+			width: 107px;
+			height: 52px;
+			background: #FB3F5C;
+			box-shadow: 0px 4px 15px rgba(251, 63, 92, 0.2);
+			border-radius: 5px
+			color:white;
+		}
+		@media screen and (max-width:500px){
+			h1{
+				font-size: 24px;
+				line-height: 31px;
+			}
+			h6{
+				font-size: 20px;
+				line-height: 26px;
+			}
+		}
+		@media screen and (max-width:400px){
+			.bigbutton{
+				width: 99%;
+			}
+		}
+		
